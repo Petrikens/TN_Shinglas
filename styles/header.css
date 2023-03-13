@@ -1,0 +1,59 @@
+.header {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    background-color: #363636;
+}
+
+.header_title {
+    padding: 0 100px;
+}
+
+.header_navbar {
+    color: #fff;
+    font-family: "TT Norms Pro";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    margin-right: 400px;
+}
+
+.header_navbar .navbar_item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.header_right {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.favorites_button,
+.city_button,
+.basket_button {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    color: #c3c3c3;
+}
+
+.city_button img {
+    margin-right: 20px;
+}
+
+.basket_button {
+    border: 2px solid #c3c3c3;
+    border-radius: 5px;
+    padding: 5px 25px 5px 11px;
+}
+
+.basket_button img {
+    margin-right: 15px;
+}
