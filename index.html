@@ -20,12 +20,18 @@
     <link rel="stylesheet" href="./styles/interestingSection.css" />
     <link rel="stylesheet" href="./styles/mapSection.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/header-media768.css" />
   </head>
   <body>
     <header class="header">
       <div class="header_title">
         <a href="#">
-          <img src="./images/header/Logo.png" alt="Logo" />
+          <img class="header_logo" src="./images/header/Logo.png" alt="Logo" />
+          <img
+            class="header_logo768"
+            src="./images/header/Logo768.png"
+            alt="Logo768"
+          />
         </a>
       </div>
       <nav>
@@ -54,16 +60,40 @@
       </nav>
       <div class="header_right">
         <button class="favorites_button" type="submit">
-          <img src="./images/header/Like.svg" alt="Like" />
+          <img class="like_img" src="./images/header/Like.svg" alt="Like" />
+          <img
+            class="like768_img"
+            src="./images/header/Like768.svg"
+            alt="Like786"
+          />
         </button>
         <button class="city_button" type="submit">
-          <img src="./images/header/City.svg" alt="City" />
+          <img class="city_img" src="./images/header/City.svg" alt="City" />
+          <img
+            class="city768_img"
+            src="./images/header/City768.svg"
+            alt="City"
+          />
           <span>Москва</span>
         </button>
         <button class="basket_button" type="submit">
-          <img src="./images/header/Basket.svg" alt="Basket" />
+          <img
+            class="basket_img"
+            src="./images/header/Basket.svg"
+            alt="Basket"
+          />
+          <img
+            class="basket768_img"
+            src="./images/header/Basket768.svg"
+            alt="Basket"
+          />
           <span>Купить</span>
         </button>
+        <ul class="burger_menu">
+          <li class="burger_menu_layer"></li>
+          <li class="burger_menu_layer"></li>
+          <li class="burger_menu_layer"></li>
+        </ul>
       </div>
     </header>
     <main>

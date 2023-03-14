@@ -1,0 +1,60 @@
+@media screen and (max-width: 768px) {
+    .header {
+        height: 50px;
+        justify-content: space-between;
+    }
+
+    .header_title {
+        padding-left: 50px;
+    }
+
+    .header_right {
+        gap: 0px;
+    }
+
+    .header_logo,
+    .like_img,
+    .city_img,
+    .basket_img {
+        display: none;
+    }
+
+    .header_logo768,
+    .like768_img,
+    .city768_img,
+    .basket768_img {
+        display: block;
+    }
+
+    .header nav {
+        display: none;
+    }
+
+    .favorites_button,
+    .city_button,
+    .basket_button {
+        font-size: 12px;
+    }
+
+    .favorites_button {
+        margin-right: 33px;
+    }
+
+    .city_button {
+        margin-right: 80px;
+    }
+
+    .basket_button {
+        border: 1px solid #C3C3C3;
+        margin-right: 20px;
+    }
+
+    .basket_button {
+        padding: 0 16px;
+    }
+
+    .burger_menu {
+        display: flex;
+    }
+
+}
