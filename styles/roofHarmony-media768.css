@@ -1,0 +1,15 @@
+@media screen and (max-width: 768px) {
+    .roof_harmony {
+        margin-bottom: 100px;
+    }
+
+    .roof_harmony .section_title {
+        margin-bottom: 30px;
+    }
+
+    .harmony_cards {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+}
