@@ -10,6 +10,10 @@
         height: 466px;
     }
 
+    .banner_info {
+        margin: 240px 0px 0px 50px;
+    }
+
     .banner_subtitle {
         font-size: 16px;
         line-height: 21px;
