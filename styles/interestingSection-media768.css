@@ -1,0 +1,34 @@
+@media screen and (max-width: 768px) {
+    .interesting_block_wrapper {
+        height: 100%;
+    }
+
+
+
+    .interesting_section .section_title {
+        padding-top: 85px;
+        padding-bottom: 40px;
+    }
+
+    .interesting_section_content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+    }
+
+    .news_cards {
+        margin-bottom: 30px;
+    }
+
+    .news_card:last-child {
+        display: none;
+    }
+
+    .interesting_section .slider_menu {
+        display: flex;
+        margin-bottom: 0;
+        padding-bottom: 30px;
+        justify-content: center;
+    }
+}
