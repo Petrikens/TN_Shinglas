@@ -1,0 +1,58 @@
+@media screen and (max-width: 768px) {
+    .best_roofer {
+        margin-left: 50px;
+        flex-direction: column;
+    }
+
+    .best_roofer_right_content {
+        width: 644px;
+        height: 393px;
+        position: relative;
+        margin-left: 50px;
+    }
+
+    .roofers_img768,
+    .award_img768 {
+        display: block;
+    }
+
+    .roofers_img,
+    .award_img {
+        display: none;
+    }
+
+    .international_award_block {
+        top: 84px;
+        left: -40px;
+        width: 240px;
+        height: 240px;
+    }
+
+    .article_title_text {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .best_roofer_left_content .article_title_text {
+        width: 100%;
+        margin-bottom: 37px;
+    }
+
+    .best_roofer_left_content .article_text {
+        width: 650px;
+        margin-bottom: 55px;
+    }
+
+    .best_roofer_left_content .slider_menu {
+        display: none;
+    }
+
+    .roofers_img768 {
+        margin-bottom: 30px;
+    }
+
+    .best_roofer_right_content .slider_menu {
+        display: flex;
+        justify-content: center;
+    }
+}
