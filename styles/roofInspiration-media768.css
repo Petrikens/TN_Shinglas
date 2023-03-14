@@ -1,0 +1,25 @@
+@media screen and (max-width: 768px) {
+    .roof_inspiration {
+        margin-bottom: 100px;
+    }
+
+    .roof_inspiration .section_title {
+        margin-bottom: 85px;
+    }
+
+    .inspiration_cards {
+        flex-direction: row;
+        gap: 28px;
+
+    }
+
+    .inspiration_card:nth-child(even) {
+        top: -50px;
+    }
+
+    .inspiration_card {
+        width: 320px;
+        height: 505px;
+        position: relative;
+    }
+}
