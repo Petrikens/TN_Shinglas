@@ -32,17 +32,20 @@
     <link rel="stylesheet" href="./styles/offerSection-media768.css" />
     <link rel="stylesheet" href="./styles/roofHarmony-media768.css" />
     <link rel="stylesheet" href="./styles/interestingSection-media768.css" />
+    <link rel="stylesheet" href="./styles/mapSection-media768.css" />
+    <link rel="stylesheet" href="./styles/footer-media768.css" />
   </head>
   <body>
     <header class="header">
       <div class="header_title">
         <a href="#">
-          <img class="header_logo" src="./images/header/Logo.png" alt="Logo" />
-          <img
-            class="header_logo768"
-            src="./images/header/Logo768.png"
-            alt="Logo768"
-          />
+          <picture>
+            <source
+              srcset="./images/header/Logo768.png"
+              media="(max-width: 768px)"
+            />
+            <img src="./images/header/Logo.png" alt="Logo" />
+          </picture>
         </a>
       </div>
       <nav>
@@ -1184,6 +1187,83 @@
               <button>Официальный сайт</button>
               <button>Проекты корпорации</button>
             </div>
+            <ul class="middle_links">
+              <li class="link">
+                <a href="#">
+                  <img src="./images/footer/Youtube.svg" alt="Youtube" />
+                </a>
+              </li>
+              <li class="link">
+                <a href="#">
+                  <img src="./images/footer/Rutube.svg" alt="Rutube" />
+                </a>
+              </li>
+              <li class="link">
+                <a href="#">
+                  <img src="./images/footer/Zen.svg" alt="Zen" />
+                </a>
+              </li>
+              <li class="link">
+                <a href="#">
+                  <img src="./images/footer/Telegram.svg" alt="Telegram" />
+                </a>
+              </li>
+            </ul>
+            <div class="middle_right_content">
+              <button>Интернет-магазин</button>
+              <button>Точки продаж</button>
+            </div>
+          </div>
+          <div class="footer_bottom_content">
+            <span class="bottom_left_content"
+              >© Корпорация ТЕХНОНИКОЛЬ, 2010 — 2023. Все права защищены.
+              Правовая информация.
+            </span>
+            <span class="bottom_right_content">
+              Разработка сайта — MINISOL
+            </span>
+          </div>
+        </div>
+      </footer>
+      <footer class="footer_media">
+        <div class="container">
+          <div class="footer_media_top">
+            <div class="footer_title">
+              <a href="#">
+                <img src="./images/header/Logo.png" alt="Logo" />
+              </a>
+            </div>
+            <div class="media_top_content">
+              <div class="top_left_content">
+                <button>Официальный сайт</button>
+                <button>Проекты корпорации</button>
+                <div class="footer_hotline">
+                  <span class="hotline_text">горячая линия</span>
+                  <span class="hotline_phone">8 800 600 0565</span>
+                </div>
+              </div>
+              <div class="top_middle_content">
+                <nav>
+                  <ul class="footer_nav">
+                    <li class="nav_item"><a href="#">Коллекции</a></li>
+                    <li class="nav_item"><a href="#">Покупателю</a></li>
+                    <li class="nav_item"><a href="#">Калькулятор</a></li>
+                    <li class="nav_item"><a href="#">Фото домов</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="top_right_content">
+                <nav>
+                  <ul class="footer_nav">
+                    <li class="nav_item"><a href="#">3D-конфигуратор</a></li>
+                    <li class="nav_item"><a href="#">Строителю</a></li>
+                    <li class="nav_item"><a href="#">Мотнаж</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="footer_middle_content">
             <ul class="middle_links">
               <li class="link">
                 <a href="#">

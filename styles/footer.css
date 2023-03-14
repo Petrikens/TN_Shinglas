@@ -3,6 +3,10 @@
     background: #363636;
 }
 
+.footer_media {
+    display: none;
+}
+
 .footer_top_content,
 .footer_middle_content {
     display: flex;
