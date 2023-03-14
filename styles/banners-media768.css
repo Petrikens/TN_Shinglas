@@ -1,0 +1,39 @@
+@media screen and (max-width: 768px) {
+
+    .left_banner {
+        width: 60vw;
+        height: 466px;
+    }
+
+    .right_banner {
+        width: 40vw;
+        height: 466px;
+    }
+
+    .banner_subtitle {
+        font-size: 16px;
+        line-height: 21px;
+        margin-bottom: 0px;
+    }
+
+    .banner_title {
+        font-size: 60px;
+        line-height: 78px;
+        margin-bottom: 14px;
+    }
+
+    .banner_menu {
+        left: 48px;
+        bottom: 17px;
+    }
+
+    .banner_menu_highlight {
+        width: 160px;
+    }
+
+    .banner_menu_text {
+        font-size: 12px;
+        line-height: 16px;
+        max-width: 160px;
+    }
+}
