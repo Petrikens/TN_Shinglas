@@ -1,0 +1,38 @@
+@media screen and (max-width: 768px) {
+    .info_section {
+        margin-bottom: 88px;
+    }
+
+    .info_section .block_wrapper .info_block {
+        flex-direction: column;
+
+    }
+
+    .block_wrapper {
+        width: 100%;
+        height: 100%;
+        background: #F9F7F6;
+    }
+
+    .info_block {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0 0 100px;
+    }
+
+    .info_block_img {
+        width: 768px;
+        height: 719px;
+        margin-bottom: 35px;
+    }
+
+    .block_img {
+        display: none;
+    }
+
+    .block_img768 {
+        display: block;
+    }
+
+
+}

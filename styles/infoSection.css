@@ -28,6 +28,10 @@
     height: 760px;
 }
 
+.block_img768 {
+    display: none;
+}
+
 .info_block_text {
     gap: 35px;
     display: flex;
