@@ -76,6 +76,10 @@
       rel="stylesheet"
       href="./styles/interestingSection/interestingSection-media768.css"
     />
+    <link
+      rel="stylesheet"
+      href="./styles/interestingSection/interestingSection-media320.css"
+    />
     <link rel="stylesheet" href="./styles/mapSection/mapSection.css" />
     <link rel="stylesheet" href="./styles/mapSection/mapSection-media768.css" />
     <link rel="stylesheet" href="./styles/footer/footer.css" />
@@ -1328,15 +1332,30 @@
             <div class="section_title">Будет интересно</div>
             <div class="interesting_section_content">
               <div class="phone_content">
-                <img src="./images/interestingSection/Phone.png" alt="Phone" />
+                <picture>
+                  <source
+                    media="(max-width: 320px)"
+                    srcset="./images/interestingSection/Phone320.png"
+                  />
+                  <img
+                    src="./images/interestingSection/Phone.png"
+                    alt="Phone"
+                  />
+                </picture>
               </div>
               <div class="news_cards">
                 <div class="news_card">
-                  <img
-                    class="news_image"
-                    src="./images/interestingSection/Tournament.png"
-                    alt="Tournament"
-                  />
+                  <picture>
+                    <source
+                      media="(max-width: 320px)"
+                      srcset="./images/interestingSection/Tournament320.png"
+                    />
+                    <img
+                      class="news_image"
+                      src="./images/interestingSection/Tournament.png"
+                      alt="Tournament"
+                    />
+                  </picture>
                   <article class="news_content">
                     <div class="news_date">21/12/2022</div>
                     <div class="news_card_title">

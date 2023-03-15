@@ -3,6 +3,10 @@
         margin-bottom: 70px;
     }
 
+    .roof_inspiration .container {
+        max-width: 320px;
+    }
+
     .roof_inspiration .section_title {
         margin-bottom: 10px;
     }
