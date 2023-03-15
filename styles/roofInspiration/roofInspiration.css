@@ -32,3 +32,7 @@
 .roof_inspiration .goto_text {
     text-transform: uppercase;
 }
+
+.roof_inspiration .slider_menu {
+    display: none;
+}

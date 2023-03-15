@@ -1,0 +1,26 @@
+@media screen and (max-width: 320px) {
+    .roof_inspiration {
+        margin-bottom: 70px;
+    }
+
+    .roof_inspiration .section_title {
+        margin-bottom: 10px;
+    }
+
+    .inspiration_cards div:not(:first-child) {
+        display: none;
+    }
+
+    .inspiration_cards {
+        margin-bottom: 30px;
+    }
+
+    .roof_inspiration .goto_wrapper {
+        display: none;
+    }
+
+
+    .roof_inspiration .slider_menu {
+        display: flex;
+    }
+}
