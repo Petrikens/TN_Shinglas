@@ -82,6 +82,7 @@
     />
     <link rel="stylesheet" href="./styles/mapSection/mapSection.css" />
     <link rel="stylesheet" href="./styles/mapSection/mapSection-media768.css" />
+    <link rel="stylesheet" href="./styles/mapSection/mapSection-media320.css" />
     <link rel="stylesheet" href="./styles/footer/footer.css" />
     <link rel="stylesheet" href="./styles/footer/footer-media768.css" />
     <link rel="stylesheet" href="./styles/sliderMenu/sliderMenu.css" />
@@ -1451,7 +1452,13 @@
             <div class="map_buttons">
               <button class="map_button" type="submit">
                 <div class="button_left_content">
-                  <img src="./images/mapSection/City.svg" alt="City" />
+                  <picture>
+                    <source
+                      media="(max-width: 320px)"
+                      srcset="./images/mapSection/City320.svg"
+                    />
+                    <img src="./images/mapSection/City.svg" alt="City" />
+                  </picture>
                 </div>
                 <div class="button_right_content">
                   <div class="right_content_text">
@@ -1466,7 +1473,13 @@
               </button>
               <button class="map_button" type="submit">
                 <div class="button_left_content">
-                  <img src="./images/mapSection/Basket.svg" alt="Basket" />
+                  <picture>
+                    <source
+                      media="(max-width: 320px)"
+                      srcset="./images/mapSection/Basket320.svg"
+                    />
+                    <img src="./images/mapSection/Basket.svg" alt="Basket" />
+                  </picture>
                 </div>
                 <div class="button_right_content">
                   <div class="right_content_text">
