@@ -15,12 +15,8 @@
         margin-bottom: 30px;
     }
 
-    .roof_inspiration .goto_wrapper {
-        display: none;
-    }
-
-
     .roof_inspiration .slider_menu {
         display: flex;
+        justify-content: center;
     }
 }
