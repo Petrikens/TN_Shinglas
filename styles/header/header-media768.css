@@ -12,20 +12,6 @@
         gap: 0px;
     }
 
-    .header_logo,
-    .like_img,
-    .city_img,
-    .basket_img {
-        display: none;
-    }
-
-    .header_logo768,
-    .like768_img,
-    .city768_img,
-    .basket768_img {
-        display: block;
-    }
-
     .header nav {
         display: none;
     }

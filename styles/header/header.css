@@ -9,12 +9,6 @@
     padding: 0 100px;
 }
 
-.header_logo768,
-.like768_img,
-.city768_img,
-.basket768_img {
-    display: none;
-}
 
 .header_navbar {
     color: #fff;

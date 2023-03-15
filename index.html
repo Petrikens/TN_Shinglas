@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./styles/main-media768.css" />
     <link rel="stylesheet" href="./styles/header/header.css" />
     <link rel="stylesheet" href="./styles/header/header-media768.css" />
+    <link rel="stylesheet" href="./styles/header/header-media320.css" />
     <link rel="stylesheet" href="./styles/banners/banners.css" />
     <link rel="stylesheet" href="./styles/banners/banners-media768.css" />
     <link rel="stylesheet" href="./styles/bestRoof/bestRoof.css" />
@@ -65,8 +66,12 @@
         <a href="#">
           <picture>
             <source
-              srcset="./images/header/Logo768.png"
+              media="(max-width: 320px)"
+              srcset="./images/header/Logo320.png"
+            />
+            <source
               media="(max-width: 768px)"
+              srcset="./images/header/Logo768.png"
             />
             <img src="./images/header/Logo.png" alt="Logo" />
           </picture>
@@ -98,33 +103,32 @@
       </nav>
       <div class="header_right">
         <button class="favorites_button" type="submit">
-          <img class="like_img" src="./images/header/Like.svg" alt="Like" />
-          <img
-            class="like768_img"
-            src="./images/header/Like768.svg"
-            alt="Like786"
-          />
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="./images/header/Like768.svg"
+            />
+            <img src="./images/header/Like.svg" alt="Like" />
+          </picture>
         </button>
         <button class="city_button" type="submit">
-          <img class="city_img" src="./images/header/City.svg" alt="City" />
-          <img
-            class="city768_img"
-            src="./images/header/City768.svg"
-            alt="City"
-          />
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="./images/header/City768.svg"
+            />
+            <img src="./images/header/City.svg" alt="City" />
+          </picture>
           <span>Москва</span>
         </button>
         <button class="basket_button" type="submit">
-          <img
-            class="basket_img"
-            src="./images/header/Basket.svg"
-            alt="Basket"
-          />
-          <img
-            class="basket768_img"
-            src="./images/header/Basket768.svg"
-            alt="Basket"
-          />
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="./images/header/Basket768.svg"
+            />
+            <img src="./images/header/Basket.svg" alt="Basket" />
+          </picture>
           <span>Купить</span>
         </button>
         <ul class="burger_menu">
