@@ -66,6 +66,10 @@
     />
     <link
       rel="stylesheet"
+      href="./styles/roofHarmony/roofHarmony-media320.css"
+    />
+    <link
+      rel="stylesheet"
       href="./styles/interestingSection/interestingSection.css"
     />
     <link
@@ -1209,10 +1213,16 @@
           <div class="harmony_cards">
             <div class="harmony_card">
               <a href="#">
-                <img
-                  src="./images/roofHarmony/CompositeShingles.png"
-                  alt="CompositeShingles"
-                />
+                <picture>
+                  <source
+                    media="(max-width: 320px)"
+                    srcset="./images/roofHarmony/CompositeShingles320.png"
+                  />
+                  <img
+                    src="./images/roofHarmony/CompositeShingles.png"
+                    alt="CompositeShingles"
+                  />
+                </picture>
               </a>
             </div>
             <div class="harmony_card">
@@ -1274,6 +1284,42 @@
               </a>
             </div>
           </div>
+          <ul class="slider_menu">
+            <li class="slider_item">
+              <button type="submit">
+                <img
+                  src="./images/slider/LeftSliderArrow.svg"
+                  alt="LeftSliderArrow"
+                />
+              </button>
+            </li>
+            <li class="slider_item">
+              <img
+                src="./images/slider/ActiveSliderMenu.svg"
+                alt="ActiveSliderMenu"
+              />
+            </li>
+            <li class="slider_item">
+              <img src="./images/slider/SliderMenu.svg" alt="SliderMenu" />
+            </li>
+            <li class="slider_item">
+              <img src="./images/slider/SliderMenu.svg" alt="SliderMenu" />
+            </li>
+            <li class="slider_item">
+              <img src="./images/slider/SliderMenu.svg" alt="SliderMenu" />
+            </li>
+            <li class="slider_item">
+              <img src="./images/slider/SliderMenu.svg" alt="SliderMenu" />
+            </li>
+            <li class="slider_item">
+              <button type="submit">
+                <img
+                  src="./images/slider/RightSliderArrow.svg"
+                  alt="RightSliderArrow"
+                />
+              </button>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="interesting_section">
