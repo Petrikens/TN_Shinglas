@@ -7,6 +7,7 @@
     <title>Технониколь</title>
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/main-media768.css" />
+    <link rel="stylesheet" href="./styles/main-media320.css" />
     <link rel="stylesheet" href="./styles/header/header.css" />
     <link rel="stylesheet" href="./styles/header/header-media768.css" />
     <link rel="stylesheet" href="./styles/header/header-media320.css" />
@@ -15,6 +16,7 @@
     <link rel="stylesheet" href="./styles/banners/banners-media320.css" />
     <link rel="stylesheet" href="./styles/bestRoof/bestRoof.css" />
     <link rel="stylesheet" href="./styles/bestRoof/bestRoof-media768.css" />
+    <link rel="stylesheet" href="./styles/bestRoof/bestRoof-media320.css" />
     <link rel="stylesheet" href="./styles/bestRoofer/bestRoofer.css" />
     <link rel="stylesheet" href="./styles/bestRoofer/bestRoofer-media768.css" />
     <link rel="stylesheet" href="./styles/roofEstimate/roofEstimate.css" />
@@ -58,6 +60,7 @@
     <link rel="stylesheet" href="./styles/footer/footer.css" />
     <link rel="stylesheet" href="./styles/footer/footer-media768.css" />
     <link rel="stylesheet" href="./styles/sliderMenu/sliderMenu.css" />
+    <link rel="stylesheet" href="./styles/sliderMenu/slider_menu320.css" />
     <link rel="stylesheet" href="./styles/goToButton/goToButton.css" />
     <link rel="stylesheet" href="./styles/goToButton/goToButton-media768.css" />
   </head>
@@ -182,7 +185,13 @@
               <li>
                 <a href="#" class="nav_item">
                   <div class="nav_wrapper">
-                    <img src="./images/bestRoof/Roofer.png" alt="Roofer" />
+                    <picture>
+                      <source
+                        media="(max-width: 320px)"
+                        srcset="./images/bestRoof/Roofer320.png"
+                      />
+                      <img src="./images/bestRoof/Roofer.png" alt="Roofer" />
+                    </picture>
                   </div>
                   <div class="nav_title">Лучший кровельщик 2023</div>
                 </a>
@@ -201,7 +210,13 @@
               <li>
                 <a href="#" class="nav_item">
                   <div class="nav_wrapper">
-                    <img src="./images/bestRoof/New.png" alt="New" />
+                    <picture>
+                      <source
+                        media="(max-width: 320px)"
+                        srcset="./images/bestRoof/New320.png"
+                      />
+                      <img src="./images/bestRoof/New.png" alt="New" />
+                    </picture>
                   </div>
                   <div class="nav_title">Новинки</div>
                 </a>
@@ -209,7 +224,13 @@
               <li>
                 <a href="#" class="nav_item">
                   <div class="nav_wrapper">
-                    <img src="./images/bestRoof/Promo.png" alt="Promo" />
+                    <picture>
+                      <source
+                        media="(max-width: 320px)"
+                        srcset="./images/bestRoof/Promo320.png"
+                      />
+                      <img src="./images/bestRoof/Promo.png" alt="Promo" />
+                    </picture>
                   </div>
                   <div class="nav_title">TN Promo</div>
                 </a>
@@ -273,29 +294,47 @@
           <div class="slider_gallery">
             <div class="slider_card active_card">
               <div class="slider_img">
-                <img
-                  src="./images/bestRoof/AntalikaRoof.png"
-                  alt="AntalikaRoof"
-                />
+                <picture>
+                  <source
+                    media="(max-width: 320px)"
+                    srcset="./images/bestRoof/AntalikaRoof320.png"
+                  />
+                  <img
+                    src="./images/bestRoof/AntalikaRoof.png"
+                    alt="AntalikaRoof"
+                  />
+                </picture>
                 <ul class="image_chooser">
                   <li class="image_chooser_item"></li>
                   <li class="image_chooser_item active_chooser_item"></li>
                   <li class="image_chooser_item"></li>
                   <li class="image_chooser_item"></li>
                 </ul>
-                <img
-                  class="active_like_card"
-                  src="./images/bestRoof/ActiveLike.svg"
-                  alt="Like"
-                />
+                <picture>
+                  <source
+                    media="(max-width: 320px)"
+                    srcset="./images/bestRoof/ActiveLike320.svg"
+                  />
+                  <img
+                    class="active_like_card"
+                    src="./images/bestRoof/ActiveLike.svg"
+                    alt="Like"
+                  />
+                </picture>
               </div>
               <div class="slider_info">
                 <div class="left_card_content">
-                  <img
-                    class="layers"
-                    src="./images/bestRoof/ThreeLayers.svg"
-                    alt="ThreeLayers"
-                  />
+                  <picture>
+                    <source
+                      media="(max-width: 320px)"
+                      srcset="./images/bestRoof/ThreeLayers320.svg"
+                    />
+                    <img
+                      class="layers"
+                      src="./images/bestRoof/ThreeLayers.svg"
+                      alt="ThreeLayers"
+                    />
+                  </picture>
                   <div class="roof_name">Атлантика</div>
                 </div>
                 <div class="roof_pricepermeter">
@@ -359,6 +398,42 @@
               </div>
             </div>
           </div>
+          <ul class="slider_menu">
+            <li class="slider_item">
+              <button type="submit">
+                <img
+                  src="./images/slider/LeftSliderArrow.svg"
+                  alt="LeftSliderArrow"
+                />
+              </button>
+            </li>
+            <li class="slider_item">
+              <img
+                src="./images/slider/ActiveSliderMenu.svg"
+                alt="ActiveSliderMenu"
+              />
+            </li>
+            <li class="slider_item">
+              <img src="./images/slider/SliderMenu.svg" alt="SliderMenu" />
+            </li>
+            <li class="slider_item">
+              <img src="./images/slider/SliderMenu.svg" alt="SliderMenu" />
+            </li>
+            <li class="slider_item">
+              <img src="./images/slider/SliderMenu.svg" alt="SliderMenu" />
+            </li>
+            <li class="slider_item">
+              <img src="./images/slider/SliderMenu.svg" alt="SliderMenu" />
+            </li>
+            <li class="slider_item">
+              <button type="submit">
+                <img
+                  src="./images/slider/RightSliderArrow.svg"
+                  alt="RightSliderArrow"
+                />
+              </button>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="best_roofer">

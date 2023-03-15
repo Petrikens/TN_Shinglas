@@ -1,0 +1,118 @@
+@media screen and (max-width: 320px) {
+    .best_roof {
+        margin-top: 20px;
+        margin-bottom: 41px;
+    }
+
+    .best_roof_nav {
+        margin-bottom: 35px;
+        gap: 15px;
+        margin-left: 20px;
+    }
+
+    .nav_wrapper {
+        width: 55px;
+        height: 55px;
+        border: 2px solid transparent;
+        margin-bottom: 3px;
+    }
+
+    .nav_wrapper img {
+        width: 48px;
+        height: 48px;
+        border-radius: 36px;
+    }
+
+    .promo_percent {
+        width: 48px;
+        height: 48px;
+        border-radius: 36px;
+    }
+
+    .promo_percent span {
+        font-size: 24px;
+        line-height: 31px;
+    }
+
+    .nav_title {
+        max-width: 76px;
+        height: 24px;
+        font-size: 9px;
+        line-height: 12px;
+    }
+
+    .section_title {
+        font-size: 24px;
+        line-height: 31px;
+    }
+
+    .best_roof .section_title {
+        text-align: start;
+        margin-bottom: 34px;
+    }
+
+    .article_text {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .best_roof_info {
+        margin-bottom: 30px;
+    }
+
+    .best_roof_info + .slider_menu {
+        display: none;
+    }
+
+    .slider_gallery {
+        margin-bottom: 30px;
+    }
+
+    .slider_gallery + .slider_menu {
+        display: flex;
+    }
+
+    .slider_card {
+        width: 280px;
+        height: 280px;
+        border: 1px solid #DDDDDD;
+        border-radius: 3px;
+    }
+
+    .active_card {
+        box-shadow: 0px 6px 11px #0000001a;
+    }
+
+    .slider_img {
+        width: 100%;
+        height: 224px;
+        position: relative;
+    }
+
+    .slider_img img {
+        border-top-right-radius: 3px;
+        border-top-left-radius: 3px;
+    }
+
+    .slider_like_card,
+    .active_like_card {
+        position: absolute;
+        top: 11px;
+        right: 11px;
+    }
+
+    .slider_info {
+        height: 56px;
+        padding: 0 15px;
+    }
+
+    .layers {
+        margin-right: 15px;
+    }
+
+    .roof_name,
+    .roof_pricepermeter {
+        font-size: 13px;
+        line-height: 17px;
+    }
+}

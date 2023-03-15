@@ -87,7 +87,10 @@
 .slider_gallery {
     display: flex;
     justify-content: space-between;
+}
 
+.slider_gallery + .slider_menu {
+    display: none;
 }
 
 .slider_card {
