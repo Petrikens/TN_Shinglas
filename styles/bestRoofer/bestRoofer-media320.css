@@ -1,0 +1,40 @@
+@media screen and (max-width: 320px) {
+    .best_roofer {
+        margin-left: 0px;
+        flex-direction: column;
+    }
+
+    .best_roofer_right_content {
+        width: 320px;
+        height: 195px;
+        margin-left: 0px;
+    }
+
+    .international_award_block {
+        display: none;
+    }
+
+    .best_roofer_left_content + .article_text {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .article_title_text {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .best_roofer_left_content {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    .best_roofer_left_content .article_text {
+        max-width: 280px;
+        margin-bottom: 27px;
+    }
+
+    .best_roofer_right_content .slider_menu {
+        margin-top: 28px;
+    }
+}

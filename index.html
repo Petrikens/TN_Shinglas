@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./styles/bestRoof/bestRoof-media320.css" />
     <link rel="stylesheet" href="./styles/bestRoofer/bestRoofer.css" />
     <link rel="stylesheet" href="./styles/bestRoofer/bestRoofer-media768.css" />
+    <link rel="stylesheet" href="./styles/bestRoofer/bestRoofer-media320.css" />
     <link rel="stylesheet" href="./styles/roofEstimate/roofEstimate.css" />
     <link
       rel="stylesheet"
@@ -477,27 +478,33 @@
           </ul>
         </div>
         <div class="best_roofer_right_content">
-          <img
-            class="roofers_img"
-            src="./images/bestRoofer/Roofers.png"
-            alt="Roofers"
-          />
-          <img
-            class="roofers_img768"
-            src="./images/bestRoofer/Roofers768.png"
-            alt="Roofers"
-          />
+          <picture>
+            <source
+              media="(max-width: 320px)"
+              srcset="./images/bestRoofer/Roofers320.png"
+            />
+            <source
+              media="(max-width: 768px)"
+              srcset="./images/bestRoofer/Roofers768.png"
+            />
+            <img
+              class="roofers_img"
+              src="./images/bestRoofer/Roofers.png"
+              alt="Roofers"
+            />
+          </picture>
           <div class="international_award_block">
-            <img
-              class="award_img"
-              src="./images/bestRoofer/InternationalAwards.svg"
-              alt="InternationalAwards"
-            />
-            <img
-              class="award_img768"
-              src="./images/bestRoofer/InternationalAwards768.png"
-              alt="InternationalAwards"
-            />
+            <picture>
+              <source
+                media="(max-width: 768px)"
+                srcset="./images/bestRoofer/InternationalAwards768.png"
+              />
+              <img
+                class="award_img"
+                src="./images/bestRoofer/InternationalAwards.svg"
+                alt="InternationalAwards"
+              />
+            </picture>
           </div>
           <ul class="slider_menu">
             <li class="slider_item">
