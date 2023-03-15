@@ -1,0 +1,38 @@
+@media screen and (max-width: 320px) {
+    .info_block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+        padding-bottom: 50px;
+    }
+
+    .info_block_img {
+        width: 320px;
+        height: 300px;
+        margin-bottom: 20px;
+    }
+
+    .info_block_img + .slider_menu {
+        display: flex;
+        margin-bottom: 25px;
+    }
+
+    .info_block_text {
+        gap: 25px;
+    }
+
+    .article_subtitle {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .info_text {
+        width: 275px;
+        gap: 20px;
+    }
+
+    .info_section div:not(:first-child) {
+        display: none;
+    }
+}

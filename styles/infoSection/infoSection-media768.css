@@ -1,6 +1,6 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 320px) {
     .info_section {
-        margin-bottom: 88px;
+        margin-bottom: 45px;
     }
 
     .info_section .block_wrapper .info_block {
