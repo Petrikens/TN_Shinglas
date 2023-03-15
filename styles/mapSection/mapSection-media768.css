@@ -1,7 +1,7 @@
 @media screen and (max-width: 768px) {
     .map {
         height: 600px;
-        background-image: url('../images/mapSection/Map768.png');
+        background-image: url('../../images/mapSection/Map768.png');
     }
 
     .map_blackout {

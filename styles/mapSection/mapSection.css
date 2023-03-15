@@ -1,6 +1,6 @@
 .map {
     height: 604px;
-    background-image: url('../images/mapSection/Map.png');
+    background-image: url('../../images/mapSection/Map.png');
     background-size: cover;
     position: relative;
 }
