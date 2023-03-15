@@ -86,3 +86,7 @@
     text-transform: uppercase;
     text-align: center;
 }
+
+.roof_cards + .slider_menu {
+    display: none;
+}

@@ -1,0 +1,51 @@
+@media screen and (max-width: 320px) {
+    .roof_estimate {
+        margin-bottom: 44px;
+    }
+
+    .roof_estimate .section_title {
+        margin-bottom: 30px;
+    }
+
+    .estimate_settings {
+        margin-bottom: 40px;
+    }
+
+    .estimate_step_info {
+        margin-bottom: 35px;
+    }
+
+    .estimate_step_info .additional_text {
+        margin-left: 7px;
+    }
+
+    .roof_cards {
+        margin-bottom: 35px;
+        gap: 20px;
+
+    }
+
+    .roof_cards + .slider_menu {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 45px;
+    }
+
+    .steps_controller {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .step_counter {
+        font-size: 20px;
+        line-height: 26px;
+        margin-right: 0px;
+        margin-bottom: 40px;
+    }
+
+    .tagline {
+        font-size: 23px;
+        line-height: 31px;
+    }
+}
