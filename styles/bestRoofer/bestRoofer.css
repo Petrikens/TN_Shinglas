@@ -32,20 +32,20 @@
     position: relative;
 }
 
+.roofers_img {
+    width: 1179px;
+    height: 720px;
+}
+
 .best_roofer_right_content .slider_menu {
     display: none;
     margin-bottom: 0;
 }
 
-.roofers_img768,
-.award_img768 {
-    display: none;
-}
-
 .international_award_block {
     position: absolute;
     top: 155px;
-    right: 870px;
+    left: -130px;
     width: 440px;
     height: 440px;
     background: #D39269;

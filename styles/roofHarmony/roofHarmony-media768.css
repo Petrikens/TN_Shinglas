@@ -12,4 +12,10 @@
         justify-content: center;
         gap: 20px;
     }
+
+    .harmony_card,
+    .harmony_card img {
+        width: 500px;
+        height: 500px;
+    }
 }

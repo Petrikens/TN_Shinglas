@@ -1,0 +1,24 @@
+@media screen and (max-width: 1600px) {
+    .best_roofer {
+        margin-left: 100px;
+        margin-bottom: 80px;
+    }
+
+    .best_roofer_right_content {
+        width: 937px;
+        height: 572px;
+    }
+
+    .roofers_img {
+        width: 937px;
+        height: 572px;
+    }
+
+    .international_award_block {
+        position: absolute;
+        top: 123px;
+        left: -100px;
+        width: 350px;
+        height: 350px;
+    }
+}

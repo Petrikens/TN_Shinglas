@@ -80,11 +80,9 @@
 }
 
 .tagline {
-    font-size: 72px;
-    line-height: 96px;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    text-align: center;
+    font-size: 60px;
+    line-height: 78px;
+    text-align: start;
 }
 
 .roof_cards + .slider_menu {

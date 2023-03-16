@@ -11,7 +11,8 @@
         justify-content: center;
     }
 
-    .phone_content {
+    .phone_content,
+    .phone_content img {
         width: 306px;
         height: 629px;
     }

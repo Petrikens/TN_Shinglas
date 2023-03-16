@@ -4,9 +4,9 @@
 }
 
 .left_banner {
-    background-image: url("../../images/banners/MainHouse.png");
+    background-image: url("../../images/banners/MainHouse.svg");
     width: 70vw;
-    height: 1016px;
+    height: 840px;
     background-size: cover;
 }
 
@@ -15,14 +15,14 @@
 }
 
 .right_banner {
-    background-image: url("../../images/banners/Happy-family.png");
+    background-image: url("../../images/banners/HappyFamily.svg");
     width: 30vw;
-    height: 1016px;
+    height: 840px;
     background-size: cover;
 }
 
 .banner_info {
-    margin: 545px 0px 0px 95px;
+    margin: 530px 0px 0px 150px;
 }
 
 .banner_subtitle {

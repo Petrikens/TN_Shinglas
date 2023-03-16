@@ -10,6 +10,11 @@
         margin-left: 0px;
     }
 
+    .roofers_img {
+        width: 320px;
+        height: 195px;
+    }
+
     .international_award_block {
         display: none;
     }

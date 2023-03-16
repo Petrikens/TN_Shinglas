@@ -9,6 +9,9 @@
 
     .roof_inspiration .section_title {
         margin-bottom: 10px;
+        font-size: 30px;
+        line-height: 30px;
+        margin-left: 20px;
     }
 
     .inspiration_cards div:not(:first-child) {

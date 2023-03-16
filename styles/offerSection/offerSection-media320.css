@@ -6,7 +6,7 @@
     .offers {
         flex-direction: column;
         justify-content: center;
-        gap: 25px;
+        gap: 70px;
     }
 
     .offer_card {
@@ -27,6 +27,7 @@
     .offer_card_title {
         font-size: 30px;
         line-height: 39px;
+        margin-bottom: 0px;
     }
 
     .offer_card_img {

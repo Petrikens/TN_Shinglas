@@ -24,10 +24,8 @@
     }
 
     .offer_card_img {
-        width: 270px;
         height: 380px;
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
-        margin-top: 7px;
     }
 }

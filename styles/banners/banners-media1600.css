@@ -1,0 +1,41 @@
+@media screen and (max-width: 1600px) {
+    .left_banner {
+        background-image: url("../../images/banners/MainHouse1600.svg");
+        width: 55vw;
+        height: 700px;
+    }
+
+    .right_banner {
+        background-image: url("../../images/banners/HappyFamily1600.svg");
+        width: 45vw;
+        height: 700px;
+    }
+
+    .banner_info {
+        margin: 430px 0px 0px 100px;
+    }
+
+    .banner_subtitle {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 0px;
+    }
+
+    .banner_title {
+        font-size: 80px;
+        line-height: 104px;
+        margin-bottom: 10px;
+    }
+
+    .banner_menu {
+        left: 100px;
+        bottom: 20px;
+        gap: 10px;
+    }
+
+    .banner_menu_highlight {
+        width: 340px;
+        height: 2px;
+        margin-bottom: 3px;
+    }
+}

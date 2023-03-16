@@ -8,7 +8,11 @@
         width: 644px;
         height: 393px;
         position: relative;
-        margin-left: 50px;
+    }
+
+    .roofers_img {
+        width: 644px;
+        height: 393px;
     }
 
     .international_award_block {

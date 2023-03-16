@@ -1,0 +1,27 @@
+@media screen and (max-width: 1600px) {
+    .offer_section {
+        margin-bottom: 80px;
+    }
+
+    .offer_card {
+        width: 646px;
+        height: 323px;
+    }
+
+    .offer_card_content {
+        width: 284px;
+        gap: 20px;
+        margin-left: 40px;
+    }
+
+    .offer_card_title {
+        margin-bottom: 40px;
+    }
+
+    .offer_card_img {
+        width: 306px;
+        height: 323px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+}

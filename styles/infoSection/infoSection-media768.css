@@ -1,11 +1,10 @@
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 768px) {
     .info_section {
         margin-bottom: 45px;
     }
 
     .info_section .block_wrapper .info_block {
         flex-direction: column;
-
     }
 
     .block_wrapper {
@@ -25,14 +24,4 @@
         height: 719px;
         margin-bottom: 35px;
     }
-
-    .block_img {
-        display: none;
-    }
-
-    .block_img768 {
-        display: block;
-    }
-
-
 }

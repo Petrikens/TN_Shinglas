@@ -1,0 +1,17 @@
+@media screen and (max-width: 1600px) {
+    .roof_estimate {
+        margin-bottom: 85px;
+    }
+
+    .estimate_settings {
+        margin-bottom: 68px;
+    }
+
+    .roof_cards {
+        gap: 25px;
+    }
+
+    .step_counter {
+        margin-right: 300px;
+    }
+}

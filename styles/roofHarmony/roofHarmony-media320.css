@@ -9,7 +9,8 @@
         line-height: 30px;
     }
 
-    .harmony_card {
+    .harmony_card,
+    .harmony_card img {
         width: 280px;
         height: 280px;
     }

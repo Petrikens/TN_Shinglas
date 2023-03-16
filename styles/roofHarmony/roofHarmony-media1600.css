@@ -1,0 +1,19 @@
+@media screen and (max-width: 1600px) {
+    .roof_harmony {
+        margin-bottom: 100px;
+    }
+
+    .roof_harmony .section_title {
+        margin-bottom: 70px;
+    }
+
+    .harmony_cards {
+        gap: 50px 50px;
+    }
+
+    .harmony_card,
+    .harmony_card img {
+        width: 430px;
+        height: 430px;
+    }
+}

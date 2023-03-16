@@ -37,6 +37,10 @@
     background-color: #C9C9C9;
 }
 
+.best_roof_nav li:nth-child(4) img {
+    background-color: #EA4335;
+}
+
 .promo_percent {
     width: 80px;
     height: 80px;
