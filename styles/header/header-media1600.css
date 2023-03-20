@@ -1,10 +1,13 @@
 @media screen and (max-width: 1600px) {
     .header_title {
-        padding-left: 100px;
         padding-right: 90px;
     }
 
+    .header_wrapper {
+        max-width: 1400px;
+    }
+
     .header_navbar {
-        margin-right: 50px;
+        margin-right: 44px;
     }
 }

@@ -6,6 +6,7 @@
     .section_title {
         font-size: 36px;
         line-height: 47px;
+        text-align: start;
     }
 
     .article_text {

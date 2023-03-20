@@ -16,6 +16,10 @@
     background: #fff;
 }
 
+.info_section div:nth-child(even) .info_block_text .goto_button {
+    background: #F9F7F6;
+}
+
 .info_block {
     display: flex;
     justify-content: space-between;

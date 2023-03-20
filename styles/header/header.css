@@ -1,12 +1,18 @@
 .header {
     height: 64px;
-    display: flex;
-    align-items: center;
+
     background-color: #363636;
 }
 
+.header_wrapper {
+    max-width: 1720px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
 .header_title {
-    padding: 0 100px;
+    padding-right: 55px;
 }
 
 
@@ -20,14 +26,41 @@
     letter-spacing: 0.05em;
     display: flex;
     flex-direction: row;
-    gap: 60px;
-    margin-right: 400px;
+    margin-right: 399px;
 }
 
-.header_navbar .navbar_item {
+.navbar_item {
+    height: 64px;
+    padding-left: 35px;
+    padding-right: 30px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.navbar_item img {
+    position: absolute;
+    top: 30px;
+    right: 15px;
+}
+
+.navbar_item img:last-child {
+    display: none;
+}
+
+.navbar_item:hover {
+    background: #FFFFFF;
+    color: #000000;
+}
+
+.navbar_item:hover img:first-child {
+    display: none;
+}
+
+.navbar_item:hover img:last-child {
+    display: block;
 }
 
 .header_right {
@@ -46,14 +79,41 @@
     color: #c3c3c3;
 }
 
+.city_hover_img,
+.like_hover_img {
+    display: none;
+}
+
 .city_button img {
     margin-right: 20px;
 }
 
+.city_button:hover .city_img {
+    display: none;
+}
+
+.city_button:hover .city_hover_img {
+    display: block;
+}
+
+.favorites_button:hover .like_img {
+    display: none;
+}
+
+.favorites_button:hover .like_hover_img {
+    display: block;
+}
+
 .basket_button {
-    border: 2px solid #c3c3c3;
+    border: 1px solid #c3c3c3;
     border-radius: 5px;
     padding: 5px 25px 5px 11px;
+}
+
+.basket_button:hover {
+    background: #E30613;
+    border: 1px solid #E30613;
+
 }
 
 .basket_button img {

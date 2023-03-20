@@ -134,80 +134,90 @@
   </head>
   <body>
     <header class="header">
-      <div class="header_title">
-        <a href="#">
-          <picture>
-            <source
-              media="(max-width: 320px)"
-              srcset="./images/header/Logo320.svg"
+      <div class="header_wrapper">
+        <div class="header_title">
+          <a href="#">
+            <picture>
+              <source
+                media="(max-width: 320px)"
+                srcset="./images/header/Logo320.svg"
+              />
+              <source
+                media="(max-width: 768px)"
+                srcset="./images/header/Logo768.svg"
+              />
+              <img src="./images/header/Logo.svg" alt="Logo" />
+            </picture>
+          </a>
+        </div>
+        <nav>
+          <ul class="header_navbar">
+            <li class="navbar_item">
+              <span>Коллекции</span>
+              <img src="./images/header/Arrow-down.svg" alt="Arrow" />
+              <img
+                src="./images/header/BlackArrowDown.svg"
+                alt="BlackArrowDown"
+              />
+            </li>
+            <li class="navbar_item">
+              <span>Галерея </span>
+            </li>
+            <li class="navbar_item">
+              <span>Монтаж</span>
+            </li>
+            <li class="navbar_item">
+              <span>Покупателю</span>
+              <img src="./images/header/Arrow-down.svg" alt="Arrow" />
+              <img
+                src="./images/header/BlackArrowDown.svg"
+                alt="BlackArrowDown"
+              />
+            </li>
+            <li class="navbar_item">
+              <span>Строителю</span>
+              <img src="./images/header/Arrow-down.svg" alt="Arrow" />
+              <img
+                src="./images/header/BlackArrowDown.svg"
+                alt="BlackArrowDown"
+              />
+            </li>
+          </ul>
+        </nav>
+        <div class="header_right">
+          <button class="favorites_button" type="submit">
+            <img class="like_img" src="./images/header/Like.svg" alt="Like" />
+            <img
+              class="like_hover_img"
+              src="./images/header/LikeHover.svg"
+              alt="LikeHover"
             />
-            <source
-              media="(max-width: 768px)"
-              srcset="./images/header/Logo768.svg"
+          </button>
+          <button class="city_button" type="submit">
+            <img class="city_img" src="./images/header/City.svg" alt="City" />
+            <img
+              class="city_hover_img"
+              src="./images/header/CityHover.svg"
+              alt="CityHover"
             />
-            <img src="./images/header/Logo.svg" alt="Logo" />
-          </picture>
-        </a>
-      </div>
-      <nav>
-        <ul class="header_navbar">
-          <li class="navbar_item">
-            <span>Коллекции</span>
-            <img src="./images/header/Arrow-down.svg" alt="Arrow" />
-          </li>
-          <li class="navbar_item">
-            <span>Галерея </span>
-            <img src="./images/header/Arrow-down.svg" alt="Arrow" />
-          </li>
-          <li class="navbar_item">
-            <span>Мотаж</span>
-            <img src="./images/header/Arrow-down.svg" alt="Arrow" />
-          </li>
-          <li class="navbar_item">
-            <span>Покупателю</span>
-            <img src="./images/header/Arrow-down.svg" alt="Arrow" />
-          </li>
-          <li class="navbar_item">
-            <span>Строителю</span>
-            <img src="./images/header/Arrow-down.svg" alt="Arrow" />
-          </li>
-        </ul>
-      </nav>
-      <div class="header_right">
-        <button class="favorites_button" type="submit">
-          <picture>
-            <source
-              media="(max-width: 768px)"
-              srcset="./images/header/Like768.svg"
-            />
-            <img src="./images/header/Like.svg" alt="Like" />
-          </picture>
-        </button>
-        <button class="city_button" type="submit">
-          <picture>
-            <source
-              media="(max-width: 768px)"
-              srcset="./images/header/City768.svg"
-            />
-            <img src="./images/header/City.svg" alt="City" />
-          </picture>
-          <span>Москва</span>
-        </button>
-        <button class="basket_button" type="submit">
-          <picture>
-            <source
-              media="(max-width: 768px)"
-              srcset="./images/header/Basket768.svg"
-            />
-            <img src="./images/header/Basket.svg" alt="Basket" />
-          </picture>
-          <span>Купить</span>
-        </button>
-        <ul class="burger_menu">
-          <li class="burger_menu_layer"></li>
-          <li class="burger_menu_layer"></li>
-          <li class="burger_menu_layer"></li>
-        </ul>
+            <span>Москва</span>
+          </button>
+          <button class="basket_button" type="submit">
+            <picture>
+              <source
+                media="(max-width: 768px)"
+                srcset="./images/header/Basket768.svg"
+              />
+              <img src="./images/header/Basket.svg" alt="Basket" />
+            </picture>
+            <span>Купить</span>
+          </button>
+          <ul class="burger_menu">
+            <li class="burger_menu_layer"></li>
+            <li class="burger_menu_layer"></li>
+            <li class="burger_menu_layer"></li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -220,6 +230,7 @@
               <p class="goto_text">Узнать больше</p>
               <button class="goto_button" type="submit">
                 <img src="./images/banners/Arrow-right.svg" alt="Arrow" />
+                <img src="./images/banners/Arrow-right-hover.svg" alt="Arrow" />
               </button>
             </div>
           </div>
@@ -261,7 +272,10 @@
                       <img src="./images/bestRoof/Roofer.svg" alt="Roofer" />
                     </picture>
                   </div>
-                  <div class="nav_title">Лучший кровельщик 2023</div>
+                  <div class="nav_title">
+                    Лучший <br />
+                    кровельщик 2023
+                  </div>
                 </a>
               </li>
               <li>
@@ -308,7 +322,10 @@
                   <div class="nav_wrapper">
                     <img src="./images/bestRoof/Mortgage.svg" alt="Mortgage" />
                   </div>
-                  <div class="nav_title">Курс «Ипотека на ИЖС»</div>
+                  <div class="nav_title">
+                    Курс <br />
+                    «Ипотека на ИЖС»
+                  </div>
                 </a>
               </li>
             </ul>
@@ -360,7 +377,7 @@
             </li>
           </ul>
           <div class="slider_gallery">
-            <div class="slider_card active_card">
+            <div class="slider_card">
               <div class="slider_img">
                 <picture>
                   <source
@@ -724,6 +741,10 @@
                 </p>
                 <button class="goto_button" type="submit">
                   <img src="./images/banners/Arrow-right.svg" alt="Arrow" />
+                  <img
+                    src="./images/banners/Arrow-right-hover.svg"
+                    alt="Arrow"
+                  />
                 </button>
               </div>
             </div>
@@ -823,6 +844,10 @@
                   </p>
                   <button class="goto_button" type="submit">
                     <img src="./images/banners/Arrow-right.svg" alt="Arrow" />
+                    <img
+                      src="./images/banners/Arrow-right-hover.svg"
+                      alt="Arrow"
+                    />
                   </button>
                 </div>
               </article>
@@ -863,6 +888,10 @@
                 </p>
                 <button class="goto_button" type="submit">
                   <img src="./images/banners/Arrow-right.svg" alt="Arrow" />
+                  <img
+                    src="./images/banners/Arrow-right-hover.svg"
+                    alt="Arrow"
+                  />
                 </button>
               </div>
             </article>
@@ -939,6 +968,10 @@
                   </p>
                   <button class="goto_button" type="submit">
                     <img src="./images/banners/Arrow-right.svg" alt="Arrow" />
+                    <img
+                      src="./images/banners/Arrow-right-hover.svg"
+                      alt="Arrow"
+                    />
                   </button>
                 </div>
               </article>
@@ -978,6 +1011,10 @@
                 </p>
                 <button class="goto_button" type="submit">
                   <img src="./images/banners/Arrow-right.svg" alt="Arrow" />
+                  <img
+                    src="./images/banners/Arrow-right-hover.svg"
+                    alt="Arrow"
+                  />
                 </button>
               </div>
             </article>
@@ -1037,6 +1074,10 @@
                   </p>
                   <button class="goto_button" type="submit">
                     <img src="./images/banners/Arrow-right.svg" alt="Arrow" />
+                    <img
+                      src="./images/banners/Arrow-right-hover.svg"
+                      alt="Arrow"
+                    />
                   </button>
                 </div>
               </article>
@@ -1187,6 +1228,7 @@
             </p>
             <button class="goto_button" type="submit">
               <img src="./images/banners/Arrow-right.svg" alt="Arrow" />
+              <img src="./images/banners/Arrow-right-hover.svg" alt="Arrow" />
             </button>
           </div>
         </div>
@@ -1207,6 +1249,10 @@
                   </p>
                   <button class="goto_button" type="submit">
                     <img src="./images/banners/Arrow-right.svg" alt="Arrow" />
+                    <img
+                      src="./images/banners/Arrow-right-hover.svg"
+                      alt="Arrow"
+                    />
                   </button>
                 </div>
               </div>
@@ -1243,6 +1289,10 @@
                   </p>
                   <button class="goto_button" type="submit">
                     <img src="./images/banners/Arrow-right.svg" alt="Arrow" />
+                    <img
+                      src="./images/banners/Arrow-right-hover.svg"
+                      alt="Arrow"
+                    />
                   </button>
                 </div>
               </div>
@@ -1442,6 +1492,10 @@
                           src="./images/banners/Arrow-right.svg"
                           alt="Arrow"
                         />
+                        <img
+                          src="./images/banners/Arrow-right-hover.svg"
+                          alt="Arrow"
+                        />
                       </button>
                     </div>
                   </article>
@@ -1469,6 +1523,10 @@
                       <button class="goto_button" type="submit">
                         <img
                           src="./images/banners/Arrow-right.svg"
+                          alt="Arrow"
+                        />
+                        <img
+                          src="./images/banners/Arrow-right-hover.svg"
                           alt="Arrow"
                         />
                       </button>

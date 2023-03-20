@@ -22,3 +22,19 @@
     justify-content: center;
     align-items: center;
 }
+
+.goto_button img:last-child {
+    display: none;
+}
+
+.goto_button:hover {
+    background: #E30613 !important;
+}
+
+.goto_button:hover img:last-child {
+    display: block;
+}
+
+.goto_button:hover img:first-child {
+    display: none;
+}
