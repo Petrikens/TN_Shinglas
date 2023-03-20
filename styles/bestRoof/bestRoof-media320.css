@@ -6,7 +6,6 @@
 
     .best_roof_nav {
         margin-bottom: 35px;
-        gap: 15px;
         margin-left: 20px;
     }
 
@@ -35,7 +34,7 @@
     }
 
     .nav_title {
-        max-width: 76px;
+        width: 76px;
         height: 24px;
         font-size: 9px;
         line-height: 12px;
