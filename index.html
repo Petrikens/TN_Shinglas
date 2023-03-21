@@ -40,10 +40,10 @@
                 />
               </li>
               <li class="navbar_item">
-                <span>Галерея </span>
+                <a href="#">Галерея</a>
               </li>
               <li class="navbar_item">
-                <span>Монтаж</span>
+                <a href="#">Монтаж</a>
               </li>
               <li class="navbar_item">
                 <span>Покупателю</span>
@@ -222,184 +222,208 @@
               воплотить любую архитектурную задумку в жизнь.
             </article>
           </div>
-          <ul class="slider_menu">
-            <li class="slider_item">
-              <button type="submit">
+          <div class="slider_gallery">
+            <ul class="slider_menu">
+              <button class="prev" type="submit">
                 <img
                   src="./images/slider/LeftSliderArrow.svg"
                   alt="LeftSliderArrow"
                 />
               </button>
-            </li>
-            <li class="slider_item">
-              <img
-                src="./images/slider/ActiveSliderMenu.svg"
-                alt="ActiveSliderMenu"
-              />
-            </li>
-            <li class="slider_item">
-              <img src="./images/slider/SliderMenu.svg" alt="SliderMenu" />
-            </li>
-            <li class="slider_item">
-              <img src="./images/slider/SliderMenu.svg" alt="SliderMenu" />
-            </li>
-            <li class="slider_item">
-              <img src="./images/slider/SliderMenu.svg" alt="SliderMenu" />
-            </li>
-            <li class="slider_item">
-              <img src="./images/slider/SliderMenu.svg" alt="SliderMenu" />
-            </li>
-            <li class="slider_item">
-              <button type="submit">
+              <li class="slider_item active_item"></li>
+              <li class="slider_item"></li>
+              <li class="slider_item"></li>
+              <li class="slider_item"></li>
+              <li class="slider_item"></li>
+              <button class="next" type="submit">
                 <img
                   src="./images/slider/RightSliderArrow.svg"
                   alt="RightSliderArrow"
                 />
               </button>
-            </li>
-          </ul>
-          <div class="slider_gallery">
-            <div class="slider_card">
-              <div class="slider_img">
-                <picture>
-                  <source
-                    media="(max-width: 320px)"
-                    srcset="./images/bestRoof/AntalikaRoof320.svg"
-                  />
-                  <img
-                    src="./images/bestRoof/AntalikaRoof.svg"
-                    alt="AntalikaRoof"
-                  />
-                </picture>
-                <ul class="image_chooser">
-                  <li class="image_chooser_item"></li>
-                  <li class="image_chooser_item active_chooser_item"></li>
-                  <li class="image_chooser_item"></li>
-                  <li class="image_chooser_item"></li>
-                </ul>
-                <picture>
-                  <source
-                    media="(max-width: 320px)"
-                    srcset="./images/bestRoof/ActiveLike320.svg"
-                  />
-                  <img
-                    class="active_like_card"
-                    src="./images/bestRoof/ActiveLike.svg"
-                    alt="Like"
-                  />
-                </picture>
-              </div>
-              <div class="slider_info">
-                <div class="left_card_content">
-                  <picture>
-                    <source
-                      media="(max-width: 320px)"
-                      srcset="./images/bestRoof/ThreeLayers320.svg"
+            </ul>
+            <div class="slider_list">
+              <div class="slider_track">
+                <div class="slider_card">
+                  <div class="slider_img">
+                    <picture>
+                      <source
+                        media="(max-width: 320px)"
+                        srcset="./images/bestRoof/AntalikaRoof320.svg"
+                      />
+                      <img
+                        src="./images/bestRoof/AntalikaRoof.svg"
+                        alt="AntalikaRoof"
+                      />
+                    </picture>
+                    <ul class="image_chooser">
+                      <li class="image_chooser_item"></li>
+                      <li class="image_chooser_item active_chooser_item"></li>
+                      <li class="image_chooser_item"></li>
+                      <li class="image_chooser_item"></li>
+                    </ul>
+                    <picture>
+                      <source
+                        media="(max-width: 320px)"
+                        srcset="./images/bestRoof/ActiveLike320.svg"
+                      />
+                      <img
+                        class="active_like_card"
+                        src="./images/bestRoof/ActiveLike.svg"
+                        alt="Like"
+                      />
+                    </picture>
+                  </div>
+                  <div class="slider_info">
+                    <div class="left_card_content">
+                      <picture>
+                        <source
+                          media="(max-width: 320px)"
+                          srcset="./images/bestRoof/ThreeLayers320.svg"
+                        />
+                        <img
+                          class="layers"
+                          src="./images/bestRoof/ThreeLayers.svg"
+                          alt="ThreeLayers"
+                        />
+                      </picture>
+                      <div class="roof_name">Атлантика</div>
+                    </div>
+                    <div class="roof_pricepermeter">
+                      <span>3 776</span>
+                      <span class="rubl_meter">₽/м²</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider_card">
+                  <div class="slider_img">
+                    <img
+                      src="./images/bestRoof/KontinentRoof.svg"
+                      alt="KontinentRoof"
                     />
                     <img
-                      class="layers"
-                      src="./images/bestRoof/ThreeLayers.svg"
-                      alt="ThreeLayers"
+                      class="slider_like_card"
+                      src="./images/header/Like.svg"
+                      alt="Like"
                     />
-                  </picture>
-                  <div class="roof_name">Атлантика</div>
+                  </div>
+                  <div class="slider_info">
+                    <div class="left_card_content">
+                      <img
+                        class="layers"
+                        src="./images/bestRoof/ThreeLayers.svg"
+                        alt="ThreeLayers"
+                      />
+                      <div class="roof_name">Континент</div>
+                    </div>
+                    <div class="roof_pricepermeter">
+                      <span>3 776</span>
+                      <span class="rubl_meter">₽/м²</span>
+                    </div>
+                  </div>
                 </div>
-                <div class="roof_pricepermeter">
-                  <span>3 776</span>
-                  <span class="rubl_meter">₽/м²</span>
+                <div class="slider_card">
+                  <div class="slider_img">
+                    <img
+                      src="./images/bestRoof/VesternRoof.svg"
+                      alt="VesternRoof"
+                    />
+                    <img
+                      class="slider_like_card"
+                      src="./images/header/Like.svg"
+                      alt="Like"
+                    />
+                  </div>
+                  <div class="slider_info">
+                    <div class="left_card_content">
+                      <img
+                        class="layers"
+                        src="./images/bestRoof/TwoLayers.svg"
+                        alt="ThreeLayers"
+                      />
+                      <div class="roof_name">Вестерн</div>
+                    </div>
+                    <div class="roof_pricepermeter">
+                      <span>2 614</span>
+                      <span class="rubl_meter">₽/м²</span>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="slider_card">
-              <div class="slider_img">
-                <img
-                  src="./images/bestRoof/KontinentRoof.svg"
-                  alt="KontinentRoof"
-                />
-                <img
-                  class="slider_like_card"
-                  src="./images/header/Like.svg"
-                  alt="Like"
-                />
-              </div>
-              <div class="slider_info">
-                <div class="left_card_content">
-                  <img
-                    class="layers"
-                    src="./images/bestRoof/ThreeLayers.svg"
-                    alt="ThreeLayers"
-                  />
-                  <div class="roof_name">Континент</div>
+                <div class="slider_card">
+                  <div class="slider_img">
+                    <img
+                      src="./images/bestRoof/VesternRoof.svg"
+                      alt="VesternRoof"
+                    />
+                    <img
+                      class="slider_like_card"
+                      src="./images/header/Like.svg"
+                      alt="Like"
+                    />
+                  </div>
+                  <div class="slider_info">
+                    <div class="left_card_content">
+                      <img
+                        class="layers"
+                        src="./images/bestRoof/TwoLayers.svg"
+                        alt="ThreeLayers"
+                      />
+                      <div class="roof_name">Вестерн</div>
+                    </div>
+                    <div class="roof_pricepermeter">
+                      <span>2 614</span>
+                      <span class="rubl_meter">₽/м²</span>
+                    </div>
+                  </div>
                 </div>
-                <div class="roof_pricepermeter">
-                  <span>3 776</span>
-                  <span class="rubl_meter">₽/м²</span>
-                </div>
-              </div>
-            </div>
-            <div class="slider_card">
-              <div class="slider_img">
-                <img
-                  src="./images/bestRoof/VesternRoof.svg"
-                  alt="VesternRoof"
-                />
-                <img
-                  class="slider_like_card"
-                  src="./images/header/Like.svg"
-                  alt="Like"
-                />
-              </div>
-              <div class="slider_info">
-                <div class="left_card_content">
-                  <img
-                    class="layers"
-                    src="./images/bestRoof/TwoLayers.svg"
-                    alt="ThreeLayers"
-                  />
-                  <div class="roof_name">Вестерн</div>
-                </div>
-                <div class="roof_pricepermeter">
-                  <span>2 614</span>
-                  <span class="rubl_meter">₽/м²</span>
+                <div class="slider_card">
+                  <div class="slider_img">
+                    <img
+                      src="./images/bestRoof/VesternRoof.svg"
+                      alt="VesternRoof"
+                    />
+                    <img
+                      class="slider_like_card"
+                      src="./images/header/Like.svg"
+                      alt="Like"
+                    />
+                  </div>
+                  <div class="slider_info">
+                    <div class="left_card_content">
+                      <img
+                        class="layers"
+                        src="./images/bestRoof/TwoLayers.svg"
+                        alt="ThreeLayers"
+                      />
+                      <div class="roof_name">Вестерн</div>
+                    </div>
+                    <div class="roof_pricepermeter">
+                      <span>2 614</span>
+                      <span class="rubl_meter">₽/м²</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <ul class="slider_menu">
-            <li class="slider_item">
-              <button type="submit">
-                <img
-                  src="./images/slider/LeftSliderArrow.svg"
-                  alt="LeftSliderArrow"
-                />
-              </button>
-            </li>
-            <li class="slider_item">
+            <button class="prev" type="submit">
               <img
-                src="./images/slider/ActiveSliderMenu.svg"
-                alt="ActiveSliderMenu"
+                src="./images/slider/LeftSliderArrow.svg"
+                alt="LeftSliderArrow"
               />
-            </li>
-            <li class="slider_item">
-              <img src="./images/slider/SliderMenu.svg" alt="SliderMenu" />
-            </li>
-            <li class="slider_item">
-              <img src="./images/slider/SliderMenu.svg" alt="SliderMenu" />
-            </li>
-            <li class="slider_item">
-              <img src="./images/slider/SliderMenu.svg" alt="SliderMenu" />
-            </li>
-            <li class="slider_item">
-              <img src="./images/slider/SliderMenu.svg" alt="SliderMenu" />
-            </li>
-            <li class="slider_item">
-              <button type="submit">
-                <img
-                  src="./images/slider/RightSliderArrow.svg"
-                  alt="RightSliderArrow"
-                />
-              </button>
-            </li>
+            </button>
+            <li class="slider_item active_item"></li>
+            <li class="slider_item"></li>
+            <li class="slider_item"></li>
+            <li class="slider_item"></li>
+            <li class="slider_item"></li>
+            <button class="next" type="submit">
+              <img
+                src="./images/slider/RightSliderArrow.svg"
+                alt="RightSliderArrow"
+              />
+            </button>
           </ul>
         </div>
       </section>
@@ -414,34 +438,23 @@
             приезжай на церемонию награждения.
           </article>
           <ul class="slider_menu">
-            <li class="slider_item">
-              <button type="submit">
-                <img
-                  src="./images/slider/LeftSliderArrow.svg"
-                  alt="LeftSliderArrow"
-                />
-              </button>
-            </li>
-            <li class="slider_item">
+            <button class="prev" type="submit">
               <img
-                src="./images/slider/ActiveSliderMenu.svg"
-                alt="ActiveSliderMenu"
+                src="./images/slider/LeftSliderArrow.svg"
+                alt="LeftSliderArrow"
               />
-            </li>
-            <li class="slider_item">
-              <img src="./images/slider/SliderMenu.svg" alt="SliderMenu" />
-            </li>
-            <li class="slider_item">
-              <img src="./images/slider/SliderMenu.svg" alt="SliderMenu" />
-            </li>
-            <li class="slider_item">
-              <button type="submit">
-                <img
-                  src="./images/slider/RightSliderArrow.svg"
-                  alt="RightSliderArrow"
-                />
-              </button>
-            </li>
+            </button>
+            <li class="slider_item active_item"></li>
+            <li class="slider_item"></li>
+            <li class="slider_item"></li>
+            <li class="slider_item"></li>
+            <li class="slider_item"></li>
+            <button class="next" type="submit">
+              <img
+                src="./images/slider/RightSliderArrow.svg"
+                alt="RightSliderArrow"
+              />
+            </button>
           </ul>
         </div>
         <div class="best_roofer_right_content">
@@ -482,34 +495,23 @@
             </picture>
           </div>
           <ul class="slider_menu">
-            <li class="slider_item">
-              <button type="submit">
-                <img
-                  src="./images/slider/LeftSliderArrow.svg"
-                  alt="LeftSliderArrow"
-                />
-              </button>
-            </li>
-            <li class="slider_item">
+            <button class="prev" type="submit">
               <img
-                src="./images/slider/ActiveSliderMenu.svg"
-                alt="ActiveSliderMenu"
+                src="./images/slider/LeftSliderArrow.svg"
+                alt="LeftSliderArrow"
               />
-            </li>
-            <li class="slider_item">
-              <img src="./images/slider/SliderMenu.svg" alt="SliderMenu" />
-            </li>
-            <li class="slider_item">
-              <img src="./images/slider/SliderMenu.svg" alt="SliderMenu" />
-            </li>
-            <li class="slider_item">
-              <button type="submit">
-                <img
-                  src="./images/slider/RightSliderArrow.svg"
-                  alt="RightSliderArrow"
-                />
-              </button>
-            </li>
+            </button>
+            <li class="slider_item active_item"></li>
+            <li class="slider_item"></li>
+            <li class="slider_item"></li>
+            <li class="slider_item"></li>
+            <li class="slider_item"></li>
+            <button class="next" type="submit">
+              <img
+                src="./images/slider/RightSliderArrow.svg"
+                alt="RightSliderArrow"
+              />
+            </button>
           </ul>
         </div>
       </section>
@@ -582,40 +584,23 @@
               </div>
             </div>
             <ul class="slider_menu">
-              <li class="slider_item">
-                <button type="submit">
-                  <img
-                    src="./images/slider/LeftSliderArrow.svg"
-                    alt="LeftSliderArrow"
-                  />
-                </button>
-              </li>
-              <li class="slider_item">
+              <button class="prev" type="submit">
                 <img
-                  src="./images/slider/ActiveSliderMenu.svg"
-                  alt="ActiveSliderMenu"
+                  src="./images/slider/LeftSliderArrow.svg"
+                  alt="LeftSliderArrow"
                 />
-              </li>
-              <li class="slider_item">
-                <img src="./images/slider/SliderMenu.svg" alt="SliderMenu" />
-              </li>
-              <li class="slider_item">
-                <img src="./images/slider/SliderMenu.svg" alt="SliderMenu" />
-              </li>
-              <li class="slider_item">
-                <img src="./images/slider/SliderMenu.svg" alt="SliderMenu" />
-              </li>
-              <li class="slider_item">
-                <img src="./images/slider/SliderMenu.svg" alt="SliderMenu" />
-              </li>
-              <li class="slider_item">
-                <button type="submit">
-                  <img
-                    src="./images/slider/RightSliderArrow.svg"
-                    alt="RightSliderArrow"
-                  />
-                </button>
-              </li>
+              </button>
+              <li class="slider_item active_item"></li>
+              <li class="slider_item"></li>
+              <li class="slider_item"></li>
+              <li class="slider_item"></li>
+              <li class="slider_item"></li>
+              <button class="next" type="submit">
+                <img
+                  src="./images/slider/RightSliderArrow.svg"
+                  alt="RightSliderArrow"
+                />
+              </button>
             </ul>
             <div class="steps_controller">
               <div class="step_counter"><strong>1</strong> / 4</div>
@@ -661,40 +646,23 @@
                 </picture>
               </div>
               <ul class="slider_menu">
-                <li class="slider_item">
-                  <button type="submit">
-                    <img
-                      src="./images/slider/LeftSliderArrow.svg"
-                      alt="LeftSliderArrow"
-                    />
-                  </button>
-                </li>
-                <li class="slider_item">
+                <button class="prev" type="submit">
                   <img
-                    src="./images/slider/ActiveSliderMenu.svg"
-                    alt="ActiveSliderMenu"
+                    src="./images/slider/LeftSliderArrow.svg"
+                    alt="LeftSliderArrow"
                   />
-                </li>
-                <li class="slider_item">
-                  <img src="./images/slider/SliderMenu.svg" alt="SliderMenu" />
-                </li>
-                <li class="slider_item">
-                  <img src="./images/slider/SliderMenu.svg" alt="SliderMenu" />
-                </li>
-                <li class="slider_item">
-                  <img src="./images/slider/SliderMenu.svg" alt="SliderMenu" />
-                </li>
-                <li class="slider_item">
-                  <img src="./images/slider/SliderMenu.svg" alt="SliderMenu" />
-                </li>
-                <li class="slider_item">
-                  <button type="submit">
-                    <img
-                      src="./images/slider/RightSliderArrow.svg"
-                      alt="RightSliderArrow"
-                    />
-                  </button>
-                </li>
+                </button>
+                <li class="slider_item active_item"></li>
+                <li class="slider_item"></li>
+                <li class="slider_item"></li>
+                <li class="slider_item"></li>
+                <li class="slider_item"></li>
+                <button class="next" type="submit">
+                  <img
+                    src="./images/slider/RightSliderArrow.svg"
+                    alt="RightSliderArrow"
+                  />
+                </button>
               </ul>
               <article class="info_block_text">
                 <div class="info_title">
@@ -1073,40 +1041,23 @@
             </div>
           </div>
           <ul class="slider_menu">
-            <li class="slider_item">
-              <button type="submit">
-                <img
-                  src="./images/slider/LeftSliderArrow.svg"
-                  alt="LeftSliderArrow"
-                />
-              </button>
-            </li>
-            <li class="slider_item">
+            <button class="prev" type="submit">
               <img
-                src="./images/slider/ActiveSliderMenu.svg"
-                alt="ActiveSliderMenu"
+                src="./images/slider/LeftSliderArrow.svg"
+                alt="LeftSliderArrow"
               />
-            </li>
-            <li class="slider_item">
-              <img src="./images/slider/SliderMenu.svg" alt="SliderMenu" />
-            </li>
-            <li class="slider_item">
-              <img src="./images/slider/SliderMenu.svg" alt="SliderMenu" />
-            </li>
-            <li class="slider_item">
-              <img src="./images/slider/SliderMenu.svg" alt="SliderMenu" />
-            </li>
-            <li class="slider_item">
-              <img src="./images/slider/SliderMenu.svg" alt="SliderMenu" />
-            </li>
-            <li class="slider_item">
-              <button type="submit">
-                <img
-                  src="./images/slider/RightSliderArrow.svg"
-                  alt="RightSliderArrow"
-                />
-              </button>
-            </li>
+            </button>
+            <li class="slider_item active_item"></li>
+            <li class="slider_item"></li>
+            <li class="slider_item"></li>
+            <li class="slider_item"></li>
+            <li class="slider_item"></li>
+            <button class="next" type="submit">
+              <img
+                src="./images/slider/RightSliderArrow.svg"
+                alt="RightSliderArrow"
+              />
+            </button>
           </ul>
           <div class="goto_wrapper">
             <p class="goto_text">
@@ -1285,40 +1236,23 @@
             </div>
           </div>
           <ul class="slider_menu">
-            <li class="slider_item">
-              <button type="submit">
-                <img
-                  src="./images/slider/LeftSliderArrow.svg"
-                  alt="LeftSliderArrow"
-                />
-              </button>
-            </li>
-            <li class="slider_item">
+            <button class="prev" type="submit">
               <img
-                src="./images/slider/ActiveSliderMenu.svg"
-                alt="ActiveSliderMenu"
+                src="./images/slider/LeftSliderArrow.svg"
+                alt="LeftSliderArrow"
               />
-            </li>
-            <li class="slider_item">
-              <img src="./images/slider/SliderMenu.svg" alt="SliderMenu" />
-            </li>
-            <li class="slider_item">
-              <img src="./images/slider/SliderMenu.svg" alt="SliderMenu" />
-            </li>
-            <li class="slider_item">
-              <img src="./images/slider/SliderMenu.svg" alt="SliderMenu" />
-            </li>
-            <li class="slider_item">
-              <img src="./images/slider/SliderMenu.svg" alt="SliderMenu" />
-            </li>
-            <li class="slider_item">
-              <button type="submit">
-                <img
-                  src="./images/slider/RightSliderArrow.svg"
-                  alt="RightSliderArrow"
-                />
-              </button>
-            </li>
+            </button>
+            <li class="slider_item active_item"></li>
+            <li class="slider_item"></li>
+            <li class="slider_item"></li>
+            <li class="slider_item"></li>
+            <li class="slider_item"></li>
+            <button class="next" type="submit">
+              <img
+                src="./images/slider/RightSliderArrow.svg"
+                alt="RightSliderArrow"
+              />
+            </button>
           </ul>
         </div>
       </section>
@@ -1424,36 +1358,6 @@
                 </div>
               </div>
             </div>
-            <ul class="slider_menu">
-              <li class="slider_item">
-                <button type="submit">
-                  <img
-                    src="./images/slider/LeftSliderArrow.svg"
-                    alt="LeftSliderArrow"
-                  />
-                </button>
-              </li>
-              <li class="slider_item">
-                <img
-                  src="./images/slider/ActiveSliderMenu.svg"
-                  alt="ActiveSliderMenu"
-                />
-              </li>
-              <li class="slider_item">
-                <img src="./images/slider/SliderMenu.svg" alt="SliderMenu" />
-              </li>
-              <li class="slider_item">
-                <img src="./images/slider/SliderMenu.svg" alt="SliderMenu" />
-              </li>
-              <li class="slider_item">
-                <button type="submit">
-                  <img
-                    src="./images/slider/RightSliderArrow.svg"
-                    alt="RightSliderArrow"
-                  />
-                </button>
-              </li>
-            </ul>
           </div>
         </div>
       </section>
@@ -1723,4 +1627,5 @@
       </footer>
     </main>
   </body>
+  <script src="./js/slider.js"></script>
 </html>

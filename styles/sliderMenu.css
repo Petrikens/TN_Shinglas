@@ -8,23 +8,31 @@
 
 .slider_item {
     display: flex;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #E7E7E7;
 }
 
-.slider_item button {
-    width: 44px !important;
-    height: 44px !important;
+.active_item {
+    background-color: #000000;
+}
+
+.slider_menu button {
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.slider_item button:active {
+.slider_menu button:active {
     background-color: #F8F8F8;
 }
 
 @media screen and (max-width: 320px) {
-    .slider_item button {
+    .slider_menu button {
         width: 30px;
         height: 30px;
     }
