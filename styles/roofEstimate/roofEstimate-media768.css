@@ -24,6 +24,7 @@
     .roof_cards {
         gap: 25px;
         margin-bottom: 50px;
+        overflow: scroll;
     }
 
     .steps_controller {
