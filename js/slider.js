@@ -6,11 +6,10 @@ let slider = document.querySelector(".slider_gallery"),
   arrows = slider.querySelector(".slider_menu"),
   prev = slider.querySelector(".prev"),
   next = slider.querySelector(".next"),
-  slideGap = 60,
+  slideGap = slider.offsetWidth > 320 ? 60 : 0,
   slideWidth = slides[0].offsetWidth + slideGap,
   slideIndex = 0,
   maxIndex = slides.length - Math.floor(slider.offsetWidth / slideWidth),
-  transition = true,
   createSliderItems = (function () {
     for (let i = 0; i <= maxIndex; i++) {
       let li = document.createElement("li");
@@ -22,9 +21,8 @@ let slider = document.querySelector(".slider_gallery"),
     }
   })(),
   slide = function () {
-    if (transition) {
-      sliderTrack.style.transition = "transform .5s";
-    }
+    sliderTrack.style.transition = "transform .5s";
+
     sliderTrack.style.transform = `translate3d(-${
       slideIndex * slideWidth
     }px, 0px, 0px)`;
@@ -36,19 +34,12 @@ let slider = document.querySelector(".slider_gallery"),
         item.classList.add("active_item");
       }
     });
-  },
-  reachEdge = function () {
-    transition = false;
-    swipeEnd();
-    allowSwipe = true;
   };
-
-sliderTrack.style.transform = "translate3d(0px, 0px, 0px)";
-
-sliderTrack.addEventListener("transitionend", () => (allowSwipe = true));
 
 arrows.addEventListener("click", function (event) {
   let target = event.target;
+
+  console.log(target);
 
   if (target.classList.contains("next")) {
     slideIndex++;

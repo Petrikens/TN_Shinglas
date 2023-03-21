@@ -101,6 +101,8 @@
 
     .roof_cards {
         gap: 25px;
+        overflow: scroll;
+        overflow-y: hidden;
     }
 
     .step_counter {
@@ -134,8 +136,6 @@
     .roof_cards {
         gap: 25px;
         margin-bottom: 50px;
-        overflow: scroll;
-        overflow-y: hidden;
     }
 
     .steps_controller {
