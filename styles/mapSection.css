@@ -1,6 +1,6 @@
 .map {
     height: 604px;
-    background-image: url('../../images/mapSection/Map.png');
+    background-image: url('../images/mapSection/Map.png');
     background-size: cover;
     position: relative;
 }
@@ -74,4 +74,71 @@
     line-height: 23px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
+}
+
+@media screen and (max-width: 1600px) {
+    .map {
+        height: 604px;
+        background-image: url('../images/mapSection/Map1600.svg');
+    }
+
+    .map_buttons {
+        gap: 100px;
+        top: 253px;
+        left: 390px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .map {
+        height: 600px;
+        background-image: url('../images/mapSection/Map768.png');
+    }
+
+    .map_blackout {
+        height: 600px;
+    }
+
+    .map_buttons {
+        flex-direction: column;
+        gap: 30px;
+        top: 200px;
+        left: 200px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .map {
+        background-image: url('../images/mapSection/Map320.png');
+    }
+
+    .map_buttons {
+        top: 200px;
+        left: 20px;
+    }
+
+    .map_button {
+        width: 280px;
+        height: 80px;
+    }
+
+    .button_left_content {
+        width: 80px;
+        height: 80px;
+    }
+
+    .button_right_content {
+        width: 200px;
+        height: 80px;
+    }
+
+    .right_content_text .small_text {
+        font-size: 8px;
+        line-height: 10px;
+    }
+
+    .right_content_text .bold_text {
+        font-size: 14px;
+        line-height: 18px;
+    }
 }

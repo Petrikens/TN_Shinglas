@@ -140,3 +140,119 @@
     width: 20px;
     border: 1px solid #FFFFFF;
 }
+
+@media screen and (max-width: 1600px) {
+    .header_title {
+        padding-right: 90px;
+    }
+
+    .header_wrapper {
+        max-width: 1400px;
+    }
+
+    .header_navbar {
+        margin-right: 44px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        height: 50px;
+        padding: 0px;
+    }
+
+    .header_wrapper {
+        max-width: 100%;
+    }
+
+    .header_title {
+        padding-left: 50px;
+    }
+
+    .header_right {
+        gap: 0px;
+        justify-content: space-between;
+    }
+
+    .header nav {
+        display: none;
+    }
+
+    .favorites_button,
+    .city_button,
+    .basket_button {
+        font-size: 12px;
+    }
+
+    .favorites_button {
+        margin-right: 33px;
+    }
+
+    .city_button {
+        margin-right: 80px;
+    }
+
+    .basket_button {
+        border: 1px solid #C3C3C3;
+        margin-right: 20px;
+    }
+
+    .basket_button {
+        padding: 0 16px;
+    }
+
+    .burger_menu {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .header {
+        height: 50px;
+        display: flex;
+    }
+
+    .header_title {
+        padding: 0 38px 0 20px;
+    }
+
+    .header_right {
+        gap: 20px;
+    }
+
+    .favorites_button {
+        margin-right: 0px;
+    }
+
+    .city_button {
+        margin-right: 0px;
+    }
+
+    .city_button span {
+        display: none;
+    }
+
+    .basket_button {
+        border: none;
+        margin-right: 30px;
+        padding: 0px;
+
+    }
+
+    .basket_button span {
+        display: none;
+    }
+
+    .burger_menu {
+        display: none;
+    }
+
+    .city_button img {
+        margin-right: 0px;
+    }
+
+    .basket_button img {
+        margin-right: 0px;
+    }
+}

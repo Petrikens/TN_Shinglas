@@ -1,0 +1,188 @@
+.best_roofer {
+    margin-left: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 130px;
+}
+
+.best_roofer_left_content .article_title_text {
+    margin-bottom: 60px;
+    width: 308px;
+}
+
+.article_title_text {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.best_roofer_left_content .article_text {
+    width: 360px;
+    margin-bottom: 55px;
+}
+
+.best_roofer_left_content .slider_menu {
+    justify-content: flex-start;
+}
+
+.best_roofer_right_content {
+    width: 1179px;
+    height: 720px;
+    position: relative;
+}
+
+.roofers_img {
+    width: 1179px;
+    height: 720px;
+}
+
+.best_roofer_right_content .slider_menu {
+    display: none;
+    margin-bottom: 0;
+}
+
+.international_award_block {
+    position: absolute;
+    top: 155px;
+    left: -130px;
+    width: 440px;
+    height: 440px;
+    background: #D39269;
+    border: 5px solid #FFFFFF;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1600px) {
+    .best_roofer {
+        margin-left: 100px;
+        margin-bottom: 80px;
+    }
+
+    .best_roofer_right_content {
+        width: 937px;
+        height: 572px;
+    }
+
+    .roofers_img {
+        width: 937px;
+        height: 572px;
+    }
+
+    .international_award_block {
+        position: absolute;
+        top: 123px;
+        left: -100px;
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .best_roofer {
+        margin-left: 0px;
+        margin-bottom: 150px;
+        flex-direction: column;
+    }
+
+    .best_roofer_right_content {
+        width: 644px;
+        height: 393px;
+        position: relative;
+        margin-left: auto;
+    }
+
+    .roofers_img {
+        width: 644px;
+        height: 393px;
+        margin-bottom: 30px;
+    }
+
+    .international_award_block {
+        top: 84px;
+        left: -65px;
+        width: 240px;
+        height: 240px;
+    }
+
+    .best_roofer_left_content {
+        padding: 0px 50px;
+    }
+
+    .article_title_text {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .best_roofer_left_content .article_title_text {
+        width: 100%;
+        margin-bottom: 37px;
+    }
+
+    .best_roofer_left_content .article_text {
+        width: 650px;
+        margin-bottom: 55px;
+    }
+
+    .best_roofer_left_content .slider_menu {
+        display: none;
+    }
+
+    .best_roofer_right_content .slider_menu {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .best_roofer {
+        flex-direction: column;
+    }
+
+    .best_roofer_right_content {
+        width: 320px;
+        height: 195px;
+        margin-left: 0px;
+    }
+
+    .roofers_img {
+        width: 320px;
+        height: 195px;
+        margin-bottom: 20px;
+    }
+
+    .international_award_block {
+        display: none;
+    }
+
+    .best_roofer_left_content + .article_text {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .best_roofer_left_content {
+        padding: 0px 0px;
+    }
+
+    .article_title_text {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .best_roofer_left_content {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    .best_roofer_left_content .article_text {
+        max-width: 280px;
+        margin-bottom: 27px;
+    }
+
+    .best_roofer_right_content .slider_menu {
+        margin-top: 28px;
+    }
+}

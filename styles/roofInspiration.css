@@ -1,0 +1,120 @@
+.roof_inspiration {
+    margin-bottom: 133px;
+}
+
+.roof_inspiration .section_title {
+    margin-bottom: 175px;
+    text-align: left;
+}
+
+.inspiration_cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 33px;
+    margin-bottom: 35px;
+
+}
+
+.inspiration_card:nth-child(even) {
+    top: -100px;
+}
+
+.inspiration_card {
+    width: 380px;
+    height: 600px;
+    position: relative;
+}
+
+.roof_inspiration .goto_wrapper {
+    justify-content: center;
+}
+
+.roof_inspiration .goto_text {
+    text-transform: uppercase;
+}
+
+.roof_inspiration .slider_menu {
+    display: none;
+}
+
+@media screen and (max-width: 1600px) {
+    .roof_inspiration {
+        margin-bottom: 100px;
+    }
+
+    .roof_inspiration .section_title {
+        margin-bottom: 145px;
+    }
+
+    .inspiration_cards {
+        gap: 29px;
+        margin-bottom: 60px;
+
+    }
+
+    .inspiration_card:nth-child(even) {
+        top: -70px;
+    }
+
+    .inspiration_card,
+    .inspiration_card img {
+        width: 328px;
+        height: 519px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .roof_inspiration {
+        margin-bottom: 100px;
+    }
+
+    .roof_inspiration .section_title {
+        margin-bottom: 85px;
+    }
+
+    .inspiration_cards {
+        flex-direction: row;
+        gap: 28px;
+
+    }
+
+    .inspiration_card:nth-child(even) {
+        top: -50px;
+    }
+
+    .inspiration_card {
+        width: 320px;
+        height: 505px;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .roof_inspiration {
+        margin-bottom: 70px;
+    }
+
+    .roof_inspiration .container {
+        max-width: 320px;
+    }
+
+    .roof_inspiration .section_title {
+        margin-bottom: 20px;
+        font-size: 30px;
+        line-height: 30px;
+        margin-left: 20px;
+    }
+
+    .inspiration_cards div:not(:first-child) {
+        display: none;
+    }
+
+    .inspiration_cards {
+        margin-bottom: 30px;
+    }
+
+    .roof_inspiration .slider_menu {
+        display: flex;
+        justify-content: center;
+    }
+}

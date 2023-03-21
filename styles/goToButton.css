@@ -38,3 +38,32 @@
 .goto_button:hover img:first-child {
     display: none;
 }
+
+@media screen and (max-width: 1600px) {
+    .goto_button {
+        width: 30px;
+        height: 30px;
+    }
+
+    .goto_text {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .goto_wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .goto_text {
+        font-size: 14px;
+        line-height: 18px;
+        margin-right: 9px;
+    }
+
+    .goto_button {
+        width: 30px;
+        height: 30px;
+    }
+}
