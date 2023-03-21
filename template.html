@@ -6,20 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Технониколь</title>
     <link rel="stylesheet" href="./styles/main.css" />
-    <link rel="stylesheet" href="./styles/main-media1600.css" />
-    <link rel="stylesheet" href="./styles/main-media768.css" />
-    <link rel="stylesheet" href="./styles/main-media320.css" />
-    <link rel="stylesheet" href="./styles/header/header.css" />
-    <link rel="stylesheet" href="./styles/header/header-media1600.css" />
-    <link rel="stylesheet" href="./styles/header/header-media768.css" />
-    <link rel="stylesheet" href="./styles/header/header-media320.css" />
-    <link rel="stylesheet" href="./styles/footer/footer.css" />
-    <link rel="stylesheet" href="./styles/footer/footer-media1600.css" />
-    <link rel="stylesheet" href="./styles/footer/footer-media768.css" />
-    <link rel="stylesheet" href="./styles/footer/footer-media320.css" />
   </head>
   <body>
     <header class="header">
+      <link rel="stylesheet" href="./styles/header.css" />
       <div class="header_wrapper">
         <div class="header_left">
           <div class="header_title">
@@ -109,13 +99,20 @@
       </div>
     </header>
     <main>
-      <section>
+      <link rel="stylesheet" href="./styles/template.css" />
+      <section class="title_section">
         <div class="container">
-          <h1>Заголовок</h1>
+          <ul class="bread_crumbs">
+            <li class="crumb">Главная</li>
+            <li class="crumb">></li>
+            <li class="crumb">Коллекции</li>
+          </ul>
+          <div class="title">Заголовок</div>
         </div>
       </section>
     </main>
     <footer class="footer">
+      <link rel="stylesheet" href="./styles/footer.css" />
       <div class="container">
         <div class="footer_top_content">
           <div class="footer_title">

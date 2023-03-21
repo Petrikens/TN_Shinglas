@@ -1,0 +1,16 @@
+.title_section {
+    padding-top: 35px;
+}
+
+.bread_crumbs {
+    display: flex;
+    font-size: 14px;
+    line-height: 20px;
+    gap: 10px;
+}
+
+.title {
+    padding-top: 17px;
+    font-size: 70px;
+    line-height: 91px;
+}
