@@ -1,0 +1,98 @@
+.roof_harmony {
+    margin-bottom: 150px;
+}
+
+.roof_harmony .section_title {
+    margin-bottom: 70px;
+    text-align: left;
+}
+
+.harmony_cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px 60px;
+}
+
+.harmony_card {
+    width: 500px;
+    height: 500px;
+}
+
+.roof_harmony .slider_menu {
+    display: none;
+}
+
+@media screen and (max-width: 1600px) {
+    .roof_harmony {
+        margin-bottom: 100px;
+    }
+
+    .roof_harmony .section_title {
+        margin-bottom: 70px;
+    }
+
+    .harmony_cards {
+        gap: 50px 50px;
+    }
+
+    .harmony_card,
+    .harmony_card img {
+        width: 430px;
+        height: 430px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .roof_harmony {
+        margin-bottom: 100px;
+    }
+
+    .roof_harmony .section_title {
+        margin-bottom: 30px;
+    }
+
+    .harmony_cards {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .harmony_card,
+    .harmony_card img {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .roof_harmony {
+        margin-bottom: 80px;
+    }
+
+    .roof_harmony .section_title {
+        margin-bottom: 20px;
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .harmony_card,
+    .harmony_card img {
+        width: 280px;
+        height: 280px;
+    }
+
+    .harmony_cards {
+        margin-bottom: 40px;
+    }
+
+    .harmony_cards div:not(:first-child) {
+        display: none;
+    }
+
+    .roof_harmony .slider_menu {
+        display: flex;
+        justify-content: center;
+    }
+}
