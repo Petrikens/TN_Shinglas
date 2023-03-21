@@ -100,8 +100,22 @@
 }
 
 .slider_gallery {
+    position: relative;
+    width: 1780px;
+}
+
+.slider_gallery .slider_menu {
+    margin-right: 150px;
+}
+
+.slider_list {
+    width: 1780px;
+    overflow: hidden;
+}
+
+.slider_track {
     display: flex;
-    justify-content: space-between;
+    gap: 60px;
 }
 
 .slider_gallery + .slider_menu {
@@ -191,7 +205,15 @@
     }
 
     .slider_gallery {
-        gap: 60px;
+        width: 1500px;
+    }
+
+    .slider_gallery .slider_menu {
+        margin-right: 100px;
+    }
+
+    .slider_list {
+        width: 1500px;
     }
 
     .article_text {
@@ -203,6 +225,19 @@
 @media screen and (max-width: 768px) {
     .best_roof_nav {
         margin-bottom: 83px;
+    }
+
+    .slider_gallery {
+        width: 718px;
+    }
+
+    .slider_gallery .slider_menu {
+        margin-right: 0px;
+    }
+
+    .slider_list {
+        width: 718px;
+        margin-left: 70px;
     }
 
     .section_title {
@@ -218,19 +253,6 @@
 
     .best_roof .slider_menu {
         justify-content: center;
-    }
-
-    .slider_gallery {
-        justify-content: center;
-
-    }
-
-    .slider_card {
-        display: none;
-    }
-
-    .slider_card:first-child {
-        display: block;
     }
 }
 
@@ -295,16 +317,16 @@
         margin-bottom: 30px;
     }
 
-    .best_roof_info + .slider_menu {
-        display: none;
-    }
-
     .slider_gallery {
-        margin-bottom: 30px;
+        width: 280px;
+        display: flex;
+        flex-direction: column-reverse;
     }
 
-    .slider_gallery + .slider_menu {
-        display: flex;
+    .slider_list {
+        width: 280px;
+        margin-left: 0px;
+        margin-bottom: 30px;
     }
 
     .slider_card {
