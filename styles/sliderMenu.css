@@ -6,6 +6,11 @@
     margin-bottom: 35px;
 }
 
+.slider_items {
+    display: flex;
+    gap: 20px;
+}
+
 .slider_item {
     display: flex;
     width: 7px;
