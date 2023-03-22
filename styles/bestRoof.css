@@ -234,6 +234,7 @@
 
     .slider_gallery .slider_menu {
         margin-right: 0px;
+        justify-content: center;
     }
 
     .slider_gallery .slider_list {
@@ -250,10 +251,6 @@
     .article_text {
         font-size: 18px;
         line-height: 30px;
-    }
-
-    .best_roof .slider_menu {
-        justify-content: center;
     }
 }
 
@@ -323,6 +320,7 @@
         display: flex;
         flex-direction: column-reverse;
     }
+
 
     .slider_gallery .slider_track {
         gap: 0px;

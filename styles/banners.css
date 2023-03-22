@@ -43,10 +43,13 @@
 }
 
 .banner_menu {
+    width: 100%;
     position: absolute;
-    left: 225px;
+    /* left: 225px; */
     bottom: 36px;
+    padding: 0 225px;
     display: flex;
+    justify-content: space-between;
     gap: 10px;
 }
 
@@ -104,8 +107,9 @@
     }
 
     .banner_menu {
-        left: 105px;
+        /* left: 105px; */
         bottom: 20px;
+        padding: 0 105px;
         gap: 10px;
     }
 
@@ -144,8 +148,9 @@
     }
 
     .banner_menu {
-        left: 48px;
+        /* left: 48px; */
         bottom: 17px;
+        padding: 0 50px;
     }
 
     .banner_menu_highlight {
@@ -187,9 +192,10 @@
     }
 
     .banner_menu {
-        left: 20px;
+        /* left: 20px; */
         bottom: 10px;
         gap: 2px;
+        padding: 0 20px;
 
     }
 
