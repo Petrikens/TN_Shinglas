@@ -3,6 +3,9 @@
     background-image: url('../images/mapSection/Map.png');
     background-size: cover;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .map_blackout {
@@ -16,13 +19,13 @@
 }
 
 .map_buttons {
-    position: absolute;
+    position: relative;
     z-index: 2;
     display: flex;
     flex-direction: row;
     gap: 30px;
-    top: 253px;
-    left: 599px;
+    /* top: 253px;
+    left: 599px; */
 }
 
 .map_button {
@@ -84,8 +87,8 @@
 
     .map_buttons {
         gap: 100px;
-        top: 253px;
-        left: 390px;
+        /* top: 253px;
+        left: 390px; */
     }
 }
 
@@ -102,19 +105,14 @@
     .map_buttons {
         flex-direction: column;
         gap: 30px;
-        top: 200px;
-        left: 200px;
+        /* top: 200px;
+        left: 200px; */
     }
 }
 
 @media screen and (max-width: 700px) {
     .map {
         background-image: url('../images/mapSection/Map320.png');
-    }
-
-    .map_buttons {
-        top: 200px;
-        left: 20px;
     }
 
     .map_button {
