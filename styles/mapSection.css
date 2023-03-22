@@ -89,7 +89,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1430px) {
     .map {
         height: 600px;
         background-image: url('../images/mapSection/Map768.png');
@@ -107,7 +107,7 @@
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 700px) {
     .map {
         background-image: url('../images/mapSection/Map320.png');
     }

@@ -6,7 +6,28 @@
     margin-bottom: 130px;
 }
 
-.best_roofer_left_content .article_title_text {
+.best_roofer_slider {
+    position: relative;
+    width: 360px;
+    height: 360px;
+}
+
+.best_roofer_slider .slider_list {
+    width: 360px;
+    height: 360px;
+    overflow: hidden;
+}
+
+.best_roofer_slider .slider_track {
+    display: flex;
+}
+
+.best_roofer_slider .slider_card {
+    width: 360px;
+    height: 360px;
+}
+
+.best_roofer_slider .article_title_text {
     margin-bottom: 60px;
     width: 308px;
 }
@@ -17,12 +38,12 @@
     line-height: 50px;
 }
 
-.best_roofer_left_content .article_text {
+.best_roofer_slider .article_text {
     width: 360px;
     margin-bottom: 55px;
 }
 
-.best_roofer_left_content .slider_menu {
+.best_roofer_slider .slider_menu {
     justify-content: flex-start;
 }
 
@@ -81,11 +102,40 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1430px) {
     .best_roofer {
         margin-left: 0px;
         margin-bottom: 150px;
         flex-direction: column;
+    }
+
+    .best_roofer_slider {
+        width: 666px;
+        height: 300px;
+        margin-bottom: 40px;
+    }
+
+    .best_roofer_slider .slider_list {
+        width: 666px;
+        height: 300px;
+    }
+
+    .best_roofer_slider .slider_track {
+        display: flex;
+    }
+
+    .best_roofer_slider .slider_card {
+        width: 666px;
+        height: 300px;
+    }
+
+    .best_roofer_slider .article_text {
+        width: 666px;
+        margin-bottom: 55px;
+    }
+
+    .best_roofer_slider .slider_menu {
+        display: none;
     }
 
     .best_roofer_right_content {
@@ -137,7 +187,7 @@
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 700px) {
     .best_roofer {
         flex-direction: column;
     }
@@ -158,12 +208,29 @@
         display: none;
     }
 
-    .best_roofer_left_content + .article_text {
+    .best_roofer_slider {
+        position: relative;
+        width: 280px;
+        height: 320px;
+    }
+
+    .best_roofer_slider .slider_list {
+        width: 280px;
+        height: 320px;
+        overflow: hidden;
+    }
+
+    .best_roofer_slider .slider_card {
+        width: 280px;
+        height: 320px;
+    }
+
+    .best_roofer_slider + .article_text {
         font-size: 18px;
         line-height: 30px;
     }
 
-    .best_roofer_left_content {
+    .best_roofer_slider {
         padding: 0px 0px;
     }
 
@@ -172,12 +239,12 @@
         line-height: 30px;
     }
 
-    .best_roofer_left_content {
+    .best_roofer_slider {
         max-width: 280px;
         margin: 0 auto;
     }
 
-    .best_roofer_left_content .article_text {
+    .best_roofer_slider .article_text {
         max-width: 280px;
         margin-bottom: 27px;
     }

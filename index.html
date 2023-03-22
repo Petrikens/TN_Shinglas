@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Технониколь</title>
     <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
     <link rel="stylesheet" href="./styles/sliderMenu.css" />
     <link rel="stylesheet" href="./styles/goToButton.css" />
+    <script src="./js/roofSlider.js" defer></script>
+    <script src="./js/rooferSlider.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -18,11 +21,11 @@
             <a href="#">
               <picture>
                 <source
-                  media="(max-width: 320px)"
+                  media="(max-width: 700px)"
                   srcset="./images/header/Logo320.svg"
                 />
                 <source
-                  media="(max-width: 768px)"
+                  media="(max-width: 1430px)"
                   srcset="./images/header/Logo768.svg"
                 />
                 <img src="./images/header/Logo.svg" alt="Logo" />
@@ -85,7 +88,7 @@
           <button class="basket_button" type="submit">
             <picture>
               <source
-                media="(max-width: 768px)"
+                media="(max-width: 1430px)"
                 srcset="./images/header/Basket768.svg"
               />
               <img src="./images/header/Basket.svg" alt="Basket" />
@@ -148,7 +151,7 @@
                   <div class="nav_wrapper">
                     <picture>
                       <source
-                        media="(max-width: 320px)"
+                        media="(max-width: 700px)"
                         srcset="./images/bestRoof/Roofer320.svg"
                       />
                       <img src="./images/bestRoof/Roofer.svg" alt="Roofer" />
@@ -176,7 +179,7 @@
                   <div class="nav_wrapper">
                     <picture>
                       <source
-                        media="(max-width: 320px)"
+                        media="(max-width: 700px)"
                         srcset="./images/bestRoof/New320.svg"
                       />
                       <img src="./images/bestRoof/New.svg" alt="New" />
@@ -190,7 +193,7 @@
                   <div class="nav_wrapper">
                     <picture>
                       <source
-                        media="(max-width: 320px)"
+                        media="(max-width: 700px)"
                         srcset="./images/bestRoof/Promo320.svg"
                       />
                       <img src="./images/bestRoof/Promo.svg" alt="Promo" />
@@ -241,12 +244,12 @@
               </button>
             </div>
             <div class="slider_list">
-              <div class="slider_track">
-                <div class="slider_card">
+              <div class="slider_track" id="slider_track">
+                <div class="slider_card" id="slider_card">
                   <div class="slider_img">
                     <picture>
                       <source
-                        media="(max-width: 320px)"
+                        media="(max-width: 700px)"
                         srcset="./images/bestRoof/AntalikaRoof320.svg"
                       />
                       <img
@@ -262,7 +265,7 @@
                     </ul>
                     <picture>
                       <source
-                        media="(max-width: 320px)"
+                        media="(max-width: 700px)"
                         srcset="./images/bestRoof/ActiveLike320.svg"
                       />
                       <img
@@ -276,7 +279,7 @@
                     <div class="left_card_content">
                       <picture>
                         <source
-                          media="(max-width: 320px)"
+                          media="(max-width: 700px)"
                           srcset="./images/bestRoof/ThreeLayers320.svg"
                         />
                         <img
@@ -293,7 +296,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="slider_card">
+                <div class="slider_card" id="slider_card">
                   <div class="slider_img">
                     <img
                       src="./images/bestRoof/KontinentRoof.svg"
@@ -320,7 +323,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="slider_card">
+                <div class="slider_card" id="slider_card">
                   <div class="slider_img">
                     <img
                       src="./images/bestRoof/VesternRoof.svg"
@@ -347,7 +350,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="slider_card">
+                <div class="slider_card" id="slider_card">
                   <div class="slider_img">
                     <img
                       src="./images/bestRoof/VesternRoof.svg"
@@ -374,7 +377,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="slider_card">
+                <div class="slider_card" id="slider_card">
                   <div class="slider_img">
                     <img
                       src="./images/bestRoof/VesternRoof.svg"
@@ -404,38 +407,34 @@
               </div>
             </div>
           </div>
-          <ul class="slider_menu">
-            <button class="prev" type="submit">
-              <img
-                src="./images/slider/LeftSliderArrow.svg"
-                alt="LeftSliderArrow"
-              />
-            </button>
-            <li class="slider_item active_item"></li>
-            <li class="slider_item"></li>
-            <li class="slider_item"></li>
-            <li class="slider_item"></li>
-            <li class="slider_item"></li>
-            <button class="next" type="submit">
-              <img
-                src="./images/slider/RightSliderArrow.svg"
-                alt="RightSliderArrow"
-              />
-            </button>
-          </ul>
         </div>
       </section>
       <section class="best_roofer">
         <link rel="stylesheet" href="./styles/bestRoofer.css" />
-        <div class="best_roofer_left_content">
-          <span class="article_text">Международная премия</span>
-          <div class="article_title_text">Лучший кровельщик</div>
-          <article class="article_text">
-            Заяви о себе на крупнейшей премии лучших подрядчиков, выполняющих
-            монтаж кровельных систем. Отправляй заявку, пройди в финал и
-            приезжай на церемонию награждения.
-          </article>
-          <ul class="slider_menu">
+        <div class="best_roofer_slider" id="best_roofer_slider">
+          <div class="slider_list">
+            <div class="slider_track">
+              <div class="slider_card">
+                <span class="article_text">Международная премия</span>
+                <div class="article_title_text">Лучший кровельщик</div>
+                <article class="article_text">
+                  Заяви о себе на крупнейшей премии лучших подрядчиков,
+                  выполняющих монтаж кровельных систем. Отправляй заявку, пройди
+                  в финал и приезжай на церемонию награждения.
+                </article>
+              </div>
+              <div class="slider_card">
+                <span class="article_text">Международная премия</span>
+                <div class="article_title_text">Лучший кровельщик</div>
+                <article class="article_text">
+                  Заяви о себе на крупнейшей премии лучших подрядчиков,
+                  выполняющих монтаж кровельных систем. Отправляй заявку, пройди
+                  в финал и приезжай на церемонию награждения.
+                </article>
+              </div>
+            </div>
+          </div>
+          <div class="slider_menu">
             <button class="prev" type="submit">
               <img
                 class="prev"
@@ -443,11 +442,7 @@
                 alt="LeftSliderArrow"
               />
             </button>
-            <li class="slider_item active_item"></li>
-            <li class="slider_item"></li>
-            <li class="slider_item"></li>
-            <li class="slider_item"></li>
-            <li class="slider_item"></li>
+            <ul class="slider_items" id="slider_items"></ul>
             <button class="next" type="submit">
               <img
                 class="next"
@@ -455,16 +450,16 @@
                 alt="RightSliderArrow"
               />
             </button>
-          </ul>
+          </div>
         </div>
         <div class="best_roofer_right_content">
           <picture>
             <source
-              media="(max-width: 320px)"
+              media="(max-width: 700px)"
               srcset="./images/bestRoofer/Roofers320.svg"
             />
             <source
-              media="(max-width: 768px)"
+              media="(max-width: 1430px)"
               srcset="./images/bestRoofer/Roofers768.svg"
             />
             <source
@@ -480,7 +475,7 @@
           <div class="international_award_block">
             <picture>
               <source
-                media="(max-width: 768px)"
+                media="(max-width: 1430px)"
                 srcset="./images/bestRoofer/InternationalAwards768.svg"
               />
               <source
@@ -628,11 +623,11 @@
               <div class="info_block_img">
                 <picture>
                   <source
-                    media="(max-width: 320px)"
+                    media="(max-width: 700px)"
                     srcset="./images/infoSection/ColorDurability320.svg"
                   />
                   <source
-                    media="(max-width: 768px)"
+                    media="(max-width: 1430px)"
                     srcset="./images/infoSection/ColorDurability768.svg"
                   />
                   <source
@@ -750,7 +745,7 @@
             <div class="info_block_img">
               <picture>
                 <source
-                  media="(max-width: 768px)"
+                  media="(max-width: 1430px)"
                   srcset="./images/infoSection/GuaranteeMap768.svg"
                 />
                 <source
@@ -771,7 +766,7 @@
               <div class="info_block_img">
                 <picture>
                   <source
-                    media="(max-width: 768px)"
+                    media="(max-width: 1430px)"
                     srcset="./images/infoSection/Quality768.svg"
                   />
                   <source
@@ -873,7 +868,7 @@
             <div class="info_block_img">
               <picture>
                 <source
-                  media="(max-width: 768px)"
+                  media="(max-width: 1430px)"
                   srcset="./images/infoSection/Flexible768.svg"
                 />
                 <source
@@ -891,7 +886,7 @@
               <div class="info_block_img">
                 <picture>
                   <source
-                    media="(max-width: 768px)"
+                    media="(max-width: 1430px)"
                     srcset="./images/infoSection/Unique768.svg"
                   />
                   <source
@@ -947,7 +942,7 @@
               <picture>
                 <source
                   srcset="./images/roofInspiration/InspirationRoof1media.png"
-                  media="(max-width: 768px)"
+                  media="(max-width: 1430px)"
                 />
                 <img
                   src="./images/roofInspiration/InspirationRoof1.png"
@@ -959,7 +954,7 @@
               <picture>
                 <source
                   srcset="./images/roofInspiration/InspirationRoof2media.png"
-                  media="(max-width: 768px)"
+                  media="(max-width: 1430px)"
                 />
                 <img
                   src="./images/roofInspiration/InspirationRoof2.png"
@@ -971,7 +966,7 @@
               <picture>
                 <source
                   srcset="./images/roofInspiration/InspirationRoof3media.png"
-                  media="(max-width: 768px)"
+                  media="(max-width: 1430px)"
                 />
                 <img
                   src="./images/roofInspiration/InspirationRoof3.png"
@@ -983,7 +978,7 @@
               <picture>
                 <source
                   srcset="./images/roofInspiration/InspirationRoof4media.png"
-                  media="(max-width: 768px)"
+                  media="(max-width: 1430px)"
                 />
                 <img
                   src="./images/roofInspiration/InspirationRoof4.png"
@@ -995,7 +990,7 @@
               <picture>
                 <source
                   srcset="./images/roofInspiration/InspirationRoof5media.png"
-                  media="(max-width: 768px)"
+                  media="(max-width: 1430px)"
                 />
                 <img
                   src="./images/roofInspiration/InspirationRoof5.png"
@@ -1007,7 +1002,7 @@
               <picture>
                 <source
                   srcset="./images/roofInspiration/InspirationRoof6media.png"
-                  media="(max-width: 768px)"
+                  media="(max-width: 1430px)"
                 />
                 <img
                   src="./images/roofInspiration/InspirationRoof6.png"
@@ -1019,7 +1014,7 @@
               <picture>
                 <source
                   srcset="./images/roofInspiration/InspirationRoof7media.png"
-                  media="(max-width: 768px)"
+                  media="(max-width: 1430px)"
                 />
                 <img
                   src="./images/roofInspiration/InspirationRoof7.png"
@@ -1031,7 +1026,7 @@
               <picture>
                 <source
                   srcset="./images/roofInspiration/InspirationRoof8media.png"
-                  media="(max-width: 768px)"
+                  media="(max-width: 1430px)"
                 />
                 <img
                   src="./images/roofInspiration/InspirationRoof8.png"
@@ -1097,11 +1092,11 @@
               <picture>
                 <source
                   srcset="./images/offerSection/Contractor320.svg"
-                  media="(max-width: 320px)"
+                  media="(max-width: 700px)"
                 />
                 <source
                   srcset="./images/offerSection/Contractor768.svg"
-                  media="(max-width: 768px)"
+                  media="(max-width: 1430px)"
                 />
                 <source
                   srcset="./images/offerSection/Contractor1600.svg"
@@ -1137,11 +1132,11 @@
               <picture>
                 <source
                   srcset="./images/offerSection/Partner320.svg"
-                  media="(max-width: 320px)"
+                  media="(max-width: 700px)"
                 />
                 <source
                   srcset="./images/offerSection/Partner768.svg"
-                  media="(max-width: 768px)"
+                  media="(max-width: 1430px)"
                 />
                 <source
                   srcset="./images/offerSection/Partner1600.svg"
@@ -1166,7 +1161,7 @@
               <a href="#">
                 <picture>
                   <source
-                    media="(max-width: 320px)"
+                    media="(max-width: 700px)"
                     srcset="./images/roofHarmony/CompositeShingles320.png"
                   />
                   <img
@@ -1265,11 +1260,11 @@
               <div class="phone_content">
                 <picture>
                   <source
-                    media="(max-width: 320px)"
+                    media="(max-width: 700px)"
                     srcset="./images/interestingSection/Phone320.svg"
                   />
                   <source
-                    media="(max-width: 768px)"
+                    media="(max-width: 1430px)"
                     srcset="./images/interestingSection/Phone.svg"
                   />
                   <source
@@ -1286,7 +1281,7 @@
                 <div class="news_card">
                   <picture>
                     <source
-                      media="(max-width: 320px)"
+                      media="(max-width: 700px)"
                       srcset="./images/interestingSection/Tournament320.png"
                     />
                     <img
@@ -1371,7 +1366,7 @@
                 <div class="button_left_content">
                   <picture>
                     <source
-                      media="(max-width: 320px)"
+                      media="(max-width: 700px)"
                       srcset="./images/mapSection/City320.svg"
                     />
                     <img src="./images/mapSection/City.svg" alt="City" />
@@ -1392,7 +1387,7 @@
                 <div class="button_left_content">
                   <picture>
                     <source
-                      media="(max-width: 320px)"
+                      media="(max-width: 700px)"
                       srcset="./images/mapSection/Basket320.svg"
                     />
                     <img src="./images/mapSection/Basket.svg" alt="Basket" />
@@ -1412,26 +1407,19 @@
           </div>
         </div>
       </section>
-<<<<<<< HEAD
-      <footer class="footer">
-        <div class="container">
-          <div class="footer_top_content">
-            <div class="footer_title">
-=======
     </main>
     <footer class="footer">
-      <link rel="stylesheet" href="./styles/footer.css" />
       <div class="container">
         <div class="footer_top_content">
           <div class="footer_title">
             <a href="#">
               <picture>
                 <source
-                  media="(max-width: 320px)"
+                  media="(max-width: 700px)"
                   srcset="./images/header/Logo320.svg"
                 />
                 <source
-                  media="(max-width: 768px)"
+                  media="(max-width: 1430px)"
                   srcset="./images/header/Logo768.svg"
                 />
                 <img src="./images/header/Logo.svg" alt="Logo" />
@@ -1476,156 +1464,99 @@
               </a>
             </li>
             <li class="link">
->>>>>>> 9b20291a80383dfe494e744fb5d7e20e49f15865
               <a href="#">
-                <picture>
-                  <source
-                    media="(max-width: 320px)"
-                    srcset="./images/header/Logo320.svg"
-                  />
-                  <source
-                    media="(max-width: 768px)"
-                    srcset="./images/header/Logo768.svg"
-                  />
-                  <img src="./images/header/Logo.svg" alt="Logo" />
-                </picture>
+                <img src="./images/footer/Telegram.svg" alt="Telegram" />
               </a>
-            </div>
-            <nav>
-              <ul class="footer_nav">
-                <li class="nav_item"><a href="#">Коллекции</a></li>
-                <li class="nav_item"><a href="#">Покупателю</a></li>
-                <li class="nav_item"><a href="#">Калькулятор</a></li>
-                <li class="nav_item"><a href="#">Фото домов</a></li>
-                <li class="nav_item"><a href="#">3D-конфигуратор</a></li>
-                <li class="nav_item"><a href="#">Строителю</a></li>
-                <li class="nav_item"><a href="#">Мотнаж</a></li>
-              </ul>
-            </nav>
-            <div class="footer_hotline">
-              <span class="hotline_text">горячая линия</span>
-              <span class="hotline_phone">8 800 600 0565</span>
-            </div>
+            </li>
+          </ul>
+          <div class="middle_right_content">
+            <button>Интернет-магазин</button>
+            <button>Точки продаж</button>
           </div>
-          <div class="footer_middle_content">
-            <div class="middle_left_content">
+        </div>
+        <div class="footer_bottom_content">
+          <span class="bottom_left_content"
+            >© Корпорация ТЕХНОНИКОЛЬ, 2010 — 2023. Все права защищены. Правовая
+            информация.
+          </span>
+          <span class="bottom_right_content"> Разработка сайта — MINISOL </span>
+        </div>
+      </div>
+    </footer>
+    <footer class="footer_media">
+      <div class="container">
+        <div class="footer_media_top">
+          <div class="footer_title">
+            <a href="#">
+              <img src="./images/header/Logo.svg" alt="Logo" />
+            </a>
+          </div>
+          <div class="media_top_content">
+            <div class="top_left_content">
               <button>Официальный сайт</button>
               <button>Проекты корпорации</button>
+              <div class="footer_hotline">
+                <span class="hotline_text">горячая линия</span>
+                <span class="hotline_phone">8 800 600 0565</span>
+              </div>
             </div>
-            <ul class="middle_links">
-              <li class="link">
-                <a href="#">
-                  <img src="./images/footer/Youtube.svg" alt="Youtube" />
-                </a>
-              </li>
-              <li class="link">
-                <a href="#">
-                  <img src="./images/footer/Rutube.svg" alt="Rutube" />
-                </a>
-              </li>
-              <li class="link">
-                <a href="#">
-                  <img src="./images/footer/Zen.svg" alt="Zen" />
-                </a>
-              </li>
-              <li class="link">
-                <a href="#">
-                  <img src="./images/footer/Telegram.svg" alt="Telegram" />
-                </a>
-              </li>
-            </ul>
-            <div class="middle_right_content">
-              <button>Интернет-магазин</button>
-              <button>Точки продаж</button>
+            <div class="top_middle_content">
+              <nav>
+                <ul class="footer_nav">
+                  <li class="nav_item"><a href="#">Коллекции</a></li>
+                  <li class="nav_item"><a href="#">Покупателю</a></li>
+                  <li class="nav_item"><a href="#">Калькулятор</a></li>
+                  <li class="nav_item"><a href="#">Фото домов</a></li>
+                </ul>
+              </nav>
             </div>
-          </div>
-          <div class="footer_bottom_content">
-            <span class="bottom_left_content"
-              >© Корпорация ТЕХНОНИКОЛЬ, 2010 — 2023. Все права защищены.
-              Правовая информация.
-            </span>
-            <span class="bottom_right_content">
-              Разработка сайта — MINISOL
-            </span>
+            <div class="top_right_content">
+              <nav>
+                <ul class="footer_nav">
+                  <li class="nav_item"><a href="#">3D-конфигуратор</a></li>
+                  <li class="nav_item"><a href="#">Строителю</a></li>
+                  <li class="nav_item"><a href="#">Мотнаж</a></li>
+                </ul>
+              </nav>
+            </div>
           </div>
         </div>
-      </footer>
-      <footer class="footer_media">
-        <div class="container">
-          <div class="footer_media_top">
-            <div class="footer_title">
+        <div class="footer_middle_content">
+          <ul class="middle_links">
+            <li class="link">
               <a href="#">
-                <img src="./images/header/Logo.svg" alt="Logo" />
+                <img src="./images/footer/Youtube.svg" alt="Youtube" />
               </a>
-            </div>
-            <div class="media_top_content">
-              <div class="top_left_content">
-                <button>Официальный сайт</button>
-                <button>Проекты корпорации</button>
-                <div class="footer_hotline">
-                  <span class="hotline_text">горячая линия</span>
-                  <span class="hotline_phone">8 800 600 0565</span>
-                </div>
-              </div>
-              <div class="top_middle_content">
-                <nav>
-                  <ul class="footer_nav">
-                    <li class="nav_item"><a href="#">Коллекции</a></li>
-                    <li class="nav_item"><a href="#">Покупателю</a></li>
-                    <li class="nav_item"><a href="#">Калькулятор</a></li>
-                    <li class="nav_item"><a href="#">Фото домов</a></li>
-                  </ul>
-                </nav>
-              </div>
-              <div class="top_right_content">
-                <nav>
-                  <ul class="footer_nav">
-                    <li class="nav_item"><a href="#">3D-конфигуратор</a></li>
-                    <li class="nav_item"><a href="#">Строителю</a></li>
-                    <li class="nav_item"><a href="#">Мотнаж</a></li>
-                  </ul>
-                </nav>
-              </div>
-            </div>
-          </div>
-          <div class="footer_middle_content">
-            <ul class="middle_links">
-              <li class="link">
-                <a href="#">
-                  <img src="./images/footer/Youtube.svg" alt="Youtube" />
-                </a>
-              </li>
-              <li class="link">
-                <a href="#">
-                  <img src="./images/footer/Rutube.svg" alt="Rutube" />
-                </a>
-              </li>
-              <li class="link">
-                <a href="#">
-                  <img src="./images/footer/Zen.svg" alt="Zen" />
-                </a>
-              </li>
-              <li class="link">
-                <a href="#">
-                  <img src="./images/footer/Telegram.svg" alt="Telegram" />
-                </a>
-              </li>
-            </ul>
-            <div class="middle_right_content">
-              <button>Интернет-магазин</button>
-              <button>Точки продаж</button>
-            </div>
-          </div>
-          <div class="footer_bottom_content">
-            <div class="bottom_left_content">
-              © Корпорация ТЕХНОНИКОЛЬ, 2010 — 2023. Все права защищены.
-              Правовая информация.
-            </div>
-            <div class="bottom_right_content">Разработка сайта — MINISOL</div>
+            </li>
+            <li class="link">
+              <a href="#">
+                <img src="./images/footer/Rutube.svg" alt="Rutube" />
+              </a>
+            </li>
+            <li class="link">
+              <a href="#">
+                <img src="./images/footer/Zen.svg" alt="Zen" />
+              </a>
+            </li>
+            <li class="link">
+              <a href="#">
+                <img src="./images/footer/Telegram.svg" alt="Telegram" />
+              </a>
+            </li>
+          </ul>
+          <div class="middle_right_content">
+            <button>Интернет-магазин</button>
+            <button>Точки продаж</button>
           </div>
         </div>
-      </footer>
-    </main>
+        <div class="footer_bottom_content">
+          <div class="bottom_left_content">
+            © Корпорация ТЕХНОНИКОЛЬ, 2010 — 2023. Все права защищены. Правовая
+            информация.
+          </div>
+          <div class="bottom_right_content">Разработка сайта — MINISOL</div>
+        </div>
+      </div>
+    </footer>
   </body>
-  <script src="./js/slider.js"></script>
 </html>

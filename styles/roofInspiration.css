@@ -63,7 +63,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1430px) {
     .roof_inspiration {
         margin-bottom: 100px;
     }
@@ -89,7 +89,7 @@
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 700px) {
     .roof_inspiration {
         margin-bottom: 70px;
     }

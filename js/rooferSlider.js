@@ -1,14 +1,13 @@
-class Slider {
+class RooferSlider {
   constructor(slider) {
     this.slider = slider;
     this.sliderItems = this.slider.querySelector(".slider_items");
-    this.sliderTrack = this.slider.getElementById(".slider_track");
-    this.slides = this.slider.getElementById(".slider_card");
+    this.sliderTrack = this.slider.querySelector(".slider_track");
+    this.slides = this.slider.querySelectorAll(".slider_card");
     this.arrows = this.slider.querySelector(".slider_menu");
     this.prev = this.slider.querySelector(".prev");
     this.next = this.slider.querySelector(".next");
-    this.slideGap = this.slider.offsetWidth > 320 ? 60 : 0;
-    this.slideWidth = this.slides[0].offsetWidth + this.slideGap;
+    this.slideWidth = this.slides[0].offsetWidth;
     this.slideIndex = 0;
     this.maxIndex =
       this.slides.length -
@@ -44,30 +43,32 @@ class Slider {
   }
 }
 
-const roofSlider = new Slider(document.querySelector(".slider_gallery"));
+const rooferSlider = new RooferSlider(
+  document.getElementById("best_roofer_slider"),
+);
 
-roofSlider.createSliderItems();
+rooferSlider.createSliderItems();
 
-roofSlider.arrows.addEventListener("click", function (event) {
+rooferSlider.arrows.addEventListener("click", function (event) {
   let target = event.target;
 
   if (target.classList.contains("next")) {
-    roofSlider.slideIndex++;
-    roofSlider.activeItem(roofSlider.slideIndex);
-    if (roofSlider.slideIndex > roofSlider.maxIndex) {
-      roofSlider.slideIndex = 0;
-      roofSlider.activeItem(roofSlider.slideIndex);
+    rooferSlider.slideIndex++;
+    rooferSlider.activeItem(rooferSlider.slideIndex);
+    if (rooferSlider.slideIndex > rooferSlider.maxIndex) {
+      rooferSlider.slideIndex = 0;
+      rooferSlider.activeItem(rooferSlider.slideIndex);
     }
   } else if (target.classList.contains("prev")) {
-    if (roofSlider.slideIndex > 0) {
-      roofSlider.slideIndex--;
-      roofSlider.activeItem(roofSlider.slideIndex);
-    } else if (roofSlider.slideIndex === 0) {
-      roofSlider.slideIndex = roofSlider.maxIndex;
-      roofSlider.activeItem(roofSlider.slideIndex);
+    if (rooferSlider.slideIndex > 0) {
+      rooferSlider.slideIndex--;
+      rooferSlider.activeItem(rooferSlider.slideIndex);
+    } else if (rooferSlider.slideIndex === 0) {
+      rooferSlider.slideIndex = rooferSlider.maxIndex;
+      rooferSlider.activeItem(rooferSlider.slideIndex);
     }
   } else {
     return;
   }
-  roofSlider.slide();
+  rooferSlider.slide();
 });

@@ -110,7 +110,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1430px) {
     .roof_estimate {
         margin-bottom: 90px;
     }
@@ -152,7 +152,7 @@
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 700px) {
     .roof_estimate {
         margin-bottom: 44px;
     }

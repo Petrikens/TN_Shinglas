@@ -44,7 +44,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1430px) {
     .roof_harmony {
         margin-bottom: 100px;
     }
@@ -66,7 +66,7 @@
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 700px) {
     .roof_harmony {
         margin-bottom: 80px;
     }

@@ -58,14 +58,14 @@ button {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1430px) {
   .container {
     max-width: 668px;
     margin: 0 auto;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 700px) {
   .container {
     max-width: 280px;
     margin: 0 auto;

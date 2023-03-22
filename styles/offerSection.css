@@ -67,7 +67,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1430px) {
     .offer_section {
         margin-bottom: 87px;
     }
@@ -99,7 +99,7 @@
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 700px) {
     .offer_section {
         margin-bottom: 75px;
     }

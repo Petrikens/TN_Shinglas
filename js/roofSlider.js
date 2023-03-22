@@ -2,12 +2,12 @@ class Slider {
   constructor(slider) {
     this.slider = slider;
     this.sliderItems = this.slider.querySelector(".slider_items");
-    this.sliderTrack = this.slider.getElementById(".slider_track");
-    this.slides = this.slider.getElementById(".slider_card");
+    this.sliderTrack = this.slider.querySelector(".slider_track");
+    this.slides = this.slider.querySelectorAll(".slider_card");
     this.arrows = this.slider.querySelector(".slider_menu");
     this.prev = this.slider.querySelector(".prev");
     this.next = this.slider.querySelector(".next");
-    this.slideGap = this.slider.offsetWidth > 320 ? 60 : 0;
+    this.slideGap = this.slider.offsetWidth > 700 ? 60 : 0;
     this.slideWidth = this.slides[0].offsetWidth + this.slideGap;
     this.slideIndex = 0;
     this.maxIndex =
