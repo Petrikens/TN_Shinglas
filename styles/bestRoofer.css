@@ -102,7 +102,7 @@
     }
 }
 
-@media screen and (max-width: 1430px) {
+@media screen and (max-width: 1500px) {
     .best_roofer {
         margin-left: 0px;
         margin-bottom: 150px;
@@ -110,13 +110,13 @@
     }
 
     .best_roofer_slider {
-        width: 666px;
+        width: 650px;
         height: 300px;
         margin-bottom: 40px;
     }
 
     .best_roofer_slider .slider_list {
-        width: 666px;
+        width: 650px;
         height: 300px;
     }
 
@@ -125,12 +125,12 @@
     }
 
     .best_roofer_slider .slider_card {
-        width: 666px;
+        width: 650px;
         height: 300px;
     }
 
     .best_roofer_slider .article_text {
-        width: 666px;
+        width: 650px;
         margin-bottom: 55px;
     }
 
@@ -138,6 +138,29 @@
         display: none;
     }
 
+
+    .article_title_text {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .best_roofer_left_content .article_title_text {
+        width: 100%;
+        margin-bottom: 37px;
+    }
+
+    .best_roofer_left_content .slider_menu {
+        display: none;
+    }
+
+    .best_roofer_right_content .slider_menu {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
     .best_roofer_right_content {
         width: 644px;
         height: 393px;
@@ -158,33 +181,6 @@
         height: 240px;
     }
 
-    .best_roofer_left_content {
-        padding: 0px 50px;
-    }
-
-    .article_title_text {
-        font-size: 40px;
-        line-height: 40px;
-    }
-
-    .best_roofer_left_content .article_title_text {
-        width: 100%;
-        margin-bottom: 37px;
-    }
-
-    .best_roofer_left_content .article_text {
-        width: 650px;
-        margin-bottom: 55px;
-    }
-
-    .best_roofer_left_content .slider_menu {
-        display: none;
-    }
-
-    .best_roofer_right_content .slider_menu {
-        display: flex;
-        justify-content: center;
-    }
 }
 
 @media screen and (max-width: 700px) {
