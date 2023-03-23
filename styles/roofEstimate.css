@@ -136,6 +136,7 @@
     .roof_cards {
         gap: 25px;
         margin-bottom: 50px;
+        width: 788px;
     }
 
     .steps_controller {
@@ -179,6 +180,7 @@
         margin-bottom: 35px;
         gap: 20px;
         justify-content: center;
+        width: 100%;
 
     }
 

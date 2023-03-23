@@ -1,9 +1,12 @@
 .best_roofer {
-    margin-left: 150px;
+    /* margin-left: 150px; */
+    margin-bottom: 130px;
+}
+
+.best_roofer .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 130px;
 }
 
 .best_roofer_slider {
@@ -51,6 +54,7 @@
     width: 1179px;
     height: 720px;
     position: relative;
+    margin-left: 220px;
 }
 
 .roofers_img {
@@ -79,13 +83,14 @@
 
 @media screen and (max-width: 1600px) {
     .best_roofer {
-        margin-left: 100px;
+        /* margin-left: 100px; */
         margin-bottom: 80px;
     }
 
     .best_roofer_right_content {
         width: 937px;
         height: 572px;
+        margin-left: 200px;
     }
 
     .roofers_img {
@@ -102,11 +107,33 @@
     }
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1430px) {
     .best_roofer {
-        margin-left: 0px;
         margin-bottom: 150px;
+    }
+
+    .best_roofer .container {
         flex-direction: column;
+    }
+
+    .best_roofer_right_content {
+        width: 650px;
+        height: 393px;
+        position: relative;
+        margin-left: 200px;
+    }
+
+    .roofers_img {
+        width: 650px;
+        height: 393px;
+        margin-bottom: 30px;
+    }
+
+    .international_award_block {
+        top: 84px;
+        left: -65px;
+        width: 240px;
+        height: 240px;
     }
 
     .best_roofer_slider {
@@ -138,7 +165,6 @@
         display: none;
     }
 
-
     .article_title_text {
         font-size: 40px;
         line-height: 40px;
@@ -153,32 +179,10 @@
         display: none;
     }
 
-    .best_roofer_right_content .slider_menu {
+    .best_roofer_right_content + .slider_menu {
         display: flex;
         justify-content: center;
         margin-top: 20px;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    .best_roofer_right_content {
-        width: 644px;
-        height: 393px;
-        position: relative;
-        margin-left: auto;
-    }
-
-    .roofers_img {
-        width: 644px;
-        height: 393px;
-        margin-bottom: 30px;
-    }
-
-    .international_award_block {
-        top: 84px;
-        left: -65px;
-        width: 240px;
-        height: 240px;
     }
 
 }
