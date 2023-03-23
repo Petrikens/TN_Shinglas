@@ -1,6 +1,7 @@
 .header {
     height: 64px;
     background-color: #363636;
+    position: relative;
 }
 
 .header_wrapper {
@@ -90,6 +91,10 @@
     display: block;
 }
 
+.navbar_item:hover body {
+    display: none;
+}
+
 .navbar_item:hover img:first-child {
     display: none;
 }
@@ -115,7 +120,8 @@
 }
 
 .city_hover_img,
-.like_hover_img {
+.like_hover_img,
+.busket_hover_img {
     display: none;
 }
 
@@ -148,27 +154,105 @@
 .basket_button:hover {
     background: #E30613;
     border: 1px solid #E30613;
-
 }
 
 .basket_button img {
     margin-right: 15px;
 }
 
+/* BURGER BUTTON */
 .burger_menu {
     display: none;
     width: 50px;
     height: 50px;
     background: #E30613;
-    gap: 5px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 .burger_menu_layer {
     width: 20px;
-    border: 1px solid #FFFFFF;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 4px;
+    transform: translate(-50%, -50%);
+    background-color: #FFFFFF;
+    transition: all 0.3s ease-in-out;
+}
+
+.burger_menu .burger_menu_layer:nth-of-type(2) {
+    top: calc(50% - 5px);
+}
+
+.burger_menu .burger_menu_layer:nth-of-type(3) {
+    top: calc(50% + 5px);
+}
+
+.burger_menu.active .burger_menu_layer:nth-of-type(1) {
+    display: none;
+}
+
+.burger_menu.active .burger_menu_layer:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(45deg);
+}
+
+.burger_menu.active .burger_menu_layer:nth-of-type(3) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(-45deg);
+}
+
+/* MOBILE MENU */
+.mobile_menu {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background: #F1F1F1;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.5s;
+}
+
+.mobile_menu.active {
+    transform: translateX(0);
+}
+
+.mobile_menu .navbar_item {
+    height: 50px;
+    color: #000000;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+}
+
+.mobile_menu .navbar_content img {
+    right: 10px;
+    top: 22px;
+}
+
+.mobile_menu .navbar_content img:last-child {
+    display: block;
+}
+
+.mobile_menu .dropdown_content {
+    top: 50px;
+    min-width: 200px;
+
+}
+
+.mobile_menu .dropdown_content a {
+    padding: 10px 0px 10px 20px;
+    font-size: 14px;
+    line-height: 18px;
 }
 
 @media screen and (max-width: 1600px) {
@@ -228,7 +312,7 @@
         justify-content: space-between;
     }
 
-    .header nav {
+    .header_left nav {
         display: none;
     }
 
@@ -267,6 +351,10 @@
         display: flex;
     }
 
+    .mobile_menu {
+        display: none;
+    }
+
     .header_title {
         padding: 0 38px 0 20px;
     }
@@ -291,11 +379,27 @@
         border: none;
         margin-right: 30px;
         padding: 0px;
-
     }
 
     .basket_button span {
         display: none;
+    }
+
+    .basket_button:hover {
+        background: transparent;
+        border: none;
+    }
+
+    .basket_button:hover .busket_img {
+        display: none;
+    }
+
+    .basket_button:hover .busket_hover_img {
+        display: block;
+    }
+
+    .basket_button img {
+        margin-right: 15px;
     }
 
     .burger_menu {

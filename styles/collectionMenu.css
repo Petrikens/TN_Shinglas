@@ -1,0 +1,321 @@
+.collection_menu {
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    background: #FFFFFF;
+    z-index: 10;
+    top: 64px;
+    left: 0;
+    display: none;
+}
+
+.collection_menu .container {
+    padding: 120px 0 110px 0;
+    font-family: 'IBM Plex Sans';
+    display: flex;
+}
+
+.collection_left_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.best_roofer_banner {
+    position: relative;
+    width: 825px;
+    top: 9px;
+}
+
+.best_roofer_banner .goto_wrapper {
+    position: absolute;
+    bottom: 76px;
+    right: 31px;
+    z-index: 2;
+}
+
+.best_roofer_banner .goto_text {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.best_roofer_banner .goto_button {
+    width: 48px;
+    height: 48px;
+    background: #E30613;
+}
+
+.roofer_banner_img {
+    width: 825px;
+    height: 200px;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+}
+
+.roofer_banner_polygon {
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+    z-index: 1;
+    height: 198px;
+}
+
+.promo_banner {
+    position: absolute;
+    width: 220px;
+    height: 512px;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+    bottom: 0;
+    right: 0;
+}
+
+.promo_banner_info {
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.promo_banner_title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+}
+
+.promo_banner_subtitle {
+    font-size: 11px;
+    line-height: 14px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.promo_banner_info .goto_text {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    margin-right: 14px;
+}
+
+.bold_goto_text {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 22px;
+}
+
+.promo_banner_info .goto_button {
+    width: 32px;
+    height: 32px;
+    background: #E30613;
+}
+
+
+.collections {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 128px;
+}
+
+.collection_card {
+    width: 200px;
+    height: fit-content;
+}
+
+.collection_img {
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.collection_img img:last-child {
+    display: none;
+}
+
+.collection_img:hover img:first-child {
+    display: none;
+}
+
+.collection_img:hover img:last-child {
+    display: block;
+}
+
+.collection_info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.collection_name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    position: relative;
+}
+
+.collection_name:hover {
+    color: #E30613;
+}
+
+.roof_materials_item:hover {
+    color: #E30613;
+}
+
+.facade_materials_item:hover {
+    color: #E30613;
+}
+
+.collection_name:hover .select_item {
+    display: flex;
+}
+
+.roof_materials_item:hover .select_item {
+    display: flex;
+}
+
+.facade_materials_item:hover .select_item {
+    display: flex;
+}
+
+.select_item {
+    position: absolute;
+    left: -30px;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E30613;
+    display: none;
+}
+
+.collection_price {
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+}
+
+.collection_right_content {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    align-items: center;
+    padding-left: 180px;
+}
+
+.roof_materials_title,
+.facade_materials_title {
+    width: 180px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.roof_materials_items,
+.facade_materials_items {
+    width: 256px;
+}
+
+.roof_materials_item,
+.facade_materials_item {
+    font-size: 16px;
+    line-height: 35px;
+    letter-spacing: 0.05em;
+    position: relative;
+}
+
+.roof_materials_item .select_item,
+.facade_materials_item .select_item {
+    top: 8px;
+}
+
+@media screen and (max-width: 1650px) {
+    .collections {
+        gap: 81px;
+    }
+
+    .collection_right_content {
+        padding-left: 80px;
+    }
+}
+
+@media screen and (max-width: 1430px) {
+    .collection_menu .container {
+        max-width: 1130px;
+        padding: 40px 0 70px 0;
+    }
+
+    .collections {
+        gap: 97px;
+    }
+
+    .best_roofer_banner {
+        display: none;
+    }
+
+    .promo_banner {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    .collection_menu {
+        top: 100px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .collection_menu .container {
+        max-width: 668px;
+    }
+
+    .collections {
+        gap: 34px;
+    }
+
+    .collection_card {
+        width: 165px;
+    }
+
+    .collection_name,
+    .collection_price {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .roof_materials_item,
+    .facade_materials_item {
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    .roof_materials_items,
+    .facade_materials_items {
+        width: 224px;
+    }
+
+    .select_item {
+        width: 16px;
+        height: 16px;
+        left: -25px;
+    }
+}
