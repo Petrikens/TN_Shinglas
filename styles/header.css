@@ -45,19 +45,49 @@
     position: relative;
 }
 
-.navbar_item img {
+.dropdown_content {
+    display: none;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    background-color: #FFFFFF;
+    min-width: 300px;
+    z-index: 1;
+}
+
+.dropdown_content a {
+    font-family: 'IBM Plex Sans';
+    color: black;
+    padding: 11px 0px 11px 35px;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.dropdown_content a:hover {
+    background-color: #F1F1F1;
+}
+
+.navbar_content img {
     position: absolute;
     top: 30px;
     right: 15px;
 }
 
-.navbar_item img:last-child {
+.navbar_content img:last-child {
     display: none;
 }
 
 .navbar_item:hover {
     background: #FFFFFF;
     color: #000000;
+}
+
+.navbar_item:hover .dropdown_content {
+    display: block;
 }
 
 .navbar_item:hover img:first-child {
@@ -170,10 +200,8 @@
         padding-right: 25px;
     }
 
-    .navbar_item img {
-        position: absolute;
-        top: 30px;
-        right: 15px;
+    .navbar_content img {
+        right: 10px;
     }
 
     .header_right {

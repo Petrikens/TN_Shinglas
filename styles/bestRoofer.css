@@ -62,7 +62,7 @@
     height: 720px;
 }
 
-.best_roofer_right_content .slider_menu {
+.best_roofer_right_content + .slider_menu {
     display: none;
     margin-bottom: 0;
 }
