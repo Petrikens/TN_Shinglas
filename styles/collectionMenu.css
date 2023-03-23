@@ -9,6 +9,10 @@
     display: none;
 }
 
+.active_collection_menu {
+    display: block;
+}
+
 .collection_menu .container {
     padding: 120px 0 110px 0;
     font-family: 'IBM Plex Sans';
