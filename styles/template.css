@@ -14,3 +14,14 @@
     font-size: 70px;
     line-height: 91px;
 }
+
+a {
+    color: blue;
+    text-decoration: underline;
+}
+
+ul,
+li {
+    list-style-type: disc;
+
+}
