@@ -1,7 +1,7 @@
 let menuBtn = document.querySelector(".burger_menu");
 let menu = document.querySelector(".mobile_menu");
 let menuItem = document.querySelectorAll(".navbar_item");
-let galleryItem = document.querySelectorAll(".gallery");
+let colectionItem = document.querySelectorAll(".collection");
 let collectionMenu = document.querySelector(".collection_menu");
 
 menuBtn.addEventListener("click", function () {
@@ -12,15 +12,14 @@ menuBtn.addEventListener("click", function () {
 menuItem.forEach(function (menuItem) {
   menuItem.addEventListener("click", function () {
     menuBtn.classList.toggle("active");
-    // menu.classList.toggle("active");
   });
 });
 
-galleryItem.forEach(function (galleryItem) {
-  galleryItem.addEventListener("mouseover", function () {
+colectionItem.forEach(function (colectionItem) {
+  colectionItem.addEventListener("mouseover", function () {
     collectionMenu.classList.add("active_collection_menu");
   });
-  galleryItem.addEventListener("mouseout", function () {
+  colectionItem.addEventListener("mouseout", function () {
     collectionMenu.classList.remove("active_collection_menu");
   });
 });
