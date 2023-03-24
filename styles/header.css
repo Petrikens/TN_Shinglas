@@ -217,12 +217,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateX(100%);
+    /* transform: translateX(100%); */
     transition: transform 0.5s;
+    display: none;
 }
 
 .mobile_menu.active {
-    transform: translateX(0);
+    /* transform: translateX(0); */
+    display: flex;
 }
 
 .mobile_menu .navbar_item {

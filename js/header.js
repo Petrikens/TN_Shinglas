@@ -12,7 +12,7 @@ menuBtn.addEventListener("click", function () {
 menuItem.forEach(function (menuItem) {
   menuItem.addEventListener("click", function () {
     menuBtn.classList.toggle("active");
-    menu.classList.toggle("active");
+    // menu.classList.toggle("active");
   });
 });
 
