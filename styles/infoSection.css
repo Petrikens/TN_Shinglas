@@ -32,6 +32,11 @@
     height: 760px;
 }
 
+.info_block_img img {
+    width: 810px;
+    height: 760px;
+}
+
 .info_block_text {
     gap: 35px;
     display: flex;
@@ -55,7 +60,7 @@
     display: none;
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1680px) {
     .info_section {
         margin-bottom: 77px;
     }
@@ -64,7 +69,7 @@
         height: 810px;
     }
 
-    .info_block_img {
+    .info_block_img img {
         width: 649px;
         height: 608px;
     }
@@ -81,7 +86,66 @@
     }
 }
 
-@media screen and (max-width: 1430px) {
+@media screen and (max-width: 1450px) {
+    .info_block_text {
+        max-width: 550px;
+        gap: 20px;
+    }
+
+    .info_text {
+        max-width: 550px;
+        gap: 15px;
+    }
+
+    .article_subtitle {
+        font-size: 38px;
+        line-height: 48px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .info_block_text {
+        max-width: 450px;
+        gap: 15px;
+    }
+
+    .info_text {
+        max-width: 450px;
+        gap: 10px;
+    }
+
+    .article_subtitle {
+        font-size: 38px;
+        line-height: 44px;
+    }
+
+    .info_block_img {
+        width: 610px;
+        height: 608px;
+    }
+
+    .info_block_img img {
+        width: 610px;
+        height: 608px;
+    }
+
+    .info_text .article_text {
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .info_block_img {
+        width: 570px;
+    }
+
+    .info_block_img img {
+        width: 570px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
     .info_section {
         margin-bottom: 45px;
     }
@@ -106,6 +170,32 @@
         width: 768px;
         height: 719px;
         margin-bottom: 35px;
+
+    }
+
+    .info_block_img img {
+        width: 768px;
+        height: 719px;
+    }
+
+    .info_text .article_text {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .article_subtitle {
+        font-size: 40px;
+        line-height: 52px;
+    }
+
+    .info_block_text {
+        max-width: 668px;
+        gap: 35px;
+    }
+
+    .info_text {
+        max-width: 668px;
+        gap: 30px;
     }
 }
 
@@ -119,6 +209,12 @@
     }
 
     .info_block_img {
+        width: 320px;
+        height: 300px;
+        margin-bottom: 20px;
+    }
+
+    .info_block_img img {
         width: 320px;
         height: 300px;
         margin-bottom: 20px;

@@ -122,6 +122,32 @@
 
 @media screen and (max-width: 1430px) {
     .left_banner {
+        width: 55vw;
+        height: 580px;
+    }
+
+    .right_banner {
+        width: 45vw;
+        height: 580px;
+    }
+
+    .banner_info {
+        margin: 335px 0px 0px 75px;
+    }
+
+    .banner_menu_highlight {
+        width: 250px;
+    }
+
+    .banner_menu_text {
+        font-size: 14px;
+        line-height: 18px;
+        max-width: 250px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .left_banner {
         width: 60vw;
         height: 466px;
     }
@@ -148,9 +174,7 @@
     }
 
     .banner_menu {
-        /* left: 48px; */
         bottom: 17px;
-        /* padding: 0 50px; */
     }
 
     .banner_menu_highlight {

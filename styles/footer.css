@@ -111,7 +111,7 @@
     justify-content: space-between;
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1680px) {
     .footer_top_content {
         height: 98px;
     }
@@ -135,7 +135,27 @@
     }
 }
 
-@media screen and (max-width: 1430px) {
+@media screen and (max-width: 1450px) {
+    .footer_nav {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .middle_links {
+        gap: 40px;
+    }
+
+    .footer_nav {
+        gap: 10px;
+    }
+
+    .hotline_phone {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
     .footer {
         display: none;
     }

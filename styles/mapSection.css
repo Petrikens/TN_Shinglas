@@ -79,7 +79,7 @@
     text-transform: uppercase;
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1680px) {
     .map {
         height: 604px;
         background-image: url('../images/mapSection/Map1600.svg');
@@ -87,12 +87,10 @@
 
     .map_buttons {
         gap: 100px;
-        /* top: 253px;
-        left: 390px; */
     }
 }
 
-@media screen and (max-width: 1430px) {
+@media screen and (max-width: 1050px) {
     .map {
         height: 600px;
         background-image: url('../images/mapSection/Map768.png');
@@ -105,8 +103,6 @@
     .map_buttons {
         flex-direction: column;
         gap: 30px;
-        /* top: 200px;
-        left: 200px; */
     }
 }
 

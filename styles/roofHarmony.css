@@ -24,7 +24,7 @@
     display: none;
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1680px) {
     .roof_harmony {
         margin-bottom: 100px;
     }
@@ -44,7 +44,43 @@
     }
 }
 
-@media screen and (max-width: 1430px) {
+@media screen and (max-width: 1450px) {
+    .harmony_cards {
+        gap: 25px 25px;
+    }
+
+    .harmony_card,
+    .harmony_card img {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .harmony_cards {
+        gap: 20px 20px;
+    }
+
+    .harmony_card,
+    .harmony_card img {
+        width: 353px;
+        height: 353px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .harmony_cards {
+        gap: 10px 10px;
+    }
+
+    .harmony_card,
+    .harmony_card img {
+        width: 343px;
+        height: 343px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
     .roof_harmony {
         margin-bottom: 100px;
     }

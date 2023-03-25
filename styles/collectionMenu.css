@@ -260,6 +260,11 @@
     .collection_right_content {
         padding-left: 80px;
     }
+
+    .roofer_banner_polygon {
+        bottom: 9px;
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 1430px) {

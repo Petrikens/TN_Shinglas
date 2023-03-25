@@ -39,7 +39,7 @@
     border-bottom-right-radius: 5px;
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1680px) {
     .offer_section {
         margin-bottom: 80px;
     }
@@ -67,7 +67,45 @@
     }
 }
 
-@media screen and (max-width: 1430px) {
+@media screen and (max-width: 1450px) {
+    .offer_card {
+        width: 610px;
+        height: 323px;
+    }
+
+    .offer_card_content {
+        width: 295px;
+        gap: 20px;
+        margin-left: 20px;
+    }
+
+    .offer_card_img {
+        width: 290px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .offer_card {
+        width: 540px;
+        height: 323px;
+    }
+
+    .offer_card_content {
+        width: 237px;
+        gap: 5px;
+        margin-left: 10px;
+    }
+
+    .offer_card_title {
+        margin-bottom: 25px;
+    }
+
+    .offer_card_img {
+        width: 279px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
     .offer_section {
         margin-bottom: 87px;
     }
