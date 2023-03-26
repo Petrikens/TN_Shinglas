@@ -176,11 +176,7 @@
     color: #E30613;
 }
 
-.roof_materials_item:hover {
-    color: #E30613;
-}
-
-.facade_materials_item:hover {
+.materials_item:hover {
     color: #E30613;
 }
 
@@ -188,11 +184,7 @@
     display: flex;
 }
 
-.roof_materials_item:hover .select_item {
-    display: flex;
-}
-
-.facade_materials_item:hover .select_item {
+.materials_item:hover + .select_item {
     display: flex;
 }
 
@@ -202,7 +194,6 @@
     width: 19px;
     height: 19px;
     border-radius: 50%;
-    display: flex;
     justify-content: center;
     align-items: center;
     background: #E30613;
@@ -252,13 +243,17 @@
     top: 8px;
 }
 
-@media screen and (max-width: 1650px) {
+@media screen and (max-width: 1680px) {
+    .collection_menu .container {
+        padding: 100px 0 90px 0;
+    }
+
     .collections {
-        gap: 81px;
+        gap: 88px;
     }
 
     .collection_right_content {
-        padding-left: 80px;
+        padding-left: 70px;
     }
 
     .roofer_banner_polygon {
@@ -267,14 +262,17 @@
     }
 }
 
-@media screen and (max-width: 1430px) {
+@media screen and (max-width: 1450px) {
     .collection_menu .container {
-        max-width: 1130px;
-        padding: 40px 0 70px 0;
+        padding: 90px 0 70px 0;
     }
 
     .collections {
-        gap: 97px;
+        gap: 137px;
+    }
+
+    .collection_right_content {
+        padding-left: 120px;
     }
 
     .best_roofer_banner {
@@ -286,17 +284,43 @@
     }
 }
 
-@media screen and (max-width: 1260px) {
+@media screen and (max-width: 1300px) {
+    .collection_menu .container {
+        padding: 50px 0 40px 0;
+    }
+
+    .collections {
+        gap: 72px;
+    }
+
+    .collection_right_content {
+        padding-left: 100px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .collection_menu .container {
+        padding: 40px 0 120px 0;
+    }
+
     .collection_menu {
-        top: 100px;
+        top: 50px;
+        bottom: 80px;
+        height: calc(100vh - 80px - 50px)
     }
 }
 
 @media screen and (max-width: 1150px) {
-    .collection_menu .container {
-        max-width: 668px;
+    .collections {
+        gap: 45px;
     }
 
+    .collection_right_content {
+        padding-left: 80px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
     .collections {
         gap: 34px;
     }
@@ -326,5 +350,23 @@
         width: 16px;
         height: 16px;
         left: -25px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .collection_menu {
+        top: 50px;
+        bottom: 63px;
+        height: calc(100vh - 63px - 50px)
+    }
+
+    .collection_menu .container {
+        padding: 0;
+    }
+
+    .collection_menu .collection_left_content,
+    .collection_menu .collection_right_content {
+        display: none;
     }
 }

@@ -1,0 +1,181 @@
+/* MOBILE MENU */
+.collection_mobile {
+    display: none;
+    flex-direction: column;
+}
+
+.mobile_menu_title {
+    padding: 16px 20px;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    opacity: 0.7;
+}
+
+.collection_mobile_roofs {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile_roof_card {
+    padding: 23px 20px;
+    border-top: 1px solid #E2E2E2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.roof_main_info {
+    display: flex;
+    align-items: center;
+}
+
+.mobile_roof_card_img {
+    margin-right: 30px;
+}
+
+.roof_card_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.roof_name {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+}
+
+.roof_price {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    opacity: 0.7;
+}
+
+.roof_layer_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.roof_layer_info span:last-child {
+    font-size: 10px;
+    line-height: 13px;
+    letter-spacing: 0.05em;
+    color: #888888;
+    opacity: 0.7;
+}
+
+.layer_count {
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: 0.05em;
+    color: #C3C3C3;
+    opacity: 0.7;
+}
+
+.collection_mobile_materials {
+    border-top: 1px solid #E2E2E2;
+    padding: 15px 20px 105px 20px;
+}
+
+.collection_mobile_materials .mobile_menu_title {
+    padding: 0;
+}
+
+.materials_menu {
+    padding-top: 17px;
+    display: flex;
+    align-items: center;
+}
+
+.materials_menu_item {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.materials_menu_img {
+    margin-right: 10px;
+}
+
+.materials_menu_name {
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 12px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+/* МЕНЮ ДЛЯ ВЫБОРА МАТЕРИАЛА КРОВЛИ */
+.roof_materials_mobile,
+.facade_materials_mobile {
+    display: none;
+    flex-direction: column;
+}
+
+.materials_title {
+    padding: 17px 0px 17px 25px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.back_button_block {
+    padding: 14px 0px 14px 20px;
+    background: #F1F1F1;
+}
+
+.back_button_block button {
+    display: flex;
+    align-items: center;
+}
+
+.back_button_block button img {
+    margin-right: 20px;
+}
+
+.back_button_block button span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+}
+
+@media screen and (max-width: 700px) {
+    .collection_mobile {
+        display: flex;
+    }
+
+    .select_item {
+        top: 25px !important;
+        left: 15px;
+    }
+
+    .roof_materials_items,
+    .facade_materials_items {
+        width: 100%;
+        padding-bottom: 63px;
+    }
+
+    .roof_materials_item,
+    .facade_materials_item {
+        padding: 20px 0px 20px 45px;
+        border-top: 1px solid #E2E2E2;
+    }
+
+    .roof_materials_item:last-child {
+        border-bottom: 1px solid #E2E2E2;
+    }
+
+    .facade_materials_item:last-child {
+        border-bottom: 1px solid #E2E2E2;
+    }
+
+    .materials_item {
+        font-size: 14px;
+        letter-spacing: 0.05em;
+    }
+}

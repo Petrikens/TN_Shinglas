@@ -51,10 +51,6 @@
     align-items: center;
 }
 
-.chosen_roof {
-    background-color: #F9F7F6;
-}
-
 .mark_roof {
     position: absolute;
     top: -5px;

@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="./styles/goToButton.css" />
     <script src="./js/roofSlider.js" defer></script>
     <script src="./js/rooferSlider.js" defer></script>
-    <script src="./js/header.js" defer></script>
+    <script src="./js/navigator.js" defer></script>
+    <script src="./js/banners.js" defer></script>
+    <script src="./js/roofEstimate.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -36,7 +38,7 @@
           </div>
           <nav>
             <ul class="header_navbar">
-              <li class="navbar_item collection">
+              <li class="navbar_item" id="collection">
                 <div class="navbar_content">
                   <span>Коллекции</span>
                   <img src="./images/header/Arrow-down.svg" alt="Arrow" />
@@ -148,608 +150,6 @@
           </ul> -->
         </div>
       </div>
-      <nav class="mobile_menu">
-        <ul class="header_navbar">
-          <li class="navbar_item collection">
-            <div class="navbar_content">
-              <span>Коллекции</span>
-              <img
-                src="./images/header/BlackArrowDown.svg"
-                alt="BlackArrowDown"
-              />
-            </div>
-          </li>
-          <li class="navbar_item gallery">
-            <a href="#">Галерея</a>
-          </li>
-          <li class="navbar_item">
-            <div class="navbar_content">
-              <span>Монтаж</span>
-              <img
-                src="./images/header/BlackArrowDown.svg"
-                alt="BlackArrowDown"
-              />
-            </div>
-            <div class="dropdown_content">
-              <a href="#">Найти подрядчика</a>
-              <a href="#">Монтаж крыши</a>
-              <a href="#">Уход за крышей</a>
-              <a href="#">Документация </a>
-              <a href="#">Видео инструкции</a>
-              <a href="#">Часто задаваемые вопросы</a>
-            </div>
-          </li>
-          <li class="navbar_item">
-            <div class="navbar_content">
-              <span>Покупателю</span>
-              <img
-                src="./images/header/BlackArrowDown.svg"
-                alt="BlackArrowDown"
-              />
-            </div>
-            <div class="dropdown_content">
-              <a href="#">Каталоги и сертификаты</a>
-              <a href="#">Бесплатные проекты домов</a>
-              <a href="#">Подбор комплектующих</a>
-              <a href="#">Часто задаваемые вопросы</a>
-              <a href="#">Оформить гарантию</a>
-              <a href="#">Заявить претензию</a>
-              <a href="#">Статьи</a>
-              <a href="#">Задать вопрос</a>
-            </div>
-          </li>
-          <li class="navbar_item">
-            <div class="navbar_content">
-              <span>Строителю</span>
-              <img
-                src="./images/header/BlackArrowDown.svg"
-                alt="BlackArrowDown"
-              />
-            </div>
-            <div class="dropdown_content">
-              <a href="#">Стать партнёром</a>
-              <a href="#">Найти заказы</a>
-              <a href="#">Заказать материалы</a>
-              <a href="#">Вернуть часть стоимости материалов</a>
-              <a href="#">Получить премию «Лучший кровельщик»</a>
-              <a href="#">Предложить идею</a>
-              <a href="#">База знаний</a>
-              <a href="#">Задать вопрос</a>
-            </div>
-          </li>
-        </ul>
-      </nav>
-      <div class="collection_menu">
-        <div class="container">
-          <div class="collection_left_content">
-            <div class="collections">
-              <div class="collection_card">
-                <div class="collection_img">
-                  <a href="#">
-                    <img
-                      src="./images/collectionMenu/Collection1.svg"
-                      alt="Collection1"
-                    />
-                    <img
-                      src="./images/collectionMenu/HoverCollection1.svg"
-                      alt="HoverCollection1"
-                    />
-                  </a>
-                </div>
-                <ul class="collection_info">
-                  <li class="info_item">
-                    <span class="collection_name">
-                      <div class="select_item">
-                        <img
-                          src="./images/collectionMenu/Select.svg"
-                          alt="Select"
-                        />
-                      </div>
-                      <a href="#">Аккорд</a>
-                    </span>
-                    <span class="collection_price">449 ₽/м²</span>
-                  </li>
-                  <li class="info_item">
-                    <span class="collection_name">
-                      <div class="select_item">
-                        <img
-                          src="./images/collectionMenu/Select.svg"
-                          alt="Select"
-                        />
-                      </div>
-                      <a href="#">Болеро</a></span
-                    >
-                    <span class="collection_price">666 ₽/м²</span>
-                  </li>
-                  <li class="info_item">
-                    <span class="collection_name">
-                      <div class="select_item">
-                        <img
-                          src="./images/collectionMenu/Select.svg"
-                          alt="Select"
-                        />
-                      </div>
-                      <a href="#">Фокстрот</a></span
-                    >
-                    <span class="collection_price">871 ₽/м²</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="collection_card">
-                <div class="collection_img">
-                  <a href="#">
-                    <img
-                      src="./images/collectionMenu/Collection2.svg"
-                      alt="Collection1"
-                    />
-                    <img
-                      src="./images/collectionMenu/HoverCollection2.svg"
-                      alt="HoverCollection2"
-                    />
-                  </a>
-                </div>
-                <ul class="collection_info">
-                  <li class="info_item">
-                    <span class="collection_name">
-                      <div class="select_item">
-                        <img
-                          src="./images/collectionMenu/Select.svg"
-                          alt="Select"
-                        />
-                      </div>
-                      <a href="#">Оптима</a></span
-                    >
-                    <span class="collection_price">336 ₽/м²</span>
-                  </li>
-                  <li class="info_item">
-                    <span class="collection_name">
-                      <div class="select_item">
-                        <img
-                          src="./images/collectionMenu/Select.svg"
-                          alt="Select"
-                        />
-                      </div>
-                      <a href="#">Соната</a></span
-                    >
-                    <span class="collection_price">449 ₽/м²</span>
-                  </li>
-                  <li class="info_item">
-                    <span class="collection_name">
-                      <div class="select_item">
-                        <img
-                          src="./images/collectionMenu/Select.svg"
-                          alt="Select"
-                        />
-                      </div>
-                      <a href="#">Сальса</a></span
-                    >
-                    <span class="collection_price">666 ₽/м²</span>
-                  </li>
-                  <li class="info_item">
-                    <span class="collection_name">
-                      <div class="select_item">
-                        <img
-                          src="./images/collectionMenu/Select.svg"
-                          alt="Select"
-                        />
-                      </div>
-                      <a href="#">Самба</a></span
-                    >
-                    <span class="collection_price">871 ₽/м²</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="collection_card">
-                <div class="collection_img">
-                  <a href="#">
-                    <img
-                      src="./images/collectionMenu/Collection3.svg"
-                      alt="Collection1"
-                    />
-                    <img
-                      src="./images/collectionMenu/HoverCollection3.svg"
-                      alt="HoverCollection3"
-                    />
-                  </a>
-                </div>
-                <ul class="collection_info">
-                  <li class="info_item">
-                    <span class="collection_name">
-                      <div class="select_item">
-                        <img
-                          src="./images/collectionMenu/Select.svg"
-                          alt="Select"
-                        />
-                      </div>
-                      <a href="#">Фазенда</a></span
-                    >
-                    <span class="collection_price">466 ₽/м²</span>
-                  </li>
-                  <li class="info_item">
-                    <span class="collection_name">
-                      <div class="select_item">
-                        <img
-                          src="./images/collectionMenu/Select.svg"
-                          alt="Select"
-                        />
-                      </div>
-                      <a href="#">Ранчо</a></span
-                    >
-                    <span class="collection_price">610 ₽/м²</span>
-                  </li>
-                  <li class="info_item">
-                    <span class="collection_name">
-                      <div class="select_item">
-                        <img
-                          src="./images/collectionMenu/Select.svg"
-                          alt="Select"
-                        />
-                      </div>
-                      <a href="#">Кантри</a></span
-                    >
-                    <span class="collection_price">951 ₽/м²</span>
-                  </li>
-                  <li class="info_item">
-                    <span class="collection_name">
-                      <div class="select_item">
-                        <img
-                          src="./images/collectionMenu/Select.svg"
-                          alt="Select"
-                        />
-                      </div>
-                      <a href="#">Джаз</a></span
-                    >
-                    <span class="collection_price">1430 ₽/м²</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="collection_card">
-                <div class="collection_img">
-                  <a href="#">
-                    <img
-                      src="./images/collectionMenu/Collection4.svg"
-                      alt="Collection1"
-                    />
-                    <img
-                      src="./images/collectionMenu/HoverCollection4.svg"
-                      alt="HoverCollection4"
-                    />
-                  </a>
-                </div>
-                <ul class="collection_info">
-                  <li class="info_item">
-                    <span class="collection_name">
-                      <div class="select_item">
-                        <img
-                          src="./images/collectionMenu/Select.svg"
-                          alt="Select"
-                        />
-                      </div>
-                      <a href="#">Модерн</a></span
-                    >
-                    <span class="collection_price">666 ₽/м²</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="collection_card">
-                <div class="collection_img">
-                  <a href="#">
-                    <img
-                      src="./images/collectionMenu/Collection5.svg"
-                      alt="Collection1"
-                    />
-                    <img
-                      src="./images/collectionMenu/HoverCollection5.svg"
-                      alt="HoverCollection5"
-                    />
-                  </a>
-                </div>
-                <ul class="collection_info">
-                  <li class="info_item">
-                    <span class="collection_name">
-                      <div class="select_item">
-                        <img
-                          src="./images/collectionMenu/Select.svg"
-                          alt="Select"
-                        />
-                      </div>
-                      <a href="#">Вестерн</a></span
-                    >
-                    <span class="collection_price">2 614 ₽/м²</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="collection_card">
-                <div class="collection_img">
-                  <a href="#">
-                    <img
-                      src="./images/collectionMenu/Collection6.svg"
-                      alt="Collection1"
-                    />
-                    <img
-                      src="./images/collectionMenu/HoverCollection6.svg"
-                      alt="HoverCollection6"
-                    />
-                  </a>
-                </div>
-                <ul class="collection_info">
-                  <li class="info_item">
-                    <span class="collection_name">
-                      <div class="select_item">
-                        <img
-                          src="./images/collectionMenu/Select.svg"
-                          alt="Select"
-                        />
-                      </div>
-                      <a href="#">Континент</a></span
-                    >
-                    <span class="collection_price">3 776 ₽/м²</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="collection_card">
-                <div class="collection_img">
-                  <a href="#">
-                    <img
-                      src="./images/collectionMenu/Collection7.svg"
-                      alt="Collection1"
-                    />
-                    <img
-                      src="./images/collectionMenu/HoverCollection7.svg"
-                      alt="HoverCollection7"
-                    />
-                  </a>
-                </div>
-                <ul class="collection_info">
-                  <li class="info_item">
-                    <span class="collection_name">
-                      <div class="select_item">
-                        <img
-                          src="./images/collectionMenu/Select.svg"
-                          alt="Select"
-                        />
-                      </div>
-                      <a href="#">Атлантика</a></span
-                    >
-                    <span class="collection_price">3 776 ₽/м²</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="best_roofer_banner">
-              <img
-                class="roofer_banner_img"
-                src="./images/collectionMenu/BestRooferBanner.svg"
-                alt="BestRooferBanner"
-              />
-              <img
-                class="roofer_banner_polygon"
-                src="./images/collectionMenu/RooferBannerPolygon.svg"
-                alt="RooferBannerPolygon"
-              />
-              <div class="goto_wrapper">
-                <p class="goto_text">Подайте заявку</p>
-                <button class="goto_button" type="submit">
-                  <img
-                    src="./images/banners/Arrow-right-hover.svg"
-                    alt="Arrow"
-                  />
-                  <img
-                    src="./images/banners/Arrow-right-hover.svg"
-                    alt="Arrow"
-                  />
-                </button>
-              </div>
-            </div>
-            <div class="promo_banner">
-              <img
-                src="./images/collectionMenu/PromoBanner.svg"
-                alt="PromoBanner"
-              />
-              <div class="promo_banner_info">
-                <div class="promo_banner_title">TN Promo</div>
-                <div class="promo_banner_subtitle">
-                  для профессиональных строителей и розничных точек
-                </div>
-                <div class="goto_wrapper">
-                  <p class="goto_text">
-                    Сканируйте QR-коды и <br />
-                    <span class="bold_goto_text">зарабатывайте</span>
-                  </p>
-                  <button class="goto_button" type="submit">
-                    <img
-                      src="./images/banners/Arrow-right-hover.svg"
-                      alt="Arrow"
-                    />
-                    <img
-                      src="./images/banners/Arrow-right-hover.svg"
-                      alt="Arrow"
-                    />
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="collection_right_content">
-            <div class="roof_materials">
-              <div class="roof_materials_title">
-                Материалы для скатной кровли
-              </div>
-              <ul class="roof_materials_items">
-                <li class="roof_materials_item">
-                  <div class="select_item">
-                    <img
-                      src="./images/collectionMenu/Select.svg"
-                      alt="Select"
-                    />
-                  </div>
-                  <a href="#">Коньково-карнизная черепица</a>
-                </li>
-                <li class="roof_materials_item">
-                  <div class="select_item">
-                    <img
-                      src="./images/collectionMenu/Select.svg"
-                      alt="Select"
-                    />
-                  </div>
-                  <a href="#">Ендовые ковры</a>
-                </li>
-                <li class="roof_materials_item">
-                  <div class="select_item">
-                    <img
-                      src="./images/collectionMenu/Select.svg"
-                      alt="Select"
-                    />
-                  </div>
-                  <a href="#">Кровельные планки и гвозди</a>
-                </li>
-                <li class="roof_materials_item">
-                  <div class="select_item">
-                    <img
-                      src="./images/collectionMenu/Select.svg"
-                      alt="Select"
-                    />
-                  </div>
-                  <a href="#">Антисептики для кровли</a>
-                </li>
-                <li class="roof_materials_item">
-                  <div class="select_item">
-                    <img
-                      src="./images/collectionMenu/Select.svg"
-                      alt="Select"
-                    />
-                  </div>
-                  <a href="#">Антисептик для древесины</a>
-                </li>
-                <li class="roof_materials_item">
-                  <div class="select_item">
-                    <img
-                      src="./images/collectionMenu/Select.svg"
-                      alt="Select"
-                    />
-                  </div>
-                  <a href="#">Огнебиозащита для древесины</a>
-                </li>
-                <li class="roof_materials_item">
-                  <div class="select_item">
-                    <img
-                      src="./images/collectionMenu/Select.svg"
-                      alt="Select"
-                    />
-                  </div>
-                  <a href="#">Подкладочные ковры</a>
-                </li>
-                <li class="roof_materials_item">
-                  <div class="select_item">
-                    <img
-                      src="./images/collectionMenu/Select.svg"
-                      alt="Select"
-                    />
-                  </div>
-                  <a href="#">Снегозадержатели</a>
-                </li>
-                <li class="roof_materials_item">
-                  <div class="select_item">
-                    <img
-                      src="./images/collectionMenu/Select.svg"
-                      alt="Select"
-                    />
-                  </div>
-                  <a href="#">Вентиляция кровли</a>
-                </li>
-                <li class="roof_materials_item">
-                  <div class="select_item">
-                    <img
-                      src="./images/collectionMenu/Select.svg"
-                      alt="Select"
-                    />
-                  </div>
-                  <a href="#">Вентиляция помещений</a>
-                </li>
-                <li class="roof_materials_item">
-                  <div class="select_item">
-                    <img
-                      src="./images/collectionMenu/Select.svg"
-                      alt="Select"
-                    />
-                  </div>
-                  <a href="#">Софиты для подшивки</a>
-                </li>
-                <li class="roof_materials_item">
-                  <div class="select_item">
-                    <img
-                      src="./images/collectionMenu/Select.svg"
-                      alt="Select"
-                    />
-                  </div>
-                  <a href="#">Водосточные системы</a>
-                </li>
-                <li class="roof_materials_item">
-                  <div class="select_item">
-                    <img
-                      src="./images/collectionMenu/Select.svg"
-                      alt="Select"
-                    />
-                  </div>
-                  <a href="#">Композитная черепица</a>
-                </li>
-              </ul>
-            </div>
-            <div class="facade_materials">
-              <div class="facade_materials_title">
-                Материалы для фасада и отделки
-              </div>
-              <ul class="facade_materials_items">
-                <li class="facade_materials_item">
-                  <div class="select_item">
-                    <img
-                      src="./images/collectionMenu/Select.svg"
-                      alt="Select"
-                    />
-                  </div>
-                  <a href="#"> Виниловый сайдинг </a>
-                </li>
-                <li class="facade_materials_item">
-                  <div class="select_item">
-                    <img
-                      src="./images/collectionMenu/Select.svg"
-                      alt="Select"
-                    />
-                  </div>
-                  <a href="#">Фасадная плитка HAUBERK </a>
-                </li>
-                <li class="facade_materials_item">
-                  <div class="select_item">
-                    <img
-                      src="./images/collectionMenu/Select.svg"
-                      alt="Select"
-                    />
-                  </div>
-                  <a href="#">Планкен </a>
-                </li>
-                <li class="facade_materials_item">
-                  <div class="select_item">
-                    <img
-                      src="./images/collectionMenu/Select.svg"
-                      alt="Select"
-                    />
-                  </div>
-                  <a href="#">Вагонка </a>
-                </li>
-                <li class="facade_materials_item">
-                  <div class="select_item">
-                    <img
-                      src="./images/collectionMenu/Select.svg"
-                      alt="Select"
-                    />
-                  </div>
-                  <a href="#">Террасная доска </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
     </header>
     <main>
       <section class="banners_section">
@@ -770,7 +170,7 @@
         <div class="right_banner"></div>
         <ul class="banner_menu">
           <li class="banner_menu_item">
-            <div class="banner_menu_highlight banner_menu_active"></div>
+            <div class="banner_menu_highlight"></div>
             <span class="banner_menu_text">Новый цвет СИЕНА</span>
           </li>
           <li class="banner_menu_item">
@@ -912,7 +312,11 @@
                       <li class="image_chooser_item"></li>
                     </ul>
                     <button class="slider_like_card" type="submit">
-                      <img src="./images/header/Like.svg" alt="Like" />
+                      <img
+                        class="favorite_roof"
+                        src="./images/header/Like.svg"
+                        alt="Like"
+                      />
                     </button>
                   </div>
                   <div class="slider_info">
@@ -943,7 +347,11 @@
                       alt="KontinentRoof"
                     />
                     <button class="slider_like_card" type="submit">
-                      <img src="./images/header/Like.svg" alt="Like" />
+                      <img
+                        class="favorite_roof"
+                        src="./images/header/Like.svg"
+                        alt="Like"
+                      />
                     </button>
                   </div>
                   <div class="slider_info">
@@ -968,7 +376,11 @@
                       alt="VesternRoof"
                     />
                     <button class="slider_like_card" type="submit">
-                      <img src="./images/header/Like.svg" alt="Like" />
+                      <img
+                        class="favorite_roof"
+                        src="./images/header/Like.svg"
+                        alt="Like"
+                      />
                     </button>
                   </div>
                   <div class="slider_info">
@@ -993,7 +405,11 @@
                       alt="VesternRoof"
                     />
                     <button class="slider_like_card" type="submit">
-                      <img src="./images/header/Like.svg" alt="Like" />
+                      <img
+                        class="favorite_roof"
+                        src="./images/header/Like.svg"
+                        alt="Like"
+                      />
                     </button>
                   </div>
                   <div class="slider_info">
@@ -1018,7 +434,11 @@
                       alt="VesternRoof"
                     />
                     <button class="slider_like_card" type="submit">
-                      <img src="./images/header/Like.svg" alt="Like" />
+                      <img
+                        class="favorite_roof"
+                        src="./images/header/Like.svg"
+                        alt="Like"
+                      />
                     </button>
                   </div>
                   <div class="slider_info">
@@ -1155,16 +575,13 @@
             </div>
             <div class="roof_cards">
               <div class="roof_card">
-                <div class="roof_card_img chosen_roof">
+                <div class="roof_card_img">
                   <img
                     src="./images/roofEstimate/ShedRoof.svg"
                     alt="ShedRoof"
                   />
                 </div>
-                <span class="roof_card_name"><strong>Односкатная</strong></span>
-                <div class="mark_roof">
-                  <img src="./images/roofEstimate/Chosen.svg" alt="Chosen" />
-                </div>
+                <span class="roof_card_name">Односкатная</span>
               </div>
               <div class="roof_card">
                 <div class="roof_card_img">
@@ -2064,161 +1481,161 @@
           </div>
         </div>
       </section>
-    </main>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer_top_content">
-          <div class="footer_title">
-            <a href="#">
-              <picture>
-                <source
-                  media="(max-width: 700px)"
-                  srcset="./images/header/Logo320.svg"
-                />
-                <source
-                  media="(max-width: 1430px)"
-                  srcset="./images/header/Logo768.svg"
-                />
-                <img src="./images/header/Logo.svg" alt="Logo" />
-              </picture>
-            </a>
-          </div>
-          <nav>
-            <ul class="footer_nav">
-              <li class="nav_item"><a href="#">Коллекции</a></li>
-              <li class="nav_item"><a href="#">Покупателю</a></li>
-              <li class="nav_item"><a href="#">Калькулятор</a></li>
-              <li class="nav_item"><a href="#">Фото домов</a></li>
-              <li class="nav_item"><a href="#">3D-конфигуратор</a></li>
-              <li class="nav_item"><a href="#">Строителю</a></li>
-              <li class="nav_item"><a href="#">Мотнаж</a></li>
-            </ul>
-          </nav>
-          <div class="footer_hotline">
-            <span class="hotline_text">горячая линия</span>
-            <span class="hotline_phone">8 800 600 0565</span>
-          </div>
-        </div>
-        <div class="footer_middle_content">
-          <div class="middle_left_content">
-            <button>Официальный сайт</button>
-            <button>Проекты корпорации</button>
-          </div>
-          <ul class="middle_links">
-            <li class="link">
+      <footer class="footer">
+        <div class="container">
+          <div class="footer_top_content">
+            <div class="footer_title">
               <a href="#">
-                <img src="./images/footer/Youtube.svg" alt="Youtube" />
+                <picture>
+                  <source
+                    media="(max-width: 700px)"
+                    srcset="./images/header/Logo320.svg"
+                  />
+                  <source
+                    media="(max-width: 1430px)"
+                    srcset="./images/header/Logo768.svg"
+                  />
+                  <img src="./images/header/Logo.svg" alt="Logo" />
+                </picture>
               </a>
-            </li>
-            <li class="link">
-              <a href="#">
-                <img src="./images/footer/Rutube.svg" alt="Rutube" />
-              </a>
-            </li>
-            <li class="link">
-              <a href="#">
-                <img src="./images/footer/Zen.svg" alt="Zen" />
-              </a>
-            </li>
-            <li class="link">
-              <a href="#">
-                <img src="./images/footer/Telegram.svg" alt="Telegram" />
-              </a>
-            </li>
-          </ul>
-          <div class="middle_right_content">
-            <button>Интернет-магазин</button>
-            <button>Точки продаж</button>
+            </div>
+            <nav>
+              <ul class="footer_nav">
+                <li class="nav_item"><a href="#">Коллекции</a></li>
+                <li class="nav_item"><a href="#">Покупателю</a></li>
+                <li class="nav_item"><a href="#">Калькулятор</a></li>
+                <li class="nav_item"><a href="#">Фото домов</a></li>
+                <li class="nav_item"><a href="#">3D-конфигуратор</a></li>
+                <li class="nav_item"><a href="#">Строителю</a></li>
+                <li class="nav_item"><a href="#">Мотнаж</a></li>
+              </ul>
+            </nav>
+            <div class="footer_hotline">
+              <span class="hotline_text">горячая линия</span>
+              <span class="hotline_phone">8 800 600 0565</span>
+            </div>
           </div>
-        </div>
-        <div class="footer_bottom_content">
-          <span class="bottom_left_content"
-            >© Корпорация ТЕХНОНИКОЛЬ, 2010 — 2023. Все права защищены. Правовая
-            информация.
-          </span>
-          <span class="bottom_right_content"> Разработка сайта — MINISOL </span>
-        </div>
-      </div>
-    </footer>
-    <footer class="footer_media">
-      <div class="container">
-        <div class="footer_media_top">
-          <div class="footer_title">
-            <a href="#">
-              <img src="./images/header/Logo.svg" alt="Logo" />
-            </a>
-          </div>
-          <div class="media_top_content">
-            <div class="top_left_content">
+          <div class="footer_middle_content">
+            <div class="middle_left_content">
               <button>Официальный сайт</button>
               <button>Проекты корпорации</button>
-              <div class="footer_hotline">
-                <span class="hotline_text">горячая линия</span>
-                <span class="hotline_phone">8 800 600 0565</span>
+            </div>
+            <ul class="middle_links">
+              <li class="link">
+                <a href="#">
+                  <img src="./images/footer/Youtube.svg" alt="Youtube" />
+                </a>
+              </li>
+              <li class="link">
+                <a href="#">
+                  <img src="./images/footer/Rutube.svg" alt="Rutube" />
+                </a>
+              </li>
+              <li class="link">
+                <a href="#">
+                  <img src="./images/footer/Zen.svg" alt="Zen" />
+                </a>
+              </li>
+              <li class="link">
+                <a href="#">
+                  <img src="./images/footer/Telegram.svg" alt="Telegram" />
+                </a>
+              </li>
+            </ul>
+            <div class="middle_right_content">
+              <button>Интернет-магазин</button>
+              <button>Точки продаж</button>
+            </div>
+          </div>
+          <div class="footer_bottom_content">
+            <span class="bottom_left_content"
+              >© Корпорация ТЕХНОНИКОЛЬ, 2010 — 2023. Все права защищены. Правовая
+              информация.
+            </span>
+            <span class="bottom_right_content"> Разработка сайта — MINISOL </span>
+          </div>
+        </div>
+      </footer>
+      <footer class="footer_media">
+        <div class="container">
+          <div class="footer_media_top">
+            <div class="footer_title">
+              <a href="#">
+                <img src="./images/header/Logo.svg" alt="Logo" />
+              </a>
+            </div>
+            <div class="media_top_content">
+              <div class="top_left_content">
+                <button>Официальный сайт</button>
+                <button>Проекты корпорации</button>
+                <div class="footer_hotline">
+                  <span class="hotline_text">горячая линия</span>
+                  <span class="hotline_phone">8 800 600 0565</span>
+                </div>
+              </div>
+              <div class="top_middle_content">
+                <nav>
+                  <ul class="footer_nav">
+                    <li class="nav_item"><a href="#">Коллекции</a></li>
+                    <li class="nav_item"><a href="#">Покупателю</a></li>
+                    <li class="nav_item"><a href="#">Калькулятор</a></li>
+                    <li class="nav_item"><a href="#">Фото домов</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="top_right_content">
+                <nav>
+                  <ul class="footer_nav">
+                    <li class="nav_item"><a href="#">3D-конфигуратор</a></li>
+                    <li class="nav_item"><a href="#">Строителю</a></li>
+                    <li class="nav_item"><a href="#">Мотнаж</a></li>
+                  </ul>
+                </nav>
               </div>
             </div>
-            <div class="top_middle_content">
-              <nav>
-                <ul class="footer_nav">
-                  <li class="nav_item"><a href="#">Коллекции</a></li>
-                  <li class="nav_item"><a href="#">Покупателю</a></li>
-                  <li class="nav_item"><a href="#">Калькулятор</a></li>
-                  <li class="nav_item"><a href="#">Фото домов</a></li>
-                </ul>
-              </nav>
+          </div>
+          <div class="footer_middle_content">
+            <ul class="middle_links">
+              <li class="link">
+                <a href="#">
+                  <img src="./images/footer/Youtube.svg" alt="Youtube" />
+                </a>
+              </li>
+              <li class="link">
+                <a href="#">
+                  <img src="./images/footer/Rutube.svg" alt="Rutube" />
+                </a>
+              </li>
+              <li class="link">
+                <a href="#">
+                  <img src="./images/footer/Zen.svg" alt="Zen" />
+                </a>
+              </li>
+              <li class="link">
+                <a href="#">
+                  <img src="./images/footer/Telegram.svg" alt="Telegram" />
+                </a>
+              </li>
+            </ul>
+            <div class="middle_right_content">
+              <button>Интернет-магазин</button>
+              <button>Точки продаж</button>
             </div>
-            <div class="top_right_content">
-              <nav>
-                <ul class="footer_nav">
-                  <li class="nav_item"><a href="#">3D-конфигуратор</a></li>
-                  <li class="nav_item"><a href="#">Строителю</a></li>
-                  <li class="nav_item"><a href="#">Мотнаж</a></li>
-                </ul>
-              </nav>
+          </div>
+          <div class="footer_bottom_content">
+            <div class="bottom_left_content">
+              © Корпорация ТЕХНОНИКОЛЬ, 2010 — 2023. Все права защищены. Правовая
+              информация.
             </div>
+            <div class="bottom_right_content">Разработка сайта — MINISOL</div>
           </div>
         </div>
-        <div class="footer_middle_content">
-          <ul class="middle_links">
-            <li class="link">
-              <a href="#">
-                <img src="./images/footer/Youtube.svg" alt="Youtube" />
-              </a>
-            </li>
-            <li class="link">
-              <a href="#">
-                <img src="./images/footer/Rutube.svg" alt="Rutube" />
-              </a>
-            </li>
-            <li class="link">
-              <a href="#">
-                <img src="./images/footer/Zen.svg" alt="Zen" />
-              </a>
-            </li>
-            <li class="link">
-              <a href="#">
-                <img src="./images/footer/Telegram.svg" alt="Telegram" />
-              </a>
-            </li>
-          </ul>
-          <div class="middle_right_content">
-            <button>Интернет-магазин</button>
-            <button>Точки продаж</button>
-          </div>
-        </div>
-        <div class="footer_bottom_content">
-          <div class="bottom_left_content">
-            © Корпорация ТЕХНОНИКОЛЬ, 2010 — 2023. Все права защищены. Правовая
-            информация.
-          </div>
-          <div class="bottom_right_content">Разработка сайта — MINISOL</div>
-        </div>
-      </div>
-    </footer>
+      </footer>
+    </main>
     <nav class="stickyBottomNav">
       <link rel="stylesheet" href="./styles/stickyBottomNav.css" />
       <ul class="bottom_nav">
-        <li class="bottom_nav_item">
+        <li class="bottom_nav_item" id="mobile_collection">
           <button type="submit">
             <img
               src="./images/bottomStickyNav/Collection.svg"
@@ -2253,5 +1670,714 @@
         </li>
       </ul>
     </nav>
+    <div class="collection_menu">
+      <div class="container">
+        <div class="collection_left_content">
+          <div class="collections">
+            <div class="collection_card">
+              <div class="collection_img">
+                <a href="#">
+                  <img
+                    src="./images/collectionMenu/Collection1.svg"
+                    alt="Collection1"
+                  />
+                  <img
+                    src="./images/collectionMenu/HoverCollection1.svg"
+                    alt="HoverCollection1"
+                  />
+                </a>
+              </div>
+              <ul class="collection_info">
+                <li class="info_item">
+                  <span class="collection_name">
+                    <div class="select_item">
+                      <img
+                        src="./images/collectionMenu/Select.svg"
+                        alt="Select"
+                      />
+                    </div>
+                    <a href="#">Аккорд</a>
+                  </span>
+                  <span class="collection_price">449 ₽/м²</span>
+                </li>
+                <li class="info_item">
+                  <span class="collection_name">
+                    <div class="select_item">
+                      <img
+                        src="./images/collectionMenu/Select.svg"
+                        alt="Select"
+                      />
+                    </div>
+                    <a href="#">Болеро</a></span
+                  >
+                  <span class="collection_price">666 ₽/м²</span>
+                </li>
+                <li class="info_item">
+                  <span class="collection_name">
+                    <div class="select_item">
+                      <img
+                        src="./images/collectionMenu/Select.svg"
+                        alt="Select"
+                      />
+                    </div>
+                    <a href="#">Фокстрот</a></span
+                  >
+                  <span class="collection_price">871 ₽/м²</span>
+                </li>
+              </ul>
+            </div>
+            <div class="collection_card">
+              <div class="collection_img">
+                <a href="#">
+                  <img
+                    src="./images/collectionMenu/Collection2.svg"
+                    alt="Collection1"
+                  />
+                  <img
+                    src="./images/collectionMenu/HoverCollection2.svg"
+                    alt="HoverCollection2"
+                  />
+                </a>
+              </div>
+              <ul class="collection_info">
+                <li class="info_item">
+                  <span class="collection_name">
+                    <div class="select_item">
+                      <img
+                        src="./images/collectionMenu/Select.svg"
+                        alt="Select"
+                      />
+                    </div>
+                    <a href="#">Оптима</a></span
+                  >
+                  <span class="collection_price">336 ₽/м²</span>
+                </li>
+                <li class="info_item">
+                  <span class="collection_name">
+                    <div class="select_item">
+                      <img
+                        src="./images/collectionMenu/Select.svg"
+                        alt="Select"
+                      />
+                    </div>
+                    <a href="#">Соната</a></span
+                  >
+                  <span class="collection_price">449 ₽/м²</span>
+                </li>
+                <li class="info_item">
+                  <span class="collection_name">
+                    <div class="select_item">
+                      <img
+                        src="./images/collectionMenu/Select.svg"
+                        alt="Select"
+                      />
+                    </div>
+                    <a href="#">Сальса</a></span
+                  >
+                  <span class="collection_price">666 ₽/м²</span>
+                </li>
+                <li class="info_item">
+                  <span class="collection_name">
+                    <div class="select_item">
+                      <img
+                        src="./images/collectionMenu/Select.svg"
+                        alt="Select"
+                      />
+                    </div>
+                    <a href="#">Самба</a></span
+                  >
+                  <span class="collection_price">871 ₽/м²</span>
+                </li>
+              </ul>
+            </div>
+            <div class="collection_card">
+              <div class="collection_img">
+                <a href="#">
+                  <img
+                    src="./images/collectionMenu/Collection3.svg"
+                    alt="Collection1"
+                  />
+                  <img
+                    src="./images/collectionMenu/HoverCollection3.svg"
+                    alt="HoverCollection3"
+                  />
+                </a>
+              </div>
+              <ul class="collection_info">
+                <li class="info_item">
+                  <span class="collection_name">
+                    <div class="select_item">
+                      <img
+                        src="./images/collectionMenu/Select.svg"
+                        alt="Select"
+                      />
+                    </div>
+                    <a href="#">Фазенда</a></span
+                  >
+                  <span class="collection_price">466 ₽/м²</span>
+                </li>
+                <li class="info_item">
+                  <span class="collection_name">
+                    <div class="select_item">
+                      <img
+                        src="./images/collectionMenu/Select.svg"
+                        alt="Select"
+                      />
+                    </div>
+                    <a href="#">Ранчо</a></span
+                  >
+                  <span class="collection_price">610 ₽/м²</span>
+                </li>
+                <li class="info_item">
+                  <span class="collection_name">
+                    <div class="select_item">
+                      <img
+                        src="./images/collectionMenu/Select.svg"
+                        alt="Select"
+                      />
+                    </div>
+                    <a href="#">Кантри</a></span
+                  >
+                  <span class="collection_price">951 ₽/м²</span>
+                </li>
+                <li class="info_item">
+                  <span class="collection_name">
+                    <div class="select_item">
+                      <img
+                        src="./images/collectionMenu/Select.svg"
+                        alt="Select"
+                      />
+                    </div>
+                    <a href="#">Джаз</a></span
+                  >
+                  <span class="collection_price">1430 ₽/м²</span>
+                </li>
+              </ul>
+            </div>
+            <div class="collection_card">
+              <div class="collection_img">
+                <a href="#">
+                  <img
+                    src="./images/collectionMenu/Collection4.svg"
+                    alt="Collection1"
+                  />
+                  <img
+                    src="./images/collectionMenu/HoverCollection4.svg"
+                    alt="HoverCollection4"
+                  />
+                </a>
+              </div>
+              <ul class="collection_info">
+                <li class="info_item">
+                  <span class="collection_name">
+                    <div class="select_item">
+                      <img
+                        src="./images/collectionMenu/Select.svg"
+                        alt="Select"
+                      />
+                    </div>
+                    <a href="#">Модерн</a></span
+                  >
+                  <span class="collection_price">666 ₽/м²</span>
+                </li>
+              </ul>
+            </div>
+            <div class="collection_card">
+              <div class="collection_img">
+                <a href="#">
+                  <img
+                    src="./images/collectionMenu/Collection5.svg"
+                    alt="Collection1"
+                  />
+                  <img
+                    src="./images/collectionMenu/HoverCollection5.svg"
+                    alt="HoverCollection5"
+                  />
+                </a>
+              </div>
+              <ul class="collection_info">
+                <li class="info_item">
+                  <span class="collection_name">
+                    <div class="select_item">
+                      <img
+                        src="./images/collectionMenu/Select.svg"
+                        alt="Select"
+                      />
+                    </div>
+                    <a href="#">Вестерн</a></span
+                  >
+                  <span class="collection_price">2 614 ₽/м²</span>
+                </li>
+              </ul>
+            </div>
+            <div class="collection_card">
+              <div class="collection_img">
+                <a href="#">
+                  <img
+                    src="./images/collectionMenu/Collection6.svg"
+                    alt="Collection1"
+                  />
+                  <img
+                    src="./images/collectionMenu/HoverCollection6.svg"
+                    alt="HoverCollection6"
+                  />
+                </a>
+              </div>
+              <ul class="collection_info">
+                <li class="info_item">
+                  <span class="collection_name">
+                    <div class="select_item">
+                      <img
+                        src="./images/collectionMenu/Select.svg"
+                        alt="Select"
+                      />
+                    </div>
+                    <a href="#">Континент</a></span
+                  >
+                  <span class="collection_price">3 776 ₽/м²</span>
+                </li>
+              </ul>
+            </div>
+            <div class="collection_card">
+              <div class="collection_img">
+                <a href="#">
+                  <img
+                    src="./images/collectionMenu/Collection7.svg"
+                    alt="Collection1"
+                  />
+                  <img
+                    src="./images/collectionMenu/HoverCollection7.svg"
+                    alt="HoverCollection7"
+                  />
+                </a>
+              </div>
+              <ul class="collection_info">
+                <li class="info_item">
+                  <span class="collection_name">
+                    <div class="select_item">
+                      <img
+                        src="./images/collectionMenu/Select.svg"
+                        alt="Select"
+                      />
+                    </div>
+                    <a href="#">Атлантика</a></span
+                  >
+                  <span class="collection_price">3 776 ₽/м²</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="best_roofer_banner">
+            <img
+              class="roofer_banner_img"
+              src="./images/collectionMenu/BestRooferBanner.svg"
+              alt="BestRooferBanner"
+            />
+            <img
+              class="roofer_banner_polygon"
+              src="./images/collectionMenu/RooferBannerPolygon.svg"
+              alt="RooferBannerPolygon"
+            />
+            <div class="goto_wrapper">
+              <p class="goto_text">Подайте заявку</p>
+              <button class="goto_button" type="submit">
+                <img src="./images/banners/Arrow-right-hover.svg" alt="Arrow" />
+                <img src="./images/banners/Arrow-right-hover.svg" alt="Arrow" />
+              </button>
+            </div>
+          </div>
+          <div class="promo_banner">
+            <img
+              src="./images/collectionMenu/PromoBanner.svg"
+              alt="PromoBanner"
+            />
+            <div class="promo_banner_info">
+              <div class="promo_banner_title">TN Promo</div>
+              <div class="promo_banner_subtitle">
+                для профессиональных строителей и розничных точек
+              </div>
+              <div class="goto_wrapper">
+                <p class="goto_text">
+                  Сканируйте QR-коды и <br />
+                  <span class="bold_goto_text">зарабатывайте</span>
+                </p>
+                <button class="goto_button" type="submit">
+                  <img
+                    src="./images/banners/Arrow-right-hover.svg"
+                    alt="Arrow"
+                  />
+                  <img
+                    src="./images/banners/Arrow-right-hover.svg"
+                    alt="Arrow"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="collection_right_content">
+          <div class="roof_materials">
+            <div class="roof_materials_title">Материалы для скатной кровли</div>
+            <ul class="roof_materials_items">
+              <li class="roof_materials_item">
+                <a class="materials_item" href="#">Коньково-карнизная черепица</a>
+                <div class="select_item">
+                  <img src="./images/collectionMenu/Select.svg" alt="Select" />
+                </div>
+              </li>
+              <li class="roof_materials_item">
+                <a class="materials_item" href="#">Ендовые ковры</a>
+                <div class="select_item">
+                  <img src="./images/collectionMenu/Select.svg" alt="Select" />
+                </div>
+              </li>
+              <li class="roof_materials_item">
+                <a class="materials_item" href="#">Кровельные планки и гвозди</a>
+                <div class="select_item">
+                  <img src="./images/collectionMenu/Select.svg" alt="Select" />
+                </div>
+              </li>
+              <li class="roof_materials_item">
+                <a class="materials_item" href="#">Антисептики для кровли</a>
+                <div class="select_item">
+                  <img src="./images/collectionMenu/Select.svg" alt="Select" />
+                </div>
+              </li>
+              <li class="roof_materials_item">
+                <a class="materials_item" href="#">Антисептик для древесины</a>
+                <div class="select_item">
+                  <img src="./images/collectionMenu/Select.svg" alt="Select" />
+                </div>
+              </li>
+              <li class="roof_materials_item">
+                <a class="materials_item" href="#">Огнебиозащита для древесины</a>
+                <div class="select_item">
+                  <img src="./images/collectionMenu/Select.svg" alt="Select" />
+                </div>
+              </li>
+              <li class="roof_materials_item">
+                <a class="materials_item" href="#">Подкладочные ковры</a>
+                <div class="select_item">
+                  <img src="./images/collectionMenu/Select.svg" alt="Select" />
+                </div>
+              </li>
+              <li class="roof_materials_item">
+                <a class="materials_item" href="#">Снегозадержатели</a>
+                <div class="select_item">
+                  <img src="./images/collectionMenu/Select.svg" alt="Select" />
+                </div>
+              </li>
+              <li class="roof_materials_item">
+                <a class="materials_item" href="#">Вентиляция кровли</a>
+                <div class="select_item">
+                  <img src="./images/collectionMenu/Select.svg" alt="Select" />
+                </div>
+              </li>
+              <li class="roof_materials_item">
+                <a class="materials_item" href="#">Вентиляция помещений</a>
+                <div class="select_item">
+                  <img src="./images/collectionMenu/Select.svg" alt="Select" />
+                </div>
+              </li>
+              <li class="roof_materials_item">
+                <a class="materials_item" href="#">Софиты для подшивки</a>
+                <div class="select_item">
+                  <img src="./images/collectionMenu/Select.svg" alt="Select" />
+                </div>
+              </li>
+              <li class="roof_materials_item">
+                <a class="materials_item" href="#">Водосточные системы</a>
+                <div class="select_item">
+                  <img src="./images/collectionMenu/Select.svg" alt="Select" />
+                </div>
+              </li>
+              <li class="roof_materials_item">
+                <a class="materials_item" href="#">Композитная черепица</a>
+                <div class="select_item">
+                  <img src="./images/collectionMenu/Select.svg" alt="Select" />
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="facade_materials">
+            <div class="facade_materials_title">
+              Материалы для фасада и отделки
+            </div>
+            <ul class="facade_materials_items">
+              <li class="facade_materials_item">
+                <a class="materials_item" href="#"> Виниловый сайдинг </a>
+                <div class="select_item">
+                  <img src="./images/collectionMenu/Select.svg" alt="Select" />
+                </div>
+              </li>
+              <li class="facade_materials_item">
+                <a class="materials_item" href="#">Фасадная плитка HAUBERK </a>
+                <div class="select_item">
+                  <img src="./images/collectionMenu/Select.svg" alt="Select" />
+                </div>
+              </li>
+              <li class="facade_materials_item">
+                <div class="select_item">
+                  <img src="./images/collectionMenu/Select.svg" alt="Select" />
+                </div>
+                <a class="materials_item" href="#">Планкен </a>
+              </li>
+              <li class="facade_materials_item">
+                <a class="materials_item" href="#">Вагонка </a>
+                <div class="select_item">
+                  <img src="./images/collectionMenu/Select.svg" alt="Select" />
+                </div>
+              </li>
+              <li class="facade_materials_item">
+                <a class="materials_item" href="#">Террасная доска </a>
+                <div class="select_item">
+                  <img src="./images/collectionMenu/Select.svg" alt="Select" />
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="collection_mobile">
+        <link rel="stylesheet" href="./styles/mobileMenu.css" />
+        <div class="mobile_menu_title">Выберите форму нарезки</div>
+        <div class="collection_mobile_roofs">
+          <div class="mobile_roof_card">
+            <div class="roof_main_info">
+              <img class="mobile_roof_card_img" src="./images/collectionMenu/CollectionMobile1.svg" alt="CollectionMobile1">
+              <div class="roof_card_info">
+                <span class="roof_name">Брикс</span>
+                <span class="roof_price">666 ₽/м²</span>
+              </div>
+            </div>
+            <div class="roof_layer_info">
+              <span class="layer_count">1</span>
+              <span>слой</span>
+            </div>
+          </div>
+          <div class="mobile_roof_card">
+            <div class="roof_main_info">
+              <img class="mobile_roof_card_img" src="./images/collectionMenu/CollectionMobile2.svg" alt="CollectionMobile2">
+              <div class="roof_card_info">
+                <span class="roof_name">Аккорд</span>
+                <span class="roof_price">449 — 871 ₽/м²</span>
+              </div>
+            </div>
+            <div class="roof_layer_info">
+              <span class="layer_count">1</span>
+              <span>слой</span>
+            </div>
+          </div>
+          <div class="mobile_roof_card">
+            <div class="roof_main_info">
+              <img class="mobile_roof_card_img" src="./images/collectionMenu/CollectionMobile3.svg" alt="CollectionMobile3">
+              <div class="roof_card_info">
+                <span class="roof_name">Соната</span>
+                <span class="roof_price">336 — 871 ₽/м²</span>
+              </div>
+            </div>
+            <div class="roof_layer_info">
+              <span class="layer_count">1</span>
+              <span>слой</span>
+            </div>
+          </div>            
+          <div class="mobile_roof_card">
+            <div class="roof_main_info">
+              <img class="mobile_roof_card_img" src="./images/collectionMenu/CollectionMobile4.svg" alt="CollectionMobile4">
+              <div class="roof_card_info">
+                <span class="roof_name">Драконий зуб</span>
+                <span class="roof_price">466 — 1 430 ₽/м²</span>
+              </div>
+            </div>
+            <div class="roof_layer_info">
+              <span class="layer_count">2</span>
+              <span>слоя</span>
+            </div>
+          </div>            
+          <div class="mobile_roof_card">
+            <div class="roof_main_info">
+              <img class="mobile_roof_card_img" src="./images/collectionMenu/CollectionMobile5.svg" alt="CollectionMobile5">
+              <div class="roof_card_info">
+                <span class="roof_name">Вестерн</span>
+                <span class="roof_price">2 614 ₽/м²</span>
+              </div>
+            </div>
+            <div class="roof_layer_info">
+              <span class="layer_count">2</span>
+              <span>слоя</span>
+            </div>
+          </div>            
+          <div class="mobile_roof_card">
+            <div class="roof_main_info">
+              <img class="mobile_roof_card_img" src="./images/collectionMenu/CollectionMobile6.svg" alt="CollectionMobile6">
+              <div class="roof_card_info">
+                <span class="roof_name">Континент</span>
+                <span class="roof_price">3 776 ₽/м²</span>
+              </div>
+            </div>
+            <div class="roof_layer_info">
+              <span class="layer_count">3</span>
+              <span>слоя</span>
+            </div>
+          </div>            
+          <div class="mobile_roof_card">
+            <div class="roof_main_info">
+              <img class="mobile_roof_card_img  " src="./images/collectionMenu/CollectionMobile7.svg" alt="CollectionMobile7">
+              <div class="roof_card_info">
+                <span class="roof_name">Атлантика</span>
+                <span class="roof_price">3 776 ₽/м²</span>
+              </div>
+            </div>
+            <div class="roof_layer_info">
+              <span class="layer_count">3</span>
+              <span>слоя</span>
+            </div>
+          </div>
+        </div>
+        <div class="collection_mobile_materials">
+          <span class="mobile_menu_title">Материалы для<span>
+          <div class="materials_menu">
+            <a class="materials_menu_item" href="#" id="roof_materials">
+              <img class="materials_menu_img" src="./images/collectionMenu/RoofMaterialsMobile.svg" alt="RoofMaterialsMobile">
+              <div class="materials_menu_name">Скатной<br>кровли</div>
+            </a>
+            <a class="materials_menu_item" href="#" id="facade_materials">
+              <img class="materials_menu_img" src="./images/collectionMenu/FacadeMobile.svg" alt="FacadeMobile">
+              <div class="materials_menu_name">Фасада<br>и отделки</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="roof_materials_mobile">
+        <div class="materials_title">Материалы для скатной кровли</div>
+        <div class="back_button_block">
+          <button class="back_button" type="submit">
+            <img src="./images/collectionMenu/BackArrow.svg" alt="BackArrow">
+            <span>Назад</span>
+          </button>
+        </div>
+        <ul class="roof_materials_items">
+          <li class="roof_materials_item">
+            <a class="materials_item" href="#">Коньково-карнизная черепица</a>
+            <div class="select_item">
+              <img src="./images/collectionMenu/Select.svg" alt="Select" />
+            </div>
+          </li>
+          <li class="roof_materials_item">
+            <a class="materials_item" href="#">Ендовые ковры</a>
+            <div class="select_item">
+              <img src="./images/collectionMenu/Select.svg" alt="Select" />
+            </div>
+          </li>
+          <li class="roof_materials_item">
+            <a class="materials_item" href="#">Кровельные планки и гвозди</a>
+            <div class="select_item">
+              <img src="./images/collectionMenu/Select.svg" alt="Select" />
+            </div>
+          </li>
+          <li class="roof_materials_item">
+            <a class="materials_item" href="#">Антисептики для кровли</a>
+            <div class="select_item">
+              <img src="./images/collectionMenu/Select.svg" alt="Select" />
+            </div>
+          </li>
+          <li class="roof_materials_item">
+            <a class="materials_item" href="#">Антисептик для древесины</a>
+            <div class="select_item">
+              <img src="./images/collectionMenu/Select.svg" alt="Select" />
+            </div>
+          </li>
+          <li class="roof_materials_item">
+            <a class="materials_item" href="#">Огнебиозащита для древесины</a>
+            <div class="select_item">
+              <img src="./images/collectionMenu/Select.svg" alt="Select" />
+            </div>
+          </li>
+          <li class="roof_materials_item">
+            <a class="materials_item" href="#">Подкладочные ковры</a>
+            <div class="select_item">
+              <img src="./images/collectionMenu/Select.svg" alt="Select" />
+            </div>
+          </li>
+          <li class="roof_materials_item">
+            <a class="materials_item" href="#">Снегозадержатели</a>
+            <div class="select_item">
+              <img src="./images/collectionMenu/Select.svg" alt="Select" />
+            </div>
+          </li>
+          <li class="roof_materials_item">
+            <a class="materials_item" href="#">Вентиляция кровли</a>
+            <div class="select_item">
+              <img src="./images/collectionMenu/Select.svg" alt="Select" />
+            </div>
+          </li>
+          <li class="roof_materials_item">
+            <a class="materials_item" href="#">Вентиляция помещений</a>
+            <div class="select_item">
+              <img src="./images/collectionMenu/Select.svg" alt="Select" />
+            </div>
+          </li>
+          <li class="roof_materials_item">
+            <a class="materials_item" href="#">Софиты для подшивки</a>
+            <div class="select_item">
+              <img src="./images/collectionMenu/Select.svg" alt="Select" />
+            </div>
+          </li>
+          <li class="roof_materials_item">
+            <a class="materials_item" href="#">Водосточные системы</a>
+            <div class="select_item">
+              <img src="./images/collectionMenu/Select.svg" alt="Select" />
+            </div>
+          </li>
+          <li class="roof_materials_item">
+            <a class="materials_item" href="#">Композитная черепица</a>
+            <div class="select_item">
+              <img src="./images/collectionMenu/Select.svg" alt="Select" />
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="facade_materials_mobile">
+        <div class="materials_title">Материалы для фасада и отделки</div>
+        <div class="back_button_block">
+          <button class="back_button" type="submit">
+            <img src="./images/collectionMenu/BackArrow.svg" alt="BackArrow">
+            <span>Назад</span>
+          </button>
+        </div>
+        <ul class="facade_materials_items">
+          <li class="facade_materials_item">
+            <a class="materials_item" href="#"> Виниловый сайдинг </a>
+            <div class="select_item">
+              <img src="./images/collectionMenu/Select.svg" alt="Select" />
+            </div>
+          </li>
+          <li class="facade_materials_item">
+            <a class="materials_item" href="#">Фасадная плитка HAUBERK </a>
+            <div class="select_item">
+              <img src="./images/collectionMenu/Select.svg" alt="Select" />
+            </div>
+          </li>
+          <li class="facade_materials_item">
+            <div class="select_item">
+              <img src="./images/collectionMenu/Select.svg" alt="Select" />
+            </div>
+            <a class="materials_item" href="#">Планкен </a>
+          </li>
+          <li class="facade_materials_item">
+            <a class="materials_item" href="#">Вагонка </a>
+            <div class="select_item">
+              <img src="./images/collectionMenu/Select.svg" alt="Select" />
+            </div>
+          </li>
+          <li class="facade_materials_item">
+            <a class="materials_item" href="#">Террасная доска </a>
+            <div class="select_item">
+              <img src="./images/collectionMenu/Select.svg" alt="Select" />
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>

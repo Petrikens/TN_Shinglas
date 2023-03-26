@@ -44,6 +44,8 @@ class Slider {
   }
 }
 
+const favoriteRoofs = document.querySelectorAll(".favorite_roof");
+
 const roofSlider = new Slider(document.querySelector(".slider_gallery"));
 
 roofSlider.createSliderItems();
@@ -70,4 +72,21 @@ roofSlider.arrows.addEventListener("click", function (event) {
     return;
   }
   roofSlider.slide();
+});
+
+function addFavoriteRoof(roofIndex) {
+  favoriteRoofs.forEach((item, index) => {
+    if (roofIndex === index && item.src !== "./images/header/FillLike.svg") {
+      item.src = "./images/header/FillLike.svg";
+    }
+    if (roofIndex === index && item.src === "./images/header/FillLike.svg") {
+      item.src = "./images/header/Like.svg";
+    }
+  });
+}
+
+favoriteRoofs.forEach((roof, index) => {
+  roof.addEventListener("click", () => {
+    addFavoriteRoof(index);
+  });
 });
