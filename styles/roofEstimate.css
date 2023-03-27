@@ -96,7 +96,6 @@
     }
 
     .roof_cards {
-        width: 1580px;
         gap: 25px;
         overflow: scroll;
         overflow-y: hidden;
@@ -109,7 +108,7 @@
 
 @media screen and (max-width: 1450px) {
     .roof_cards {
-        width: 1350px;
+        width: 1320px;
     }
 
     .step_counter {
@@ -119,7 +118,7 @@
 
 @media screen and (max-width: 1300px) {
     .roof_cards {
-        width: 1200px;
+        width: 1180px;
     }
 
     .step_counter {

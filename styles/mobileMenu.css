@@ -39,14 +39,14 @@
     flex-direction: column;
 }
 
-.roof_name {
+.collection_roof_name {
     font-weight: 700;
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.05em;
 }
 
-.roof_price {
+.collection_roof_price {
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.05em;
@@ -144,9 +144,15 @@
     letter-spacing: 0.05em;
 }
 
+@media screen and (max-width: 1200px) {
+    .collection_mobile {
+        display: none !important;
+    }
+}
+
 @media screen and (max-width: 700px) {
     .collection_mobile {
-        display: flex;
+        display: flex !important;
     }
 
     .select_item {
