@@ -12,9 +12,7 @@ const roofMaterialsMobilePage = document.querySelector(
 const facadeMaterialsMobilePage = document.querySelector(
   ".facade_materials_mobile",
 );
-const windowSize = window.innerWidth;
-
-console.log(windowSize);
+let windowSize = window.innerWidth;
 
 const hideCollectionMenu = () => {
   collectionMenu.classList.remove("active_collection_menu");
@@ -41,9 +39,12 @@ collectionMenu.addEventListener("mouseout", hideCollectionMenu);
 
 mobileCollectionItem.addEventListener("mouseover", () => {
   onCollectionItemHover();
-  collectionMobilePage.style.display = "flex";
+  collectionMobilePage.style.display = "none";
   roofMaterialsMobilePage.style.display = "none";
   facadeMaterialsMobilePage.style.display = "none";
+  if (windowSize <= 700) {
+    collectionMobilePage.style.display = "flex";
+  }
 });
 
 mobileCollectionItem.addEventListener("mouseout", hideCollectionMenu);
@@ -65,3 +66,11 @@ backButton.forEach((button) => {
     roofMaterialsMobilePage.style.display = "none";
   });
 });
+
+window.addEventListener(
+  "resize",
+  function () {
+    windowSize = window.innerWidth;
+  },
+  true,
+);

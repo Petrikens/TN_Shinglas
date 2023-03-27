@@ -146,13 +146,13 @@
 
 @media screen and (max-width: 1200px) {
     .collection_mobile {
-        display: none !important;
+        display: none;
     }
 }
 
 @media screen and (max-width: 700px) {
     .collection_mobile {
-        display: flex !important;
+        display: flex;
     }
 
     .select_item {
