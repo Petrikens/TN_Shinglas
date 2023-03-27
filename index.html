@@ -14,6 +14,7 @@
     <script src="./js/navigator.js" defer></script>
     <script src="./js/banners.js" defer></script>
     <script src="./js/roofEstimate.js" defer></script>
+    <script src="./js/infoSection.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -670,318 +671,322 @@
         </div>
       </section>
       <section class="info_section">
-        <div class="block_wrapper">
-          <div class="container">
-            <div class="info_block">
-              <div class="info_block_img">
-                <picture>
-                  <source
-                    media="(max-width: 700px)"
-                    srcset="./images/infoSection/ColorDurability320.svg"
-                  />
-                  <source
-                    media="(max-width: 1050px)"
-                    srcset="./images/infoSection/ColorDurability768.svg"
-                  />
-                  <source
-                    media="(max-width: 1680px)"
-                    srcset="./images/infoSection/ColorDurability1600.svg"
-                  />
-                  <img
-                    src="./images/infoSection/ColorDurability.svg"
-                    alt="ColorDurability"
-                  />
-                </picture>
+        <div class="info_block_slider" id="info_block_slider">
+          <div class="slider_list">
+            <div class="slider_track">
+              <div class="block_wrapper slider_card">
+                <div class="container">
+                  <div class="info_block">
+                    <div class="info_block_img">
+                      <picture>
+                        <source
+                          media="(max-width: 700px)"
+                          srcset="./images/infoSection/ColorDurability320.svg"
+                        />
+                        <source
+                          media="(max-width: 1050px)"
+                          srcset="./images/infoSection/ColorDurability768.svg"
+                        />
+                        <source
+                          media="(max-width: 1680px)"
+                          srcset="./images/infoSection/ColorDurability1600.svg"
+                        />
+                        <img
+                          src="./images/infoSection/ColorDurability.svg"
+                          alt="ColorDurability"
+                        />
+                      </picture>
+                    </div>
+                    <article class="info_block_text">
+                      <div class="info_title">
+                        <p class="article_subtitle">Стойкость цвета навсегда —</p>
+                        <p class="additional_text">
+                          гибкая черепица ТЕХНОНИКОЛЬ не выцветает
+                        </p>
+                      </div>
+                      <div class="info_text">
+                        <p class="article_text">
+                          Мы смешиваем базальтовые гранулы с красителем и запекаем при
+                          температуре +600 °С. Гранулы глазуруются, и цвет надежно
+                          запечатывается внутри.
+                        </p>
+                        <p class="article_text">
+                          Обогащение битума кислородом повышает его теплостойкость до
+                          +110 °С. Высококачественная минеральная посыпка из гранул
+                          нескольких фракций, плотно укрывает битумную основу, надежно
+                          защищает гибкую черепицу от ультрафиолета, и базальтовая
+                          крошка не осыпается.
+                        </p>
+                        <p class="article_text">
+                          Поэтому гибкая черепица сохраняет цвет в течение всего срока
+                          службы даже в странах с жарким климатом — в Индии, Таиланде,
+                          Узбекистане.
+                        </p>
+                      </div>
+                      <div class="goto_wrapper">
+                        <p class="goto_text">
+                          <strong>перейти в каталог</strong>
+                        </p>
+                        <button class="goto_button" type="submit">
+                          <img src="./images/banners/Arrow-right.svg" alt="Arrow" />
+                          <img
+                            src="./images/banners/Arrow-right-hover.svg"
+                            alt="Arrow"
+                          />
+                        </button>
+                      </div>
+                    </article>
+                  </div>
+                </div>
               </div>
-              <ul class="slider_menu">
-                <button class="prev" type="submit">
-                  <img
-                    src="./images/slider/LeftSliderArrow.svg"
-                    alt="LeftSliderArrow"
-                  />
-                </button>
-                <li class="slider_item active_item"></li>
-                <li class="slider_item"></li>
-                <li class="slider_item"></li>
-                <li class="slider_item"></li>
-                <li class="slider_item"></li>
-                <button class="next" type="submit">
-                  <img
-                    src="./images/slider/RightSliderArrow.svg"
-                    alt="RightSliderArrow"
-                  />
-                </button>
-              </ul>
-              <article class="info_block_text">
-                <div class="info_title">
-                  <p class="article_subtitle">Стойкость цвета навсегда —</p>
-                  <p class="additional_text">
-                    гибкая черепица ТЕХНОНИКОЛЬ не выцветает
-                  </p>
+              <div class="container slider_card">
+                <div class="info_block">
+                  <article class="info_block_text">
+                    <div class="info_title">
+                      <p class="article_subtitle">Гарантия в любой точке мира</p>
+                      <p class="additional_text">и любых климатических условия</p>
+                    </div>
+                    <div class="info_text">
+                      <p class="article_text">
+                        Мы производим и поставляем гибкую черепицу в 43 страны мира. И
+                        она везде прекрасно себя чувствует: и на русском севере, и
+                        в засушливом резко-континентальном Узбекистане, и во влажных
+                        тропиках индийского штата Керала.
+                      </p>
+                      <p class="article_text">
+                        Наша гибкая черепица отвечает международным
+                        и межгосударственным стандартам — EN 544:2011 и ГОСТ
+                        32806−2014. Система менеджмента качества рязанского завода
+                        по производству гибкой черепицы соответствует требованиям
+                        международного стандарта ISO 9001:2015. Гарантия на
+                        трехслойные коллекции гибкой черепицы — 60 лет.
+                      </p>
+                      <p class="article_text">
+                        <strong
+                          >Мы отвечаем за качество нашей продукции и услуг</strong
+                        >
+                      </p>
+                    </div>
+                    <div class="goto_wrapper">
+                      <p class="goto_text">
+                        <strong>перейти в каталог</strong>
+                      </p>
+                      <button class="goto_button" type="submit">
+                        <img src="./images/banners/Arrow-right.svg" alt="Arrow" />
+                        <img
+                          src="./images/banners/Arrow-right-hover.svg"
+                          alt="Arrow"
+                        />
+                      </button>
+                    </div>
+                  </article>
+                  <div class="info_block_img">
+                    <picture>
+                      <source
+                        media="(max-width: 1050px)"
+                        srcset="./images/infoSection/GuaranteeMap768.svg"
+                      />
+                      <source
+                        media="(max-width: 1680px)"
+                        srcset="./images/infoSection/GuaranteeMap1600.svg"
+                      />
+                      <img
+                        src="./images/infoSection/GuaranteeMap.svg"
+                        alt="GuaranteeMap"
+                      />
+                    </picture>
+                  </div>
                 </div>
-                <div class="info_text">
-                  <p class="article_text">
-                    Мы смешиваем базальтовые гранулы с красителем и запекаем при
-                    температуре +600 °С. Гранулы глазуруются, и цвет надежно
-                    запечатывается внутри.
-                  </p>
-                  <p class="article_text">
-                    Обогащение битума кислородом повышает его теплостойкость до
-                    +110 °С. Высококачественная минеральная посыпка из гранул
-                    нескольких фракций, плотно укрывает битумную основу, надежно
-                    защищает гибкую черепицу от ультрафиолета, и базальтовая
-                    крошка не осыпается.
-                  </p>
-                  <p class="article_text">
-                    Поэтому гибкая черепица сохраняет цвет в течение всего срока
-                    службы даже в странах с жарким климатом — в Индии, Таиланде,
-                    Узбекистане.
-                  </p>
+              </div>
+              <div class="block_wrapper slider_card">
+                <div class="container">
+                  <div class="info_block">
+                    <div class="info_block_img">
+                      <picture>
+                        <source
+                          media="(max-width: 1050px)"
+                          srcset="./images/infoSection/Quality768.svg"
+                        />
+                        <source
+                          media="(max-width: 1680px)"
+                          srcset="./images/infoSection/Quality1600.svg"
+                        />
+                        <img src="./images/infoSection/Quality.svg" alt="Quality" />
+                      </picture>
+                    </div>
+                    <article class="info_block_text">
+                      <div class="info_title">
+                        <p class="article_subtitle">За качество отвечаем —</p>
+                        <p class="additional_text">
+                          ТЕХНОНИКОЛЬ производит гибкую черепицу 20 лет
+                        </p>
+                      </div>
+                      <div class="info_text">
+                        <p class="article_text">
+                          Наши заводы оснащены высокопроизводительным современным
+                          оборудованием. Мы постоянно повышаем эффективность труда
+                          и придерживаемся философии бережливого производства.
+                        </p>
+                        <p class="article_text">
+                          Все наши усилия направлены на улучшение характеристик
+                          и повышение качества продукции.
+                        </p>
+                        <p class="article_text">
+                          В собственных лабораториях мы улучшаем параметры продукции
+                          и создаем новые усовершенствованные технологии. Наши заводы
+                          оснащены высокопроизводительным современным оборудованием.
+                          Мы постоянно повышаем эффективность труда и придерживаемся
+                          философии бережливого производства. Все наши усилия
+                          направлены на улучшение характеристик и повышение качества
+                          продукции.
+                        </p>
+                        <p class="article_text">
+                          <strong>
+                            Гибкая черепица ТЕХНОНИКОЛЬ — это стабильное качество, от
+                            пачке к пачке, изо дня в день.
+                          </strong>
+                        </p>
+                      </div>
+                      <div class="goto_wrapper">
+                        <p class="goto_text">
+                          <strong>перейти в каталог</strong>
+                        </p>
+                        <button class="goto_button" type="submit">
+                          <img src="./images/banners/Arrow-right.svg" alt="Arrow" />
+                          <img
+                            src="./images/banners/Arrow-right-hover.svg"
+                            alt="Arrow"
+                          />
+                        </button>
+                      </div>
+                    </article>
+                  </div>
                 </div>
-                <div class="goto_wrapper">
-                  <p class="goto_text">
-                    <strong>перейти в каталог</strong>
-                  </p>
-                  <button class="goto_button" type="submit">
-                    <img src="./images/banners/Arrow-right.svg" alt="Arrow" />
-                    <img
-                      src="./images/banners/Arrow-right-hover.svg"
-                      alt="Arrow"
-                    />
-                  </button>
+              </div>
+              <div class="container slider_card">
+                <div class="info_block">
+                  <article class="info_block_text">
+                    <div class="info_title">
+                      <p class="article_subtitle">
+                        Гибкая черепица, <br />
+                        которая вдохновляет
+                      </p>
+                    </div>
+                    <div class="info_text">
+                      <p class="article_text">
+                        Гибкая черепица — надежный, долговечный и красивый кровельный
+                        материал, с помощью которого можно воплотить самые
+                        оригинальные архитектурные замыслы. Покрытие из гибкой
+                        черепицы отлично смотрится на скромных и масштабных объектах,
+                        на простых двускатных крышах и на самых сложных кровельных
+                        конструкциях.
+                      </p>
+                      <p class="article_text">
+                        Покрытие из гибкой черепицы отлично смотрится на скромных
+                        и масштабных объектах, на простых двускатных крышах и на самых
+                        сложных кровельных конструкциях.
+                      </p>
+                      <p class="article_text">
+                        <strong>Каждый сезон мы предлагаем новинки.</strong>
+                      </p>
+                    </div>
+                    <div class="goto_wrapper">
+                      <p class="goto_text">
+                        <strong>перейти в каталог</strong>
+                      </p>
+                      <button class="goto_button" type="submit">
+                        <img src="./images/banners/Arrow-right.svg" alt="Arrow" />
+                        <img
+                          src="./images/banners/Arrow-right-hover.svg"
+                          alt="Arrow"
+                        />
+                      </button>
+                    </div>
+                  </article>
+                  <div class="info_block_img">
+                    <picture>
+                      <source
+                        media="(max-width: 1050px)"
+                        srcset="./images/infoSection/Flexible768.svg"
+                      />
+                      <source
+                        media="(max-width: 1680px)"
+                        srcset="./images/infoSection/Flexible1600.svg"
+                      />
+                      <img src="./images/infoSection/Flexible.svg" alt="Flexible" />
+                    </picture>
+                  </div>
                 </div>
-              </article>
+              </div>
+              <div class="block_wrapper slider_card">
+                <div class="container">
+                  <div class="info_block">
+                    <div class="info_block_img">
+                      <picture>
+                        <source
+                          media="(max-width: 1050px)"
+                          srcset="./images/infoSection/Unique768.svg"
+                        />
+                        <source
+                          media="(max-width: 1680px)"
+                          srcset="./images/infoSection/Unique1600.svg"
+                        />
+                        <img src="./images/infoSection/Unique.svg" alt="Unique" />
+                      </picture>
+                    </div>
+                    <article class="info_block_text">
+                      <div class="info_title">
+                        <p class="article_subtitle">Уникальная кровля</p>
+                      </div>
+                      <div class="info_text">
+                        <p class="article_text">
+                          Мы предлагаем самый большой ассортимент гибкой черепицы
+                          среди российских производителей — 19 коллекций, 9 форм
+                          нарезки и 80 неповторимых цветовых оттенков. Кровельное
+                          покрытие выглядит объемным из-за многослойности, трехмерного
+                          цвета и фактуры.
+                        </p>
+                        <p class="article_text">
+                          <strong>
+                            Наши дизайнеры вдохновляются природной палитрой, чтобы
+                            кровля дома гармонично вписывалась в окружающий ландшафт.
+                          </strong>
+                        </p>
+                      </div>
+                      <div class="goto_wrapper">
+                        <p class="goto_text">
+                          <strong>перейти в каталог</strong>
+                        </p>
+                        <button class="goto_button" type="submit">
+                          <img src="./images/banners/Arrow-right.svg" alt="Arrow" />
+                          <img
+                            src="./images/banners/Arrow-right-hover.svg"
+                            alt="Arrow"
+                          />
+                        </button>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="container">
-          <div class="info_block">
-            <article class="info_block_text">
-              <div class="info_title">
-                <p class="article_subtitle">Гарантия в любой точке мира</p>
-                <p class="additional_text">и любых климатических условия</p>
-              </div>
-              <div class="info_text">
-                <p class="article_text">
-                  Мы производим и поставляем гибкую черепицу в 43 страны мира. И
-                  она везде прекрасно себя чувствует: и на русском севере, и
-                  в засушливом резко-континентальном Узбекистане, и во влажных
-                  тропиках индийского штата Керала.
-                </p>
-                <p class="article_text">
-                  Наша гибкая черепица отвечает международным
-                  и межгосударственным стандартам — EN 544:2011 и ГОСТ
-                  32806−2014. Система менеджмента качества рязанского завода
-                  по производству гибкой черепицы соответствует требованиям
-                  международного стандарта ISO 9001:2015. Гарантия на
-                  трехслойные коллекции гибкой черепицы — 60 лет.
-                </p>
-                <p class="article_text">
-                  <strong
-                    >Мы отвечаем за качество нашей продукции и услуг</strong
-                  >
-                </p>
-              </div>
-              <div class="goto_wrapper">
-                <p class="goto_text">
-                  <strong>перейти в каталог</strong>
-                </p>
-                <button class="goto_button" type="submit">
-                  <img src="./images/banners/Arrow-right.svg" alt="Arrow" />
-                  <img
-                    src="./images/banners/Arrow-right-hover.svg"
-                    alt="Arrow"
-                  />
-                </button>
-              </div>
-            </article>
-            <div class="info_block_img">
-              <picture>
-                <source
-                  media="(max-width: 1050px)"
-                  srcset="./images/infoSection/GuaranteeMap768.svg"
-                />
-                <source
-                  media="(max-width: 1680px)"
-                  srcset="./images/infoSection/GuaranteeMap1600.svg"
-                />
-                <img
-                  src="./images/infoSection/GuaranteeMap.svg"
-                  alt="GuaranteeMap"
-                />
-              </picture>
-            </div>
-          </div>
-        </div>
-        <div class="block_wrapper">
-          <div class="container">
-            <div class="info_block">
-              <div class="info_block_img">
-                <picture>
-                  <source
-                    media="(max-width: 1050px)"
-                    srcset="./images/infoSection/Quality768.svg"
-                  />
-                  <source
-                    media="(max-width: 1680px)"
-                    srcset="./images/infoSection/Quality1600.svg"
-                  />
-                  <img src="./images/infoSection/Quality.svg" alt="Quality" />
-                </picture>
-              </div>
-              <article class="info_block_text">
-                <div class="info_title">
-                  <p class="article_subtitle">За качество отвечаем —</p>
-                  <p class="additional_text">
-                    ТЕХНОНИКОЛЬ производит гибкую черепицу 20 лет
-                  </p>
-                </div>
-                <div class="info_text">
-                  <p class="article_text">
-                    Наши заводы оснащены высокопроизводительным современным
-                    оборудованием. Мы постоянно повышаем эффективность труда
-                    и придерживаемся философии бережливого производства.
-                  </p>
-                  <p class="article_text">
-                    Все наши усилия направлены на улучшение характеристик
-                    и повышение качества продукции.
-                  </p>
-                  <p class="article_text">
-                    В собственных лабораториях мы улучшаем параметры продукции
-                    и создаем новые усовершенствованные технологии. Наши заводы
-                    оснащены высокопроизводительным современным оборудованием.
-                    Мы постоянно повышаем эффективность труда и придерживаемся
-                    философии бережливого производства. Все наши усилия
-                    направлены на улучшение характеристик и повышение качества
-                    продукции.
-                  </p>
-                  <p class="article_text">
-                    <strong>
-                      Гибкая черепица ТЕХНОНИКОЛЬ — это стабильное качество, от
-                      пачке к пачке, изо дня в день.
-                    </strong>
-                  </p>
-                </div>
-                <div class="goto_wrapper">
-                  <p class="goto_text">
-                    <strong>перейти в каталог</strong>
-                  </p>
-                  <button class="goto_button" type="submit">
-                    <img src="./images/banners/Arrow-right.svg" alt="Arrow" />
-                    <img
-                      src="./images/banners/Arrow-right-hover.svg"
-                      alt="Arrow"
-                    />
-                  </button>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="info_block">
-            <article class="info_block_text">
-              <div class="info_title">
-                <p class="article_subtitle">
-                  Гибкая черепица, <br />
-                  которая вдохновляет
-                </p>
-              </div>
-              <div class="info_text">
-                <p class="article_text">
-                  Гибкая черепица — надежный, долговечный и красивый кровельный
-                  материал, с помощью которого можно воплотить самые
-                  оригинальные архитектурные замыслы. Покрытие из гибкой
-                  черепицы отлично смотрится на скромных и масштабных объектах,
-                  на простых двускатных крышах и на самых сложных кровельных
-                  конструкциях.
-                </p>
-                <p class="article_text">
-                  Покрытие из гибкой черепицы отлично смотрится на скромных
-                  и масштабных объектах, на простых двускатных крышах и на самых
-                  сложных кровельных конструкциях.
-                </p>
-                <p class="article_text">
-                  <strong>Каждый сезон мы предлагаем новинки.</strong>
-                </p>
-              </div>
-              <div class="goto_wrapper">
-                <p class="goto_text">
-                  <strong>перейти в каталог</strong>
-                </p>
-                <button class="goto_button" type="submit">
-                  <img src="./images/banners/Arrow-right.svg" alt="Arrow" />
-                  <img
-                    src="./images/banners/Arrow-right-hover.svg"
-                    alt="Arrow"
-                  />
-                </button>
-              </div>
-            </article>
-            <div class="info_block_img">
-              <picture>
-                <source
-                  media="(max-width: 1050px)"
-                  srcset="./images/infoSection/Flexible768.svg"
-                />
-                <source
-                  media="(max-width: 1680px)"
-                  srcset="./images/infoSection/Flexible1600.svg"
-                />
-                <img src="./images/infoSection/Flexible.svg" alt="Flexible" />
-              </picture>
-            </div>
-          </div>
-        </div>
-        <div class="block_wrapper">
-          <div class="container">
-            <div class="info_block">
-              <div class="info_block_img">
-                <picture>
-                  <source
-                    media="(max-width: 1050px)"
-                    srcset="./images/infoSection/Unique768.svg"
-                  />
-                  <source
-                    media="(max-width: 1680px)"
-                    srcset="./images/infoSection/Unique1600.svg"
-                  />
-                  <img src="./images/infoSection/Unique.svg" alt="Unique" />
-                </picture>
-              </div>
-              <article class="info_block_text">
-                <div class="info_title">
-                  <p class="article_subtitle">Уникальная кровля</p>
-                </div>
-                <div class="info_text">
-                  <p class="article_text">
-                    Мы предлагаем самый большой ассортимент гибкой черепицы
-                    среди российских производителей — 19 коллекций, 9 форм
-                    нарезки и 80 неповторимых цветовых оттенков. Кровельное
-                    покрытие выглядит объемным из-за многослойности, трехмерного
-                    цвета и фактуры.
-                  </p>
-                  <p class="article_text">
-                    <strong>
-                      Наши дизайнеры вдохновляются природной палитрой, чтобы
-                      кровля дома гармонично вписывалась в окружающий ландшафт.
-                    </strong>
-                  </p>
-                </div>
-                <div class="goto_wrapper">
-                  <p class="goto_text">
-                    <strong>перейти в каталог</strong>
-                  </p>
-                  <button class="goto_button" type="submit">
-                    <img src="./images/banners/Arrow-right.svg" alt="Arrow" />
-                    <img
-                      src="./images/banners/Arrow-right-hover.svg"
-                      alt="Arrow"
-                    />
-                  </button>
-                </div>
-              </article>
-            </div>
+          <div class="slider_menu">
+            <button class="prev" type="submit">
+              <img
+                class="prev"
+                src="./images/slider/LeftSliderArrow.svg"
+                alt="LeftSliderArrow"
+              />
+            </button>
+            <ul class="slider_items"></ul>
+            <button class="next" type="submit">
+              <img
+                class="next"
+                src="./images/slider/RightSliderArrow.svg"
+                alt="RightSliderArrow"
+              />
+            </button>
           </div>
         </div>
         <link rel="stylesheet" href="./styles/infoSection.css" />
