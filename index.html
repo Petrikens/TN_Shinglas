@@ -573,81 +573,83 @@
               <div class="step_number"><strong>Шаг 1</strong></div>
               <div class="additional_text">Выберите тип крыши</div>
             </div>
-            <div class="roof_cards">
-              <div class="roof_card">
-                <div class="roof_card_img">
-                  <img
-                    src="./images/roofEstimate/ShedRoof.svg"
-                    alt="ShedRoof"
-                  />
+            <div class="roof_estimate_slider" id="roof_estimate_slider">
+              <div class="slider_list">
+                <div class="slider_track">
+                  <div class="slider_card">
+                    <div class="roof_card_img">
+                      <img
+                        src="./images/roofEstimate/ShedRoof.svg"
+                        alt="ShedRoof"
+                      />
+                    </div>
+                    <span class="roof_card_name">Односкатная</span>
+                  </div>
+                  <div class="slider_card">
+                    <div class="roof_card_img">
+                      <img
+                        src="./images/roofEstimate/GableRoof.svg"
+                        alt="GableRoof"
+                      />
+                    </div>
+                    <span class="roof_card_name">Двускатная</span>
+                  </div>
+                  <div class="slider_card">
+                    <div class="roof_card_img">
+                      <img
+                        src="./images/roofEstimate/HipRoof.svg"
+                        alt="MarqueeRoof"
+                      />
+                    </div>
+                    <span class="roof_card_name">Вальмовая</span>
+                  </div>
+                  <div class="slider_card">
+                    <div class="roof_card_img">
+                      <img
+                        src="./images/roofEstimate/MarqueeRoof.svg"
+                        alt="AtticRoof"
+                      />
+                    </div>
+                    <span class="roof_card_name">Шатровая</span>
+                  </div>
+                  <div class="slider_card">
+                    <div class="roof_card_img">
+                      <img
+                        src="./images/roofEstimate/AtticRoof.svg"
+                        alt="AtticRoof"
+                      />
+                    </div>
+                    <span class="roof_card_name">Мансардная</span>
+                  </div>
+                  <div class="slider_card">
+                    <div class="roof_card_img">
+                      <img
+                        src="./images/roofEstimate/DifficultRoof.svg"
+                        alt="DifficultRoof"
+                      />
+                    </div>
+                    <span class="roof_card_name">Сложная</span>
+                  </div>
                 </div>
-                <span class="roof_card_name">Односкатная</span>
               </div>
-              <div class="roof_card">
-                <div class="roof_card_img">
+              <div class="slider_menu">
+                <button class="prev" type="submit">
                   <img
-                    src="./images/roofEstimate/GableRoof.svg"
-                    alt="GableRoof"
+                    class="prev"
+                    src="./images/slider/LeftSliderArrow.svg"
+                    alt="LeftSliderArrow"
                   />
-                </div>
-                <span class="roof_card_name">Двускатная</span>
-              </div>
-              <div class="roof_card">
-                <div class="roof_card_img">
+                </button>
+                <ul class="slider_items"></ul>
+                <button class="next" type="submit">
                   <img
-                    src="./images/roofEstimate/HipRoof.svg"
-                    alt="MarqueeRoof"
+                    class="next"
+                    src="./images/slider/RightSliderArrow.svg"
+                    alt="RightSliderArrow"
                   />
-                </div>
-                <span class="roof_card_name">Вальмовая</span>
-              </div>
-              <div class="roof_card">
-                <div class="roof_card_img">
-                  <img
-                    src="./images/roofEstimate/MarqueeRoof.svg"
-                    alt="AtticRoof"
-                  />
-                </div>
-                <span class="roof_card_name">Шатровая</span>
-              </div>
-              <div class="roof_card">
-                <div class="roof_card_img">
-                  <img
-                    src="./images/roofEstimate/AtticRoof.svg"
-                    alt="AtticRoof"
-                  />
-                </div>
-                <span class="roof_card_name">Мансардная</span>
-              </div>
-              <div class="roof_card">
-                <div class="roof_card_img">
-                  <img
-                    src="./images/roofEstimate/DifficultRoof.svg"
-                    alt="DifficultRoof"
-                  />
-                </div>
-                <span class="roof_card_name">Сложная</span>
+                </button>
               </div>
             </div>
-            <ul class="slider_menu">
-              <button class="prev" type="submit">
-                <img
-                  src="./images/slider/LeftSliderArrow.svg"
-                  alt="LeftSliderArrow"
-                />
-              </button>
-              <li class="slider_item active_item"></li>
-              <li class="slider_item"></li>
-              <li class="slider_item"></li>
-              <li class="slider_item"></li>
-              <li class="slider_item"></li>
-              <button class="next" type="submit">
-                <img
-                  src="./images/slider/RightSliderArrow.svg"
-                  alt="RightSliderArrow"
-                />
-              </button>
-            </ul>
             <div class="steps_controller">
               <div class="step_counter"><strong>1</strong> / 4</div>
               <div class="goto_wrapper">
@@ -2117,10 +2119,10 @@
                 </div>
               </li>
               <li class="facade_materials_item">
+                <a class="materials_item" href="#">Планкен</a>
                 <div class="select_item">
                   <img src="./images/collectionMenu/Select.svg" alt="Select" />
                 </div>
-                <a class="materials_item" href="#">Планкен </a>
               </li>
               <li class="facade_materials_item">
                 <a class="materials_item" href="#">Вагонка </a>

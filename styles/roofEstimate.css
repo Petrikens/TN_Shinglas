@@ -23,14 +23,17 @@
 }
 
 
-.roof_cards {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.roof_estimate_slider {
     margin-bottom: 75px;
 }
 
-.roof_card {
+.roof_estimate_slider .slider_track {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.roof_estimate_slider .slider_card {
     width: 249px;
     height: 339px;
     display: flex;
@@ -82,12 +85,12 @@
     text-align: start;
 }
 
-.roof_cards + .slider_menu {
+.roof_estimate_slider .slider_menu {
     display: none;
 }
 
 @media screen and (max-width: 1680px) {
-    .roof_estimate {
+    .roof_estimate_slider {
         margin-bottom: 85px;
     }
 
@@ -95,10 +98,13 @@
         margin-bottom: 68px;
     }
 
-    .roof_cards {
-        gap: 25px;
+    .roof_estimate_slider {
         overflow: scroll;
         overflow-y: hidden;
+    }
+
+    .roof_estimate_slider .slider_track {
+        gap: 25px;
     }
 
     .step_counter {
@@ -107,7 +113,11 @@
 }
 
 @media screen and (max-width: 1450px) {
-    .roof_cards {
+    .roof_estimate_slider {
+        width: 1320px;
+    }
+
+    .roof_estimate_slider .slider_list {
         width: 1320px;
     }
 
@@ -117,7 +127,11 @@
 }
 
 @media screen and (max-width: 1300px) {
-    .roof_cards {
+    .roof_estimate_slider {
+        width: 1180px;
+    }
+
+    .roof_estimate_slider .slider_list {
         width: 1180px;
     }
 
@@ -127,7 +141,11 @@
 }
 
 @media screen and (max-width: 1150px) {
-    .roof_cards {
+    .roof_estimate_slider {
+        width: 1050px;
+    }
+
+    .roof_estimate_slider .slider_list {
         width: 1050px;
     }
 
@@ -160,9 +178,16 @@
         margin-left: 20px;
     }
 
-    .roof_cards {
-        gap: 25px;
+    .roof_estimate_slider {
         margin-bottom: 50px;
+        width: 788px;
+    }
+
+    .roof_estimate_slider .slider_track {
+        gap: 25px;
+    }
+
+    .roof_estimate_slider .slider_list {
         width: 788px;
     }
 
@@ -203,15 +228,22 @@
         margin-left: 7px;
     }
 
-    .roof_cards {
+    .roof_estimate_slider {
+        overflow: hidden;
         margin-bottom: 35px;
-        gap: 20px;
-        justify-content: center;
-        width: 100%;
-
+        width: 249px;
     }
 
-    .roof_cards + .slider_menu {
+    .roof_estimate_slider .slider_list {
+        margin-bottom: 25px;
+        width: 249px;
+    }
+
+    .roof_estimate_slider .slider_track {
+        gap: 0px;
+    }
+
+    .roof_estimate_slider .slider_menu {
         display: flex;
         justify-content: center;
         margin-bottom: 45px;
@@ -234,9 +266,5 @@
         font-size: 30px;
         line-height: 30px;
         max-width: 202px;
-    }
-
-    .roof_cards div:not(:first-child) {
-        display: none;
     }
 }
