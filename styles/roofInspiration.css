@@ -8,11 +8,13 @@
 }
 
 .inspiration_cards {
+    margin-bottom: 35px;
+}
+
+.inspiration_cards .slider_track {
     display: flex;
     flex-wrap: wrap;
     gap: 33px;
-    margin-bottom: 35px;
-
 }
 
 .inspiration_card:nth-child(even) {
@@ -34,7 +36,7 @@
     text-transform: uppercase;
 }
 
-.roof_inspiration .slider_menu {
+.inspiration_cards .slider_menu {
     display: none;
 }
 
@@ -48,8 +50,11 @@
     }
 
     .inspiration_cards {
-        gap: 29px;
         margin-bottom: 60px;
+    }
+
+    .inspiration_cards .slider_track {
+        gap: 29px;
     }
 
     .inspiration_card:nth-child(even) {
@@ -64,7 +69,7 @@
 }
 
 @media screen and (max-width: 1450px) {
-    .inspiration_cards {
+    .inspiration_cards .slider_track {
         gap: 20px;
     }
 
@@ -76,9 +81,6 @@
 }
 
 @media screen and (max-width: 1300px) {
-    .inspiration_cards {
-        gap: 20px;
-    }
 
     .inspiration_card,
     .inspiration_card img {
@@ -95,7 +97,7 @@
         height: 600px;
     }
 
-    .inspiration_cards {
+    .inspiration_cards .slider_track {
         row-gap: 30px;
         column-gap: 50px;
         justify-content: center;
@@ -112,10 +114,9 @@
         margin-bottom: 85px;
     }
 
-    .inspiration_cards {
+    .inspiration_cards .slider_track {
         flex-direction: row;
         gap: 28px;
-
     }
 
     .inspiration_card:nth-child(even) {
@@ -145,15 +146,35 @@
         margin-left: 20px;
     }
 
-    .inspiration_cards div:not(:first-child) {
-        display: none;
+    .inspiration_cards {
+        width: 320px;
+        overflow: hidden;
     }
+
+    .inspiration_cards .slider_list {
+        width: 320px;
+    }
+
+    .inspiration_cards .slider_track {
+        flex-wrap: nowrap;
+        gap: 0;
+        justify-content: normal;
+    }
+
+    .inspiration_card:nth-child(even) {
+        top: 0;
+    }
+
+    /* .inspiration_cards div:not(:first-child) {
+        display: none;
+    } */
 
     .inspiration_cards {
         margin-bottom: 30px;
     }
 
-    .roof_inspiration .slider_menu {
+    .inspiration_cards .slider_menu {
+        margin-top: 10px;
         display: flex;
         justify-content: center;
     }
