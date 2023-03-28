@@ -17,6 +17,11 @@ class RooferSlider {
   createSliderItems() {
     for (let i = 0; i <= this.maxIndex; i++) {
       let li = document.createElement("li");
+      li.addEventListener("click", () => {
+        this.slideIndex = i;
+        this.activeItem(i);
+        this.slide();
+      });
       li.classList.add("slider_item");
       if (i === 0) {
         li.classList.add("active_item");

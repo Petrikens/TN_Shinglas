@@ -17,6 +17,7 @@
     height: 7px;
     border-radius: 50%;
     background: #E7E7E7;
+    cursor: pointer;
 }
 
 .active_item {
@@ -38,7 +39,6 @@
 
 @media screen and (max-width: 700px) {
     .slider_menu button {
-        width: 30px;
-        height: 30px;
+        display: none;
     }
 }

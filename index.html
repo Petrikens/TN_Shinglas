@@ -16,6 +16,8 @@
     <script src="./js/roofEstimate.js" defer></script>
     <script src="./js/infoSection.js" defer></script>
     <script src="./js/roofInspiration.js" defer></script>
+    <script src="./js/roofHarmony.js" defer></script>
+    <script src="./js/interestingSection.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -294,8 +296,8 @@
               </button>
             </div>
             <div class="slider_list">
-              <div class="slider_track" id="slider_track">
-                <div class="slider_card" id="slider_card">
+              <div class="slider_track">
+                <div class="slider_card">
                   <div class="slider_img">
                     <picture>
                       <source
@@ -342,7 +344,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="slider_card" id="slider_card">
+                <div class="slider_card">
                   <div class="slider_img">
                     <img
                       src="./images/bestRoof/KontinentRoof.svg"
@@ -371,7 +373,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="slider_card" id="slider_card">
+                <div class="slider_card">
                   <div class="slider_img">
                     <img
                       src="./images/bestRoof/VesternRoof.svg"
@@ -400,7 +402,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="slider_card" id="slider_card">
+                <div class="slider_card">
                   <div class="slider_img">
                     <img
                       src="./images/bestRoof/VesternRoof.svg"
@@ -429,7 +431,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="slider_card" id="slider_card">
+                <div class="slider_card">
                   <div class="slider_img">
                     <img
                       src="./images/bestRoof/VesternRoof.svg"
@@ -1217,99 +1219,101 @@
         <link rel="stylesheet" href="./styles/roofHarmony.css" />
         <div class="container">
           <div class="section_title">В гармонии с кровлей</div>
-          <div class="harmony_cards">
-            <div class="harmony_card">
-              <a href="#">
-                <picture>
-                  <source
-                    media="(max-width: 700px)"
-                    srcset="./images/roofHarmony/CompositeShingles320.png"
-                  />
-                  <img
-                    src="./images/roofHarmony/CompositeShingles.png"
-                    alt="CompositeShingles"
-                  />
-                </picture>
-              </a>
+          <div class="harmony_cards" id="roof_harmony_slider">
+            <div class="slider_list">
+              <div class="slider_track">
+                <div class="harmony_card slider_card">
+                  <a href="#">
+                    <picture>
+                      <source
+                        media="(max-width: 700px)"
+                        srcset="./images/roofHarmony/CompositeShingles320.png"
+                      />
+                      <img
+                        src="./images/roofHarmony/CompositeShingles.png"
+                        alt="CompositeShingles"
+                      />
+                    </picture>
+                  </a>
+                </div>
+                <div class="harmony_card slider_card">
+                  <a href="#">
+                    <img
+                      src="./images/roofHarmony/PlasticVentilation.png"
+                      alt="PlasticVentilation"
+                    />
+                  </a>
+                </div>
+                <div class="harmony_card slider_card">
+                  <a href="#">
+                    <img
+                      src="./images/roofHarmony/FacadeTiles.png"
+                      alt="FacadeTiles"
+                    />
+                  </a>
+                </div>
+                <div class="harmony_card slider_card">
+                  <a href="#">
+                    <img
+                      src="./images/roofHarmony/VinylSpotlights.png"
+                      alt="VinylSpotlights"
+                    />
+                  </a>
+                </div>
+                <div class="harmony_card slider_card">
+                  <a href="#">
+                    <img
+                      src="./images/roofHarmony/VinylSiding.png"
+                      alt="VinylSiding"
+                    />
+                  </a>
+                </div>
+                <div class="harmony_card slider_card">
+                  <a href="#">
+                    <img
+                      src="./images/roofHarmony/DrainageSystems.png"
+                      alt="DrainageSystems"
+                    />
+                  </a>
+                </div>
+                <div class="harmony_card slider_card">
+                  <a href="#">
+                    <img src="./images/roofHarmony/WoodTrim.png" alt="WoodTrim" />
+                  </a>
+                </div>
+                <div class="harmony_card slider_card">
+                  <a href="#">
+                    <img
+                      src="./images/roofHarmony/LiningCarpets.png"
+                      alt="LiningCarpets"
+                    />
+                  </a>
+                </div>
+                <div class="harmony_card slider_card">
+                  <a href="#">
+                    <img src="./images/roofHarmony/Flooring.png" alt="Flooring" />
+                  </a>
+                </div>
+              </div>
             </div>
-            <div class="harmony_card">
-              <a href="#">
+            <div class="slider_menu">
+              <button class="prev" type="submit">
                 <img
-                  src="./images/roofHarmony/PlasticVentilation.png"
-                  alt="PlasticVentilation"
+                  class="prev"
+                  src="./images/slider/LeftSliderArrow.svg"
+                  alt="LeftSliderArrow"
                 />
-              </a>
-            </div>
-            <div class="harmony_card">
-              <a href="#">
+              </button>
+              <ul class="slider_items"></ul>
+              <button class="next" type="submit">
                 <img
-                  src="./images/roofHarmony/FacadeTiles.png"
-                  alt="FacadeTiles"
+                  class="next"
+                  src="./images/slider/RightSliderArrow.svg"
+                  alt="RightSliderArrow"
                 />
-              </a>
-            </div>
-            <div class="harmony_card">
-              <a href="#">
-                <img
-                  src="./images/roofHarmony/VinylSpotlights.png"
-                  alt="VinylSpotlights"
-                />
-              </a>
-            </div>
-            <div class="harmony_card">
-              <a href="#">
-                <img
-                  src="./images/roofHarmony/VinylSiding.png"
-                  alt="VinylSiding"
-                />
-              </a>
-            </div>
-            <div class="harmony_card">
-              <a href="#">
-                <img
-                  src="./images/roofHarmony/DrainageSystems.png"
-                  alt="DrainageSystems"
-                />
-              </a>
-            </div>
-            <div class="harmony_card">
-              <a href="#">
-                <img src="./images/roofHarmony/WoodTrim.png" alt="WoodTrim" />
-              </a>
-            </div>
-            <div class="harmony_card">
-              <a href="#">
-                <img
-                  src="./images/roofHarmony/LiningCarpets.png"
-                  alt="LiningCarpets"
-                />
-              </a>
-            </div>
-            <div class="harmony_card">
-              <a href="#">
-                <img src="./images/roofHarmony/Flooring.png" alt="Flooring" />
-              </a>
+              </button>
             </div>
           </div>
-          <ul class="slider_menu">
-            <button class="prev" type="submit">
-              <img
-                src="./images/slider/LeftSliderArrow.svg"
-                alt="LeftSliderArrow"
-              />
-            </button>
-            <li class="slider_item active_item"></li>
-            <li class="slider_item"></li>
-            <li class="slider_item"></li>
-            <li class="slider_item"></li>
-            <li class="slider_item"></li>
-            <button class="next" type="submit">
-              <img
-                src="./images/slider/RightSliderArrow.svg"
-                alt="RightSliderArrow"
-              />
-            </button>
-          </ul>
         </div>
       </section>
       <section class="interesting_section">
@@ -1338,103 +1342,107 @@
                   />
                 </picture>
               </div>
-              <div class="news_cards">
-                <div class="news_card">
-                  <picture>
-                    <source
-                      media="(max-width: 700px)"
-                      srcset="./images/interestingSection/Tournament320.png"
-                    />
-                    <img
-                      class="news_image"
-                      src="./images/interestingSection/Tournament.png"
-                      alt="Tournament"
-                    />
-                  </picture>
-                  <article class="news_content">
-                    <div class="news_date">21/12/2022</div>
-                    <div class="news_card_title">
-                      В Москве состоялся Турнир Кровельщиков УНИКМА
-                    </div>
-                    <div class="article_text">
-                      22 марта 2022 года прошел день компании Технониколь на
-                      Турнире Кровельщиков УНИКМА. Участники соревновались в
-                      двух номинациях — «Подкровельные слои» и «Гибкая
-                      черепица».
-                    </div>
-                    <div class="goto_wrapper">
-                      <p class="goto_text">
-                        <strong>Узнать больше</strong>
-                      </p>
-                      <button class="goto_button" type="submit">
-                        <img
-                          src="./images/banners/Arrow-right.svg"
-                          alt="Arrow"
+              <div class="news_cards" id="news_slider">
+                <div class="slider_list">
+                  <div class="slider_track">
+                    <div class="news_card slider_card">
+                      <picture>
+                        <source
+                          media="(max-width: 700px)"
+                          srcset="./images/interestingSection/Tournament320.png"
                         />
                         <img
-                          src="./images/banners/Arrow-right-hover.svg"
-                          alt="Arrow"
+                          class="news_image"
+                          src="./images/interestingSection/Tournament.png"
+                          alt="Tournament"
                         />
-                      </button>
+                      </picture>
+                      <article class="news_content">
+                        <div class="news_date">21/12/2022</div>
+                        <div class="news_card_title">
+                          В Москве состоялся Турнир Кровельщиков УНИКМА
+                        </div>
+                        <div class="article_text">
+                          22 марта 2022 года прошел день компании Технониколь на
+                          Турнире Кровельщиков УНИКМА. Участники соревновались в
+                          двух номинациях — «Подкровельные слои» и «Гибкая
+                          черепица».
+                        </div>
+                        <div class="goto_wrapper">
+                          <p class="goto_text">
+                            <strong>Узнать больше</strong>
+                          </p>
+                          <button class="goto_button" type="submit">
+                            <img
+                              src="./images/banners/Arrow-right.svg"
+                              alt="Arrow"
+                            />
+                            <img
+                              src="./images/banners/Arrow-right-hover.svg"
+                              alt="Arrow"
+                            />
+                          </button>
+                        </div>
+                      </article>
                     </div>
-                  </article>
+                    <div class="news_card slider_card">
+                      <picture>
+                        <source
+                          media="(max-width: 700px)"
+                          srcset="./images/interestingSection/UniqueHouse.png"
+                        />
+                        <img
+                          class="news_image"
+                          src="./images/interestingSection/UniqueHouse.png"
+                          alt="UniqueHouse"
+                        />
+                      </picture>
+                      <article class="news_content">
+                        <div class="news_date">21/12/2022</div>
+                        <div class="news_card_title">
+                          Уникальные дома ручной работы с душой и характером
+                        </div>
+                        <div class="article_text">
+                          Специалисты компании создают авторские дома из кедра, с
+                          соблюдением технологий деревянного домостроения — от
+                          тщательного выбора до ручной обработки каждого бревна.
+                        </div>
+                        <div class="goto_wrapper">
+                          <p class="goto_text">
+                            <strong>Узнать больше</strong>
+                          </p>
+                          <button class="goto_button" type="submit">
+                            <img
+                              src="./images/banners/Arrow-right.svg"
+                              alt="Arrow"
+                            />
+                            <img
+                              src="./images/banners/Arrow-right-hover.svg"
+                              alt="Arrow"
+                            />
+                          </button>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
                 </div>
-                <div class="news_card">
-                  <picture>
-                    <source
-                      media="(max-width: 700px)"
-                      srcset="./images/interestingSection/Unique768.png"
-                    />
+                <div class="slider_menu">
+                  <button class="prev" type="submit">
                     <img
-                      class="news_image"
-                      src="./images/interestingSection/UniqueHouse.png"
-                      alt="UniqueHouse"
+                      class="prev"
+                      src="./images/slider/LeftSliderArrow.svg"
+                      alt="LeftSliderArrow"
                     />
-                  </picture>
-                  <article class="news_content">
-                    <div class="news_date">21/12/2022</div>
-                    <div class="news_card_title">
-                      Уникальные дома ручной работы с душой и характером
-                    </div>
-                    <div class="article_text">
-                      Специалисты компании создают авторские дома из кедра, с
-                      соблюдением технологий деревянного домостроения — от
-                      тщательного выбора до ручной обработки каждого бревна.
-                    </div>
-                    <div class="goto_wrapper">
-                      <p class="goto_text">
-                        <strong>Узнать больше</strong>
-                      </p>
-                      <button class="goto_button" type="submit">
-                        <img
-                          src="./images/banners/Arrow-right.svg"
-                          alt="Arrow"
-                        />
-                        <img
-                          src="./images/banners/Arrow-right-hover.svg"
-                          alt="Arrow"
-                        />
-                      </button>
-                    </div>
-                  </article>
+                  </button>
+                  <ul class="slider_items"></ul>
+                  <button class="next" type="submit">
+                    <img
+                      class="next"
+                      src="./images/slider/RightSliderArrow.svg"
+                      alt="RightSliderArrow"
+                    />
+                  </button>
                 </div>
-              </div>
-              <div class="slider_menu">
-                <button class="prev" type="submit">
-                  <img
-                    class="prev"
-                    src="./images/slider/LeftSliderArrow.svg"
-                    alt="LeftSliderArrow"
-                  />
-                </button>
-                <ul class="slider_items"></ul>
-                <button class="next" type="submit">
-                  <img
-                    class="next"
-                    src="./images/slider/RightSliderArrow.svg"
-                    alt="RightSliderArrow"
-                  />
-                </button>
               </div>
             </div>
           </div>

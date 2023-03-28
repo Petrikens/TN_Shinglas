@@ -400,9 +400,11 @@
         position: relative;
     }
 
-    .slider_img img {
+    .slider_img > img {
         border-top-right-radius: 3px;
         border-top-left-radius: 3px;
+        width: 280px;
+        height: 224px;
     }
 
     .slider_like_card,
