@@ -15,6 +15,12 @@ class RoofSlider {
       Math.floor(this.slider.offsetWidth / this.slideWidth);
   }
 
+  chechSliderWidth() {
+    window.addEventListener("resize", () => {
+      this.slideWidth = this.slides[0].offsetWidth + this.slideGap;
+    });
+  }
+
   createSliderItems() {
     for (let i = 0; i <= this.maxIndex; i++) {
       let li = document.createElement("li");

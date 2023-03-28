@@ -35,6 +35,10 @@
     color: #FFFFFF;
 }
 
+.nav_item:hover {
+    color: #E30613;
+}
+
 .footer_hotline {
     display: flex;
     flex-direction: column;
@@ -79,6 +83,32 @@
     gap: 50px;
 }
 
+.link {
+    width: 32px;
+    height: 32px;
+    position: relative;
+}
+
+.link:nth-child(2) {
+    top: -3px;
+}
+
+.link img {
+    position: absolute;
+}
+
+.link img:last-child {
+    display: none;
+}
+
+.link:hover img:first-child {
+    display: none;
+}
+
+.link:hover img:last-child {
+    display: flex;
+}
+
 .middle_left_content button {
     border: 1px solid #707070;
     border-radius: 10px;
@@ -89,6 +119,12 @@
     letter-spacing: 0.05em;
     color: #FFFFFF;
     padding: 11px 37px;
+}
+
+.middle_left_content button:hover {
+    background: #E30613;
+    color: #FFFFFF;
+    border-color: #E30613;
 }
 
 .middle_right_content button {

@@ -260,6 +260,7 @@
 
     .info_block_text {
         gap: 25px;
+        max-width: 280px;
     }
 
     .article_subtitle {
