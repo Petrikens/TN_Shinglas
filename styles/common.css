@@ -1,0 +1,6 @@
+.bread_crumbs {
+    display: flex;
+    font-size: 14px;
+    line-height: 20px;
+    gap: 10px;
+}
