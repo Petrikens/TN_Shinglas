@@ -1,21 +1,19 @@
-const modal = document.getElementById("color_modal");
+const colorModal = document.getElementById("color_modal");
 
-const btn = document.getElementById("color_modal_button");
+const colorBtn = document.getElementById("color_modal_button");
 
-const close = modal.getElementsByClassName("close")[0];
+const closeColorModal = colorModal.getElementsByClassName("close")[0];
 
-console.log(close);
-
-btn.onclick = function () {
-  modal.style.display = "block";
+colorBtn.onclick = function () {
+  colorModal.style.display = "block";
 };
 
-close.onclick = function () {
-  modal.style.display = "none";
+closeColorModal.onclick = function () {
+  colorModal.style.display = "none";
 };
 
 window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  if (event.target == colorModal) {
+    colorModal.style.display = "none";
   }
 };
