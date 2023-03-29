@@ -10,12 +10,9 @@
     <link rel="stylesheet" href="../styles/footer.css" />
     <link rel="stylesheet" href="../styles/goToButton.css" />
     <link rel="stylesheet" href="../styles/sliderMenu.css" />
-    <link rel="stylesheet" href="./styles/Modal.css" />
     <script src="../js/navigator.js" defer></script>
-    <script src="./js/customSelect.js" defer></script>
     <script src="../js/roofHarmony.js" defer></script>
-    <script src="./js/colorModal.js" defer></script>
-    <script src="./js/shapeModal.js" defer></script>
+    <script src="./js/modal.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -188,13 +185,14 @@
               <div class="filters_block">
                 <button class="filter_button filter_text" id="color_modal_button">+ по оттенку</button>
                 <button class="filter_button filter_text" id="shape_modal_button">+ по форме</button>
-                <div class="custom-select">
-                  <select>
-                    <option value="0">популярные</option>
-                    <option value="1">дешёвле</option>
-                    <option value="2">дороже</option>
-                    <option value="2">по размеру скидки</option>
-                  </select>
+                <div class="selector">
+                  <div class="selector-display">популярные</div>
+                  <ul class="selector-list">
+                    <li class="active">популярные</li>
+                    <li>дешёвле</li>
+                    <li>дороже</li>
+                    <li>по размеру скидки</li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -202,7 +200,7 @@
         </div>
       </section>
       <section class="color_collection">
-      <link rel="stylesheet" href="./styles/colorCollection.css" />
+        <link rel="stylesheet" href="./styles/colorCollection.css" />
         <div class="container">
           <div class="color_collection_card">
             <img class="color_collection_img" src="./images/ColorCollection/Atlantika_Tenerife_tekstura 2.jpg" alt="Atlantika_Tenerife">
@@ -230,13 +228,12 @@
             </button>
           </div>
           <div class="color_collection_card">
-            <img class="color_collection_img" src="./images/ColorCollection/Atlantika_Madeyra_tekstura 1.jpg" alt="Atlantika_Madeyra_tekstura">
+            <img class="color_collection_img" src="./images/ColorCollection/Atlantika_Tenerife_tekstura 2.jpg" alt="Atlantika_Tenerife">
             <div class="color_collection_info">
               <div class="collection_info_left">
                 <img class="collection_layers_info" src="./images/layers/3.svg" alt="3">
                 <div class="collection_name_info">
-                  <span class="color_collection_name">Атлантика</span>
-                  <span class="color_name">Тенерифе</span>
+                  <span class="color_name">Атлантика</span>
                 </div>
               </div>
               <div class="collection_info_right">
@@ -244,108 +241,35 @@
                 <span class="rubl_meter">₽/м²</span>
               </div>
             </div>
-            <div class="visualization">
-              <img src="./images/ColorCollection/3d.svg" alt="3d">
-            </div>
-            <button class="collection_favorite" type="submit">
-              <img
-                src="../images/header/Like.svg"
-                alt="Like"
-              />
-            </button>
-          </div>
-          <div class="color_collection_card">
-            <img class="color_collection_img" src="./images/ColorCollection/Kontinent_Aziya 1.jpg" alt="Kontinent_Aziya">
-            <div class="color_collection_info">
-              <div class="collection_info_left">
-                <img class="collection_layers_info" src="./images/layers/3.svg" alt="3">
-                <div class="collection_name_info">
-                  <span class="color_collection_name">Атлантика</span>
-                  <span class="color_name">Тенерифе</span>
+            <div class="collection_additional_content">
+              <div class="additional_color_block">
+                <img src="./images/MainCollection/Atlantika_Tenerife_small.jpg" alt="Atlantika_Tenerife_small">
+                <span class="additional_color_name">Тенерифе</span>
+                <div class="active_marker">
+                  <img src="./images/Modal/Select.svg" alt="Select">
                 </div>
               </div>
-              <div class="collection_info_right">
-                <span class="color_collection_price">3 776</span>
-                <span class="rubl_meter">₽/м²</span>
-              </div>
-            </div>
-            <div class="visualization">
-              <img src="./images/ColorCollection/3d.svg" alt="3d">
-            </div>
-            <button class="collection_favorite" type="submit">
-              <img
-                src="../images/header/Like.svg"
-                alt="Like"
-              />
-            </button>
-          </div>
-          <div class="color_collection_card">
-            <img class="color_collection_img" src="./images/ColorCollection/Kontinent_Amerika 1.jpg" alt="Kontinent_Amerika">
-            <div class="color_collection_info">
-              <div class="collection_info_left">
-                <img class="collection_layers_info" src="./images/layers/3.svg" alt="3">
-                <div class="collection_name_info">
-                  <span class="color_collection_name">Атлантика</span>
-                  <span class="color_name">Тенерифе</span>
+              <div class="additional_color_block">
+                <img src="./images/MainCollection/Atlantika_Madeyra_small.jpg" alt="Atlantika_Madeyra_small">
+                <span class="additional_color_name">Мадейра</span>
+                <div class="active_marker active_additional_color">
+                  <img src="./images/Modal/Select.svg" alt="Select">
                 </div>
               </div>
-              <div class="collection_info_right">
-                <span class="color_collection_price">3 776</span>
-                <span class="rubl_meter">₽/м²</span>
-              </div>
-            </div>
-            <div class="visualization">
-              <img src="./images/ColorCollection/3d.svg" alt="3d">
-            </div>
-            <button class="collection_favorite" type="submit">
-              <img
-                src="../images/header/Like.svg"
-                alt="Like"
-              />
-            </button>
-          </div>
-          <div class="color_collection_card">
-            <img class="color_collection_img" src="./images/ColorCollection/Kontinent-Afrika 1.jpg" alt="Kontinent">
-            <div class="color_collection_info">
-              <div class="collection_info_left">
-                <img class="collection_layers_info" src="./images/layers/3.svg" alt="3">
-                <div class="collection_name_info">
-                  <span class="color_collection_name">Атлантика</span>
-                  <span class="color_name">Тенерифе</span>
+              <div class="additional_color_block">
+                <img src="./images/MainCollection/Atlantika_Tenerife_small.jpg" alt="Atlantika_Tenerife_small">
+                <span class="additional_color_name">Тенерифе</span>
+                <div class="active_marker">
+                  <img src="./images/Modal/Select.svg" alt="Select">
                 </div>
               </div>
-              <div class="collection_info_right">
-                <span class="color_collection_price">3 776</span>
-                <span class="rubl_meter">₽/м²</span>
-              </div>
-            </div>
-            <div class="visualization">
-              <img src="./images/ColorCollection/3d.svg" alt="3d">
-            </div>
-            <button class="collection_favorite" type="submit">
-              <img
-                src="../images/header/Like.svg"
-                alt="Like"
-              />
-            </button>
-          </div>
-          <div class="color_collection_card">
-            <img class="color_collection_img" src="./images/ColorCollection/Kontinent_Evropa 1.jpg" alt="Kontinent_Evropa">
-            <div class="color_collection_info">
-              <div class="collection_info_left">
-                <img class="collection_layers_info" src="./images/layers/3.svg" alt="3">
-                <div class="collection_name_info">
-                  <span class="color_collection_name">Атлантика</span>
-                  <span class="color_name">Тенерифе</span>
+              <div class="additional_color_block">
+                <img src="./images/MainCollection/Atlantika_Madeyra_small.jpg" alt="Atlantika_Madeyra_small">
+                <span class="additional_color_name">Мадейра</span>
+                <div class="active_marker active_additional_color">
+                  <img src="./images/Modal/Select.svg" alt="Select">
                 </div>
               </div>
-              <div class="collection_info_right">
-                <span class="color_collection_price">3 776</span>
-                <span class="rubl_meter">₽/м²</span>
-              </div>
-            </div>
-            <div class="visualization">
-              <img src="./images/ColorCollection/3d.svg" alt="3d">
             </div>
             <button class="collection_favorite" type="submit">
               <img
@@ -1682,7 +1606,6 @@
 
     </div>
     <div class="shape_modal" id="shape_modal">
-      <link rel="stylesheet" href="./styles/shapeModal.css" />
       <div class="modal_content shape_content">
         <div class="modal_header">
           <span class="modal_title">Выберите нарезку</span>

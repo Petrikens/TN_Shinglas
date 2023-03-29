@@ -80,6 +80,40 @@
     right: 22px;
 }
 
+.collection_additional_content {
+    padding: 0 30px 30px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
+}
+
+.additional_color_block {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.additional_color_block > img {
+    width: 99px;
+    height: 79px;
+    border-radius: 5px;
+}
+
+.additional_color_name {
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 5px;
+}
+
+.additional_color_block .active_marker {
+    top: -5px;
+    right: -10px;
+}
+
+.active_additional_color {
+    display: flex;
+}
+
 @media screen and (max-width: 1680px) {
     .color_collection .container {
         column-gap: 55px;
@@ -113,6 +147,25 @@
         font-size: 20px;
         line-height: 26px;
     }
+
+    .collection_additional_content {
+        padding: 0 25px 25px 25px;
+    }
+
+    .additional_color_block > img {
+        width: 84px;
+        height: 68px;
+    }
+
+    .additional_color_name {
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+    .additional_color_block .active_marker {
+        width: 30px;
+        height: 30px;
+    }
 }
 
 @media screen and (max-width: 1450px) {
@@ -132,6 +185,10 @@
 
     .color_collection_info {
         padding: 20px;
+    }
+
+    .collection_additional_content {
+        padding: 0 20px 20px 20px;
     }
 }
 
@@ -156,6 +213,10 @@
     .collection_layers_info {
         margin-right: 15px;
     }
+
+    .collection_additional_content {
+        padding: 0 15px 15px 15px;
+    }
 }
 
 @media screen and (max-width: 1150px) {
@@ -174,13 +235,16 @@
     .collection_layers_info {
         margin-right: 10px;
     }
+
+    .collection_additional_content {
+        padding: 0 10px 10px 10px;
+    }
 }
 
 @media screen and (max-width: 1050px) {
     .color_collection .container {
-        column-gap: 50px;
+        column-gap: 110px;
         row-gap: 50px;
-        justify-content: center;
     }
 
     .color_collection_card {
@@ -201,6 +265,21 @@
     .color_name {
         font-size: 16px;
         line-height: 21px;
+    }
+
+    .collection_additional_content {
+        gap: 19px;
+        justify-content: center;
+    }
+
+    .additional_color_block + img {
+        width: 100px;
+        height: 79px;
+    }
+
+    .additional_color_name {
+        font-size: 14px;
+        line-height: 18px;
     }
 }
 
