@@ -4,3 +4,22 @@
     line-height: 20px;
     gap: 10px;
 }
+
+.section_title {
+    font-size: 60px;
+    line-height: 78px;
+}
+
+@media screen and (max-width: 1050px) {
+    .section_title {
+        font-size: 40px;
+        line-height: 52px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .section_title {
+        font-size: 30px;
+        line-height: 30px;
+    }
+}
