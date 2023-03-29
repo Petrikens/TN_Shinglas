@@ -13,6 +13,7 @@
     <script src="../js/navigator.js" defer></script>
     <script src="./js/customSelect.js" defer></script>
     <script src="../js/roofHarmony.js" defer></script>
+    <script src="./js/colorModal.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -183,13 +184,14 @@
             <div class="collection_filters">
               <span class="filter_text">Фильтровать</span>
               <div class="filters_block">
-                <button class="filter_button filter_text">+ по оттенку</button>
+                <button class="filter_button filter_text" id="color_modal_button">+ по оттенку</button>
                 <button class="filter_button filter_text">+ по форме</button>
                 <div class="custom-select">
                   <select>
                     <option value="0">популярные</option>
-                    <option value="1">дорогие</option>
-                    <option value="2">дешёвые</option>
+                    <option value="1">дешёвле</option>
+                    <option value="2">дороже</option>
+                    <option value="2">по размеру скидки</option>
                   </select>
                 </div>
               </div>
@@ -1580,6 +1582,103 @@
           </li>
         </ul>
       </div>
+    </div>
+    <div class="color_modal" id="color_modal">
+      <link rel="stylesheet" href="./styles/colorModal.css" />
+      <div class="modal_content">
+        <div class="modal_header">
+          <span class="modal_title">Выберите оттенок</span>
+          <img class="close" src="./images/ModalColor/Close.jpg" alt="Close">
+        </div>
+        <ul class="modal_color_list">
+          <li class="modal_color_item">
+            <a class="color" href="#"></a>
+            <a class="modal_color_name active_color" href="#">Светло-коричневый</a>
+            <div class="active_marker active_color">
+              <img src="./images/ModalColor/Select.svg" alt="Select">
+            </div>
+          </li>
+          <li class="modal_color_item">
+            <a class="color" href="#"></a>
+            <a class="modal_color_name" href="#">Тёмно-коричневый</a>
+            <div class="active_marker">
+              <img src="./images/ModalColor/Select.svg" alt="Select">
+            </div>
+          </li>
+          <li class="modal_color_item">
+            <a class="color" href="#"></a>
+            <a class="modal_color_name" href="#">Красно-коричневый</a>
+            <div class="active_marker">
+              <img src="./images/ModalColor/Select.svg" alt="Select">
+            </div>
+          </li>
+          <li class="modal_color_item">
+            <a class="color" href="#"></a>
+            <a class="modal_color_name" href="#">Серо-коричневый</a>
+            <div class="active_marker">
+              <img src="./images/ModalColor/Select.svg" alt="Select">
+            </div>
+          </li>
+          <li class="modal_color_item">
+            <a class="color" href="#"></a>
+            <a class="modal_color_name" href="#">Светло-серый</a>
+            <div class="active_marker">
+              <img src="./images/ModalColor/Select.svg" alt="Select">
+            </div>
+          </li>
+          <li class="modal_color_item">
+            <a class="color" href="#"></a>
+            <a class="modal_color_name" href="#">Тёмно-серый</a>
+            <div class="active_marker">
+              <img src="./images/ModalColor/Select.svg" alt="Select">
+            </div>
+          </li>
+          <li class="modal_color_item">
+            <a class="color" href="#"></a>
+            <a class="modal_color_name" href="#">Красный</a>
+            <div class="active_marker">
+              <img src="./images/ModalColor/Select.svg" alt="Select">
+            </div>
+          </li>
+          <li class="modal_color_item">
+            <a class="color" href="#"></a>
+            <a class="modal_color_name" href="#">Зелёный</a>
+            <div class="active_marker">
+              <img src="./images/ModalColor/Select.svg" alt="Select">
+            </div>
+          </li>
+          <li class="modal_color_item">
+            <a class="color" href="#"></a>
+            <a class="modal_color_name" href="#">Синий</a>
+            <div class="active_marker">
+              <img src="./images/ModalColor/Select.svg" alt="Select">
+            </div>
+          </li>
+          <li class="modal_color_item">
+            <a class="color" href="#"></a>
+            <a class="modal_color_name" href="#">Черный</a>
+            <div class="active_marker">
+              <img src="./images/ModalColor/Select.svg" alt="Select">
+            </div>
+          </li>
+        </ul>
+        <div class="modal_footer">
+          <span class="modal_footer_text">По вашему выбору 15 товаров</span>
+          <div class="goto_wrapper">
+            <p class="goto_text">
+              <strong>Показать</strong>
+            </p>
+            <button class="goto_button" type="submit">
+              <img src="../images/banners/Arrow-right.svg" alt="Arrow" />
+              <img
+                src="../images/banners/Arrow-right-hover.svg"
+                alt="Arrow"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+
     </div>
   </body>
 </html>
