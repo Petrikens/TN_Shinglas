@@ -1,266 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Технониколь</title>
     <link rel="stylesheet" href="./styles/main.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <header class="header">
-      <link rel="stylesheet" href="./styles/header.css" />
-      <div class="header_wrapper">
-        <div class="header_left">
-          <div class="header_title">
-            <a href="#">
-              <picture>
-                <source
-                  media="(max-width: 320px)"
-                  srcset="./images/header/Logo320.svg"
-                />
-                <source
-                  media="(max-width: 768px)"
-                  srcset="./images/header/Logo768.svg"
-                />
-                <img src="./images/header/Logo.svg" alt="Logo" />
-              </picture>
-            </a>
-          </div>
-          <nav>
-            <ul class="header_navbar">
-              <li class="navbar_item">
-                <span>Коллекции</span>
-                <img src="./images/header/Arrow-down.svg" alt="Arrow" />
-                <img
-                  src="./images/header/BlackArrowDown.svg"
-                  alt="BlackArrowDown"
-                />
-              </li>
-              <li class="navbar_item">
-                <span>Галерея </span>
-              </li>
-              <li class="navbar_item">
-                <span>Монтаж</span>
-              </li>
-              <li class="navbar_item">
-                <span>Покупателю</span>
-                <img src="./images/header/Arrow-down.svg" alt="Arrow" />
-                <img
-                  src="./images/header/BlackArrowDown.svg"
-                  alt="BlackArrowDown"
-                />
-              </li>
-              <li class="navbar_item">
-                <span>Строителю</span>
-                <img src="./images/header/Arrow-down.svg" alt="Arrow" />
-                <img
-                  src="./images/header/BlackArrowDown.svg"
-                  alt="BlackArrowDown"
-                />
-              </li>
-            </ul>
-          </nav>
+        <link rel="stylesheet" href="./styles/header.css" />
+        <div class="header_wrapper">
+            <div class="header_left">
+                <div class="header_title">
+                    <a href="#">
+                        <picture>
+                            <source media="(max-width: 320px)" srcset="./images/header/Logo320.svg" />
+                            <source media="(max-width: 768px)" srcset="./images/header/Logo768.svg" />
+                            <img src="./images/header/Logo.svg" alt="Logo" />
+                        </picture>
+                    </a>
+                </div>
+                <nav>
+                    <ul class="header_navbar">
+                        <li class="navbar_item">
+                            <span>Коллекции</span>
+                            <img src="./images/header/Arrow-down.svg" alt="Arrow" />
+                            <img src="./images/header/BlackArrowDown.svg" alt="BlackArrowDown" />
+                        </li>
+                        <li class="navbar_item">
+                            <span>Галерея </span>
+                        </li>
+                        <li class="navbar_item">
+                            <span>Монтаж</span>
+                        </li>
+                        <li class="navbar_item">
+                            <span>Покупателю</span>
+                            <img src="./images/header/Arrow-down.svg" alt="Arrow" />
+                            <img src="./images/header/BlackArrowDown.svg" alt="BlackArrowDown" />
+                        </li>
+                        <li class="navbar_item">
+                            <span>Строителю</span>
+                            <img src="./images/header/Arrow-down.svg" alt="Arrow" />
+                            <img src="./images/header/BlackArrowDown.svg" alt="BlackArrowDown" />
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header_right">
+                <button class="favorites_button" type="submit">
+                    <img class="like_img" src="./images/header/Like.svg" alt="Like" />
+                    <img class="like_hover_img" src="./images/header/LikeHover.svg" alt="LikeHover" />
+                </button>
+                <button class="city_button" type="submit">
+                    <img class="city_img" src="./images/header/City.svg" alt="City" />
+                    <img class="city_hover_img" src="./images/header/CityHover.svg" alt="CityHover" />
+                    <span>Москва</span>
+                </button>
+                <button class="basket_button" type="submit">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="./images/header/Basket768.svg" />
+                        <img src="./images/header/Basket.svg" alt="Basket" />
+                    </picture>
+                    <span>Купить</span>
+                </button>
+                <ul class="burger_menu">
+                    <li class="burger_menu_layer"></li>
+                    <li class="burger_menu_layer"></li>
+                    <li class="burger_menu_layer"></li>
+                </ul>
+            </div>
         </div>
-        <div class="header_right">
-          <button class="favorites_button" type="submit">
-            <img class="like_img" src="./images/header/Like.svg" alt="Like" />
-            <img
-              class="like_hover_img"
-              src="./images/header/LikeHover.svg"
-              alt="LikeHover"
-            />
-          </button>
-          <button class="city_button" type="submit">
-            <img class="city_img" src="./images/header/City.svg" alt="City" />
-            <img
-              class="city_hover_img"
-              src="./images/header/CityHover.svg"
-              alt="CityHover"
-            />
-            <span>Москва</span>
-          </button>
-          <button class="basket_button" type="submit">
-            <picture>
-              <source
-                media="(max-width: 768px)"
-                srcset="./images/header/Basket768.svg"
-              />
-              <img src="./images/header/Basket.svg" alt="Basket" />
-            </picture>
-            <span>Купить</span>
-          </button>
-          <ul class="burger_menu">
-            <li class="burger_menu_layer"></li>
-            <li class="burger_menu_layer"></li>
-            <li class="burger_menu_layer"></li>
-          </ul>
-        </div>
-      </div>
     </header>
     <main>
-      <link rel="stylesheet" href="./styles/template.css" />
-      <section class="title_section">
-        <div class="container">
-          <ul class="bread_crumbs">
-            <li class="crumb">Главная</li>
-            <li class="crumb">></li>
-            <li class="crumb">Коллекции</li>
-          </ul>
-          <div class="title">Заголовок</div>
-        </div>
-      </section>
+        <link rel="stylesheet" href="./styles/template.css" />
+        <section class="title_section">
+            <div class="container">
+                <ul class="bread_crumbs">
+                    <li class="crumb">Главная</li>
+                    <li class="crumb">></li>
+                    <li class="crumb">Коллекции</li>
+                </ul>
+                <div class="title">Заголовок</div>
+            </div>
+        </section>
     </main>
     <footer class="footer">
-      <link rel="stylesheet" href="./styles/footer.css" />
-      <div class="container">
-        <div class="footer_top_content">
-          <div class="footer_title">
-            <a href="#">
-              <picture>
-                <source
-                  media="(max-width: 320px)"
-                  srcset="./images/header/Logo320.svg"
-                />
-                <source
-                  media="(max-width: 768px)"
-                  srcset="./images/header/Logo768.svg"
-                />
-                <img src="./images/header/Logo.svg" alt="Logo" />
-              </picture>
-            </a>
-          </div>
-          <nav>
-            <ul class="footer_nav">
-              <li class="nav_item"><a href="#">Коллекции</a></li>
-              <li class="nav_item"><a href="#">Покупателю</a></li>
-              <li class="nav_item"><a href="#">Калькулятор</a></li>
-              <li class="nav_item"><a href="#">Фото домов</a></li>
-              <li class="nav_item"><a href="#">3D-конфигуратор</a></li>
-              <li class="nav_item"><a href="#">Строителю</a></li>
-              <li class="nav_item"><a href="#">Мотнаж</a></li>
-            </ul>
-          </nav>
-          <div class="footer_hotline">
-            <span class="hotline_text">горячая линия</span>
-            <span class="hotline_phone">8 800 600 0565</span>
-          </div>
+        <link rel="stylesheet" href="./styles/footer.css" />
+        <div class="container">
+            <div class="footer_top_content">
+                <div class="footer_title">
+                    <a href="#">
+                        <picture>
+                            <source media="(max-width: 320px)" srcset="./images/header/Logo320.svg" />
+                            <source media="(max-width: 768px)" srcset="./images/header/Logo768.svg" />
+                            <img src="./images/header/Logo.svg" alt="Logo" />
+                        </picture>
+                    </a>
+                </div>
+                <nav>
+                    <ul class="footer_nav">
+                        <li class="nav_item"><a href="#">Коллекции</a></li>
+                        <li class="nav_item"><a href="#">Покупателю</a></li>
+                        <li class="nav_item"><a href="#">Калькулятор</a></li>
+                        <li class="nav_item"><a href="#">Фото домов</a></li>
+                        <li class="nav_item"><a href="#">3D-конфигуратор</a></li>
+                        <li class="nav_item"><a href="#">Строителю</a></li>
+                        <li class="nav_item"><a href="#">Мотнаж</a></li>
+                    </ul>
+                </nav>
+                <div class="footer_hotline">
+                    <span class="hotline_text">горячая линия</span>
+                    <span class="hotline_phone">8 800 600 0565</span>
+                </div>
+            </div>
+            <div class="footer_middle_content">
+                <div class="middle_left_content">
+                    <button>Официальный сайт</button>
+                    <button>Проекты корпорации</button>
+                </div>
+                <ul class="middle_links">
+                    <li class="link">
+                        <a href="#">
+                            <img src="./images/footer/Youtube.svg" alt="Youtube" />
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <img src="./images/footer/Rutube.svg" alt="Rutube" />
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <img src="./images/footer/Zen.svg" alt="Zen" />
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <img src="./images/footer/Telegram.svg" alt="Telegram" />
+                        </a>
+                    </li>
+                </ul>
+                <div class="middle_right_content">
+                    <button>Интернет-магазин</button>
+                    <button>Точки продаж</button>
+                </div>
+            </div>
+            <div class="footer_bottom_content">
+                <span class="bottom_left_content">© Корпорация ТЕХНОНИКОЛЬ, 2010 — 2023. Все права защищены. Правовая
+                    информация.
+                </span>
+                <span class="bottom_right_content"> Разработка сайта — MINISOL </span>
+            </div>
         </div>
-        <div class="footer_middle_content">
-          <div class="middle_left_content">
-            <button>Официальный сайт</button>
-            <button>Проекты корпорации</button>
-          </div>
-          <ul class="middle_links">
-            <li class="link">
-              <a href="#">
-                <img src="./images/footer/Youtube.svg" alt="Youtube" />
-              </a>
-            </li>
-            <li class="link">
-              <a href="#">
-                <img src="./images/footer/Rutube.svg" alt="Rutube" />
-              </a>
-            </li>
-            <li class="link">
-              <a href="#">
-                <img src="./images/footer/Zen.svg" alt="Zen" />
-              </a>
-            </li>
-            <li class="link">
-              <a href="#">
-                <img src="./images/footer/Telegram.svg" alt="Telegram" />
-              </a>
-            </li>
-          </ul>
-          <div class="middle_right_content">
-            <button>Интернет-магазин</button>
-            <button>Точки продаж</button>
-          </div>
-        </div>
-        <div class="footer_bottom_content">
-          <span class="bottom_left_content"
-            >© Корпорация ТЕХНОНИКОЛЬ, 2010 — 2023. Все права защищены. Правовая
-            информация.
-          </span>
-          <span class="bottom_right_content"> Разработка сайта — MINISOL </span>
-        </div>
-      </div>
     </footer>
     <footer class="footer_media">
-      <div class="container">
-        <div class="footer_media_top">
-          <div class="footer_title">
-            <a href="#">
-              <img src="./images/header/Logo.svg" alt="Logo" />
-            </a>
-          </div>
-          <div class="media_top_content">
-            <div class="top_left_content">
-              <button>Официальный сайт</button>
-              <button>Проекты корпорации</button>
-              <div class="footer_hotline">
-                <span class="hotline_text">горячая линия</span>
-                <span class="hotline_phone">8 800 600 0565</span>
-              </div>
+        <div class="container">
+            <div class="footer_media_top">
+                <div class="footer_title">
+                    <a href="#">
+                        <img src="./images/header/Logo.svg" alt="Logo" />
+                    </a>
+                </div>
+                <div class="media_top_content">
+                    <div class="top_left_content">
+                        <button>Официальный сайт</button>
+                        <button>Проекты корпорации</button>
+                        <div class="footer_hotline">
+                            <span class="hotline_text">горячая линия</span>
+                            <span class="hotline_phone">8 800 600 0565</span>
+                        </div>
+                    </div>
+                    <div class="top_middle_content">
+                        <nav>
+                            <ul class="footer_nav">
+                                <li class="nav_item"><a href="#">Коллекции</a></li>
+                                <li class="nav_item"><a href="#">Покупателю</a></li>
+                                <li class="nav_item"><a href="#">Калькулятор</a></li>
+                                <li class="nav_item"><a href="#">Фото домов</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="top_right_content">
+                        <nav>
+                            <ul class="footer_nav">
+                                <li class="nav_item"><a href="#">3D-конфигуратор</a></li>
+                                <li class="nav_item"><a href="#">Строителю</a></li>
+                                <li class="nav_item"><a href="#">Мотнаж</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
             </div>
-            <div class="top_middle_content">
-              <nav>
-                <ul class="footer_nav">
-                  <li class="nav_item"><a href="#">Коллекции</a></li>
-                  <li class="nav_item"><a href="#">Покупателю</a></li>
-                  <li class="nav_item"><a href="#">Калькулятор</a></li>
-                  <li class="nav_item"><a href="#">Фото домов</a></li>
+            <div class="footer_middle_content">
+                <ul class="middle_links">
+                    <li class="link">
+                        <a href="#">
+                            <img src="./images/footer/Youtube.svg" alt="Youtube" />
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <img src="./images/footer/Rutube.svg" alt="Rutube" />
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <img src="./images/footer/Zen.svg" alt="Zen" />
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <img src="./images/footer/Telegram.svg" alt="Telegram" />
+                        </a>
+                    </li>
                 </ul>
-              </nav>
+                <div class="middle_right_content">
+                    <button>Интернет-магазин</button>
+                    <button>Точки продаж</button>
+                </div>
             </div>
-            <div class="top_right_content">
-              <nav>
-                <ul class="footer_nav">
-                  <li class="nav_item"><a href="#">3D-конфигуратор</a></li>
-                  <li class="nav_item"><a href="#">Строителю</a></li>
-                  <li class="nav_item"><a href="#">Мотнаж</a></li>
-                </ul>
-              </nav>
+            <div class="footer_bottom_content">
+                <div class="bottom_left_content">
+                    © Корпорация ТЕХНОНИКОЛЬ, 2010 — 2023. Все права защищены. Правовая
+                    информация.
+                </div>
+                <div class="bottom_right_content">Разработка сайта — MINISOL</div>
             </div>
-          </div>
         </div>
-        <div class="footer_middle_content">
-          <ul class="middle_links">
-            <li class="link">
-              <a href="#">
-                <img src="./images/footer/Youtube.svg" alt="Youtube" />
-              </a>
-            </li>
-            <li class="link">
-              <a href="#">
-                <img src="./images/footer/Rutube.svg" alt="Rutube" />
-              </a>
-            </li>
-            <li class="link">
-              <a href="#">
-                <img src="./images/footer/Zen.svg" alt="Zen" />
-              </a>
-            </li>
-            <li class="link">
-              <a href="#">
-                <img src="./images/footer/Telegram.svg" alt="Telegram" />
-              </a>
-            </li>
-          </ul>
-          <div class="middle_right_content">
-            <button>Интернет-магазин</button>
-            <button>Точки продаж</button>
-          </div>
-        </div>
-        <div class="footer_bottom_content">
-          <div class="bottom_left_content">
-            © Корпорация ТЕХНОНИКОЛЬ, 2010 — 2023. Все права защищены. Правовая
-            информация.
-          </div>
-          <div class="bottom_right_content">Разработка сайта — MINISOL</div>
-        </div>
-      </div>
     </footer>
-  </body>
+</body>
+
 </html>
