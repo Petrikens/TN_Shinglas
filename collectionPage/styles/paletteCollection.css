@@ -252,6 +252,11 @@
     .collection_additional_content {
         padding: 0 15px 15px 15px;
     }
+
+    .goto_vizualization {
+        font-size: 12px;
+        line-height: 14px;
+    }
 }
 
 @media screen and (max-width: 1150px) {
@@ -300,6 +305,13 @@
     .palette_name {
         font-size: 16px;
         line-height: 21px;
+    }
+
+    .goto_vizualization {
+        padding: 3px;
+        font-size: 10px;
+        line-height: 12px;
+        margin-left: 5px;
     }
 
     .collection_additional_content {
