@@ -7,6 +7,14 @@ const shapeBtn = document.getElementById("shape_modal_button");
 const closeColorModal = colorModal.getElementsByClassName("close")[0];
 const closeShapeModal = shapeModal.getElementsByClassName("close")[0];
 
+let text = "apple banana orange apple";
+
+console.log(text);
+
+// for (let i = 0; i > text.length; i++) {
+//   console.log(text);
+// }
+
 colorBtn.onclick = function () {
   colorModal.style.display = "block";
 };

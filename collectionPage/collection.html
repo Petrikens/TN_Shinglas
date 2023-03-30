@@ -150,28 +150,15 @@
       </div>
     </header>
     <main>
-      <section class="collection_config_section">
-      <link rel="stylesheet" href="./styles/collectionConfig.css" />
+      <section class="title_section">
         <div class="container">
-          <div class="page_info_block">
-            <ul class="bread_crumbs">
-              <li class="crumb"><a href="#">Главная</a></li>
-              <li class="crumb">></li>
-              <li class="crumb"><a href="#">Коллекции</a></li>
-            </ul>
-            <div class="collection_title_block">
-              <div class="collection_page_title">Коллекции</div>
-              <div class="collection_switch">
-                <span class="filter_text">Коллекции</span>
-                <label class="switch">
-                  <input type="checkbox">
-                  <span class="slider"></span>
-                </label>
-                <span class="filter_text">Цвета</span>
-              </div>
-            </div>
-          </div>
-          <div class="config_block">
+          <ul class="bread_crumbs">
+            <li class="crumb"><a href="#">Главная</a></li>
+            <li class="crumb">></li>
+            <li class="crumb"><a href="#">Коллекции</a></li>
+          </ul>
+          <div class="collection_title_block">
+            <div class="collection_page_title">Коллекции</div>
             <div class="collection_switch">
               <span class="filter_text">Коллекции</span>
               <label class="switch">
@@ -180,45 +167,238 @@
               </label>
               <span class="filter_text">Цвета</span>
             </div>
-            <div class="collection_filters">
-              <span class="filter_text">Фильтровать</span>
-              <div class="filters_block">
-                <button class="filter_button filter_text" id="color_modal_button">+ по оттенку</button>
-                <button class="filter_button filter_text" id="shape_modal_button">+ по форме</button>
-                <div class="selector">
-                  <div class="selector-display">популярные</div>
-                  <ul class="selector-list">
-                    <li class="active">популярные</li>
-                    <li>дешёвле</li>
-                    <li>дороже</li>
-                    <li>по размеру скидки</li>
+          </div>
+        </div>
+      </section>
+      <section class="collection_config_section">
+      <link rel="stylesheet" href="./styles/collectionConfig.css" />
+        <div class="container">
+          <div class="collection_switch">
+            <span class="filter_text">Коллекции</span>
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider"></span>
+            </label>
+            <span class="filter_text">Цвета</span>
+          </div>
+          <div class="collection_filters">
+            <span class="filter_text">Фильтровать</span>
+            <div class="filters_block">
+              <button class="filter_button filter_text" id="palette_modal_button">+ по оттенку</button>
+              <div class="palette_modal" id="palette_modal">
+                <div class="modal_content">
+                  <div class="modal_header">
+                    <span class="modal_title">Выберите оттенок</span>
+                    <img class="close" src="./images/Modal/Close.jpg" alt="Close">
+                  </div>
+                  <ul class="modal_palette_list">
+                    <li class="modal_palette_item">
+                      <a class="palette" href="#"></a>
+                      <a class="modal_name active_palette" href="#">Светло-коричневый</a>
+                      <div class="active_marker active_palette">
+                        <img src="./images/Modal/Select.svg" alt="Select">
+                      </div>
+                    </li>
+                    <li class="modal_palette_item">
+                      <a class="palette" href="#"></a>
+                      <a class="modal_name" href="#">Тёмно-коричневый</a>
+                      <div class="active_marker">
+                        <img src="./images/Modal/Select.svg" alt="Select">
+                      </div>
+                    </li>
+                    <li class="modal_palette_item">
+                      <a class="palette" href="#"></a>
+                      <a class="modal_name" href="#">Красно-коричневый</a>
+                      <div class="active_marker">
+                        <img src="./images/Modal/Select.svg" alt="Select">
+                      </div>
+                    </li>
+                    <li class="modal_palette_item">
+                      <a class="palette" href="#"></a>
+                      <a class="modal_name" href="#">Серо-коричневый</a>
+                      <div class="active_marker">
+                        <img src="./images/Modal/Select.svg" alt="Select">
+                      </div>
+                    </li>
+                    <li class="modal_palette_item">
+                      <a class="palette" href="#"></a>
+                      <a class="modal_name" href="#">Светло-серый</a>
+                      <div class="active_marker">
+                        <img src="./images/Modal/Select.svg" alt="Select">
+                      </div>
+                    </li>
+                    <li class="modal_palette_item">
+                      <a class="palette" href="#"></a>
+                      <a class="modal_name" href="#">Тёмно-серый</a>
+                      <div class="active_marker">
+                        <img src="./images/Modal/Select.svg" alt="Select">
+                      </div>
+                    </li>
+                    <li class="modal_palette_item">
+                      <a class="palette" href="#"></a>
+                      <a class="modal_name" href="#">Красный</a>
+                      <div class="active_marker">
+                        <img src="./images/Modal/Select.svg" alt="Select">
+                      </div>
+                    </li>
+                    <li class="modal_palette_item">
+                      <a class="palette" href="#"></a>
+                      <a class="modal_name" href="#">Зелёный</a>
+                      <div class="active_marker">
+                        <img src="./images/Modal/Select.svg" alt="Select">
+                      </div>
+                    </li>
+                    <li class="modal_palette_item">
+                      <a class="palette" href="#"></a>
+                      <a class="modal_name" href="#">Синий</a>
+                      <div class="active_marker">
+                        <img src="./images/Modal/Select.svg" alt="Select">
+                      </div>
+                    </li>
+                    <li class="modal_palette_item">
+                      <a class="palette" href="#"></a>
+                      <a class="modal_name" href="#">Черный</a>
+                      <div class="active_marker">
+                        <img src="./images/Modal/Select.svg" alt="Select">
+                      </div>
+                    </li>
                   </ul>
+                  <div class="modal_footer">
+                    <span class="modal_footer_text">По вашему выбору 15 товаров</span>
+                    <div class="goto_wrapper">
+                      <p class="goto_text">
+                        <strong>Показать</strong>
+                      </p>
+                      <button class="goto_button" type="submit">
+                        <img src="../images/banners/Arrow-right.svg" alt="Arrow" />
+                        <img
+                          src="../images/banners/Arrow-right-hover.svg"
+                          alt="Arrow"
+                        />
+                      </button>
+                    </div>
+                  </div>
                 </div>
+              </div>
+              <button class="filter_button filter_text" id="pattern_modal_button">+ по форме</button>
+              <div class="pattern_modal" id="pattern_modal">
+                <div class="modal_content pattern_content">
+                  <div class="modal_header">
+                    <span class="modal_title">Выберите нарезку</span>
+                    <img class="close" src="./images/Modal/Close.jpg" alt="Close">
+                  </div>
+                  <div class="modal_pattern_list">
+                    <div class="pattern_type">
+                      <div class="type_name">Трёхслойная</div>
+                      <div class="patterns">
+                        <div class="pattern_info">
+                          <a href="#">
+                            <img src="./images/Modal/Antalika.svg" alt="Antalika">
+                          </a>
+                          <a class="modal_name active_palette" href="#">Атлантика</a>
+                          <div class="active_marker active_palette">
+                            <img src="./images/Modal/Select.svg" alt="Select">
+                          </div>
+                        </div>
+                        <div class="pattern_info">
+                          <a href="#">
+                            <img src="./images/Modal/Continent.svg" alt="Continent">
+                          </a>
+                          <a class="modal_name" href="#">Континенты</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pattern_type">
+                      <div class="type_name">Двухслойная</div>
+                      <div class="patterns">
+                        <div class="pattern_info">
+                          <a href="#">
+                            <img src="./images/Modal/Vestern.svg" alt="Vestern">
+                          </a>
+                          <a class="modal_name" href="#">Вестерн</a>
+                        </div>
+                        <div class="pattern_info">
+                          <a href="#">
+                            <img src="./images/Modal/Dragon.svg" alt="Dragon">
+                          </a>
+                          <a class="modal_name" href="#">Драконий зуб</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pattern_type">
+                      <div class="type_name">Однослойная</div>
+                      <div class="patterns">
+                        <div class="pattern_info">
+                          <a href="#">
+                            <img src="./images/Modal/Sonata.svg" alt="Sonata">
+                          </a>
+                          <a class="modal_name" href="#">Соната</a>
+                        </div>
+                        <div class="pattern_info">
+                          <a href="#">
+                            <img src="./images/Modal/Accord.svg" alt="Accord">
+                          </a>
+                          <a class="modal_name" href="#">Аккорд</a>
+                        </div>
+                        <div class="pattern_info">
+                          <a href="#">
+                            <img src="./images/Modal/Briks.svg" alt="Briks">
+                          </a>
+                          <a class="modal_name" href="#">Брикс</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal_footer">
+                    <span class="modal_footer_text">По вашему выбору 15 товаров</span>
+                    <div class="goto_wrapper">
+                      <p class="goto_text">
+                        <strong>Показать</strong>
+                      </p>
+                      <button class="goto_button" type="submit">
+                        <img src="../images/banners/Arrow-right.svg" alt="Arrow" />
+                        <img
+                          src="../images/banners/Arrow-right-hover.svg"
+                          alt="Arrow"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="selector">
+                <div class="selector-display">популярные</div>
+                <ul class="selector-list">
+                  <li class="active">популярные</li>
+                  <li>дешёвле</li>
+                  <li>дороже</li>
+                  <li>по размеру скидки</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="color_collection">
-        <link rel="stylesheet" href="./styles/colorCollection.css" />
+      <section class="palette_collection">
+        <link rel="stylesheet" href="./styles/paletteCollection.css" />
         <div class="container">
-          <div class="color_collection_card">
-            <img class="color_collection_img" src="./images/ColorCollection/Atlantika_Tenerife_tekstura 2.jpg" alt="Atlantika_Tenerife">
-            <div class="color_collection_info">
+          <div class="palette_collection_card">
+            <img class="palette_collection_img" src="./images/paletteCollection/Atlantika_Tenerife_tekstura 2.jpg" alt="Atlantika_Tenerife">
+            <div class="palette_collection_info">
               <div class="collection_info_left">
                 <img class="collection_layers_info" src="./images/layers/3.svg" alt="3">
                 <div class="collection_name_info">
-                  <span class="color_collection_name">Атлантика</span>
-                  <span class="color_name">Тенерифе</span>
+                  <span class="palette_collection_name">Атлантика</span>
+                  <span class="palette_name">Тенерифе</span>
                 </div>
               </div>
               <div class="collection_info_right">
-                <span class="color_collection_price">3 776</span>
+                <span class="palette_collection_price">3 776</span>
                 <span class="rubl_meter">₽/м²</span>
               </div>
             </div>
             <div class="visualization">
-              <img src="./images/ColorCollection/3d.svg" alt="3d">
+              <img src="./images/paletteCollection/3d.svg" alt="3d">
             </div>
             <button class="collection_favorite" type="submit">
               <img
@@ -227,46 +407,46 @@
               />
             </button>
           </div>
-          <div class="color_collection_card">
-            <img class="color_collection_img" src="./images/ColorCollection/Atlantika_Tenerife_tekstura 2.jpg" alt="Atlantika_Tenerife">
-            <div class="color_collection_info">
+          <div class="palette_collection_card">
+            <img class="palette_collection_img" src="./images/paletteCollection/Atlantika_Tenerife_tekstura 2.jpg" alt="Atlantika_Tenerife">
+            <div class="palette_collection_info">
               <div class="collection_info_left">
                 <img class="collection_layers_info" src="./images/layers/3.svg" alt="3">
                 <div class="collection_name_info">
-                  <span class="color_name">Атлантика</span>
+                  <span class="palette_name">Атлантика</span>
                 </div>
               </div>
               <div class="collection_info_right">
-                <span class="color_collection_price">3 776</span>
+                <span class="palette_collection_price">3 776</span>
                 <span class="rubl_meter">₽/м²</span>
               </div>
             </div>
             <div class="collection_additional_content">
-              <div class="additional_color_block">
+              <div class="additional_palette_block">
                 <img src="./images/MainCollection/Atlantika_Tenerife_small.jpg" alt="Atlantika_Tenerife_small">
-                <span class="additional_color_name">Тенерифе</span>
+                <span class="additional_palette_name">Тенерифе</span>
                 <div class="active_marker">
                   <img src="./images/Modal/Select.svg" alt="Select">
                 </div>
               </div>
-              <div class="additional_color_block">
+              <div class="additional_palette_block">
                 <img src="./images/MainCollection/Atlantika_Madeyra_small.jpg" alt="Atlantika_Madeyra_small">
-                <span class="additional_color_name">Мадейра</span>
-                <div class="active_marker active_additional_color">
+                <span class="additional_palette_name">Мадейра</span>
+                <div class="active_marker active_additional_palette">
                   <img src="./images/Modal/Select.svg" alt="Select">
                 </div>
               </div>
-              <div class="additional_color_block">
+              <div class="additional_palette_block">
                 <img src="./images/MainCollection/Atlantika_Tenerife_small.jpg" alt="Atlantika_Tenerife_small">
-                <span class="additional_color_name">Тенерифе</span>
+                <span class="additional_palette_name">Тенерифе</span>
                 <div class="active_marker">
                   <img src="./images/Modal/Select.svg" alt="Select">
                 </div>
               </div>
-              <div class="additional_color_block">
+              <div class="additional_palette_block">
                 <img src="./images/MainCollection/Atlantika_Madeyra_small.jpg" alt="Atlantika_Madeyra_small">
-                <span class="additional_color_name">Мадейра</span>
-                <div class="active_marker active_additional_color">
+                <span class="additional_palette_name">Мадейра</span>
+                <div class="active_marker active_additional_palette">
                   <img src="./images/Modal/Select.svg" alt="Select">
                 </div>
               </div>
@@ -1508,188 +1688,6 @@
           </li>
         </ul>
       </div>
-    </div>
-    <div class="color_modal" id="color_modal">
-      <div class="modal_content">
-        <div class="modal_header">
-          <span class="modal_title">Выберите оттенок</span>
-          <img class="close" src="./images/Modal/Close.jpg" alt="Close">
-        </div>
-        <ul class="modal_color_list">
-          <li class="modal_color_item">
-            <a class="color" href="#"></a>
-            <a class="modal_name active_color" href="#">Светло-коричневый</a>
-            <div class="active_marker active_color">
-              <img src="./images/Modal/Select.svg" alt="Select">
-            </div>
-          </li>
-          <li class="modal_color_item">
-            <a class="color" href="#"></a>
-            <a class="modal_name" href="#">Тёмно-коричневый</a>
-            <div class="active_marker">
-              <img src="./images/Modal/Select.svg" alt="Select">
-            </div>
-          </li>
-          <li class="modal_color_item">
-            <a class="color" href="#"></a>
-            <a class="modal_name" href="#">Красно-коричневый</a>
-            <div class="active_marker">
-              <img src="./images/Modal/Select.svg" alt="Select">
-            </div>
-          </li>
-          <li class="modal_color_item">
-            <a class="color" href="#"></a>
-            <a class="modal_name" href="#">Серо-коричневый</a>
-            <div class="active_marker">
-              <img src="./images/Modal/Select.svg" alt="Select">
-            </div>
-          </li>
-          <li class="modal_color_item">
-            <a class="color" href="#"></a>
-            <a class="modal_name" href="#">Светло-серый</a>
-            <div class="active_marker">
-              <img src="./images/Modal/Select.svg" alt="Select">
-            </div>
-          </li>
-          <li class="modal_color_item">
-            <a class="color" href="#"></a>
-            <a class="modal_name" href="#">Тёмно-серый</a>
-            <div class="active_marker">
-              <img src="./images/Modal/Select.svg" alt="Select">
-            </div>
-          </li>
-          <li class="modal_color_item">
-            <a class="color" href="#"></a>
-            <a class="modal_name" href="#">Красный</a>
-            <div class="active_marker">
-              <img src="./images/Modal/Select.svg" alt="Select">
-            </div>
-          </li>
-          <li class="modal_color_item">
-            <a class="color" href="#"></a>
-            <a class="modal_name" href="#">Зелёный</a>
-            <div class="active_marker">
-              <img src="./images/Modal/Select.svg" alt="Select">
-            </div>
-          </li>
-          <li class="modal_color_item">
-            <a class="color" href="#"></a>
-            <a class="modal_name" href="#">Синий</a>
-            <div class="active_marker">
-              <img src="./images/Modal/Select.svg" alt="Select">
-            </div>
-          </li>
-          <li class="modal_color_item">
-            <a class="color" href="#"></a>
-            <a class="modal_name" href="#">Черный</a>
-            <div class="active_marker">
-              <img src="./images/Modal/Select.svg" alt="Select">
-            </div>
-          </li>
-        </ul>
-        <div class="modal_footer">
-          <span class="modal_footer_text">По вашему выбору 15 товаров</span>
-          <div class="goto_wrapper">
-            <p class="goto_text">
-              <strong>Показать</strong>
-            </p>
-            <button class="goto_button" type="submit">
-              <img src="../images/banners/Arrow-right.svg" alt="Arrow" />
-              <img
-                src="../images/banners/Arrow-right-hover.svg"
-                alt="Arrow"
-              />
-            </button>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <div class="shape_modal" id="shape_modal">
-      <div class="modal_content shape_content">
-        <div class="modal_header">
-          <span class="modal_title">Выберите нарезку</span>
-          <img class="close" src="./images/Modal/Close.jpg" alt="Close">
-        </div>
-        <div class="modal_shape_list">
-          <div class="shape_type">
-            <div class="type_name">Трёхслойная</div>
-            <div class="shapes">
-              <div class="shape_info">
-                <a href="#">
-                  <img src="./images/Modal/Antalika.svg" alt="Antalika">
-                </a>
-                <a class="modal_name active_color" href="#">Атлантика</a>
-                <div class="active_marker active_color">
-                  <img src="./images/Modal/Select.svg" alt="Select">
-                </div>
-              </div>
-              <div class="shape_info">
-                <a href="#">
-                  <img src="./images/Modal/Continent.svg" alt="Continent">
-                </a>
-                <a class="modal_name" href="#">Континенты</a>
-              </div>
-            </div>
-          </div>
-          <div class="shape_type">
-            <div class="type_name">Двухслойная</div>
-            <div class="shapes">
-              <div class="shape_info">
-                <a href="#">
-                  <img src="./images/Modal/Vestern.svg" alt="Vestern">
-                </a>
-                <a class="modal_name" href="#">Вестерн</a>
-              </div>
-              <div class="shape_info">
-                <a href="#">
-                  <img src="./images/Modal/Dragon.svg" alt="Dragon">
-                </a>
-                <a class="modal_name" href="#">Драконий зуб</a>
-              </div>
-            </div>
-          </div>
-          <div class="shape_type">
-            <div class="type_name">Однослойная</div>
-            <div class="shapes">
-              <div class="shape_info">
-                <a href="#">
-                  <img src="./images/Modal/Sonata.svg" alt="Sonata">
-                </a>
-                <a class="modal_name" href="#">Соната</a>
-              </div>
-              <div class="shape_info">
-                <a href="#">
-                  <img src="./images/Modal/Accord.svg" alt="Accord">
-                </a>
-                <a class="modal_name" href="#">Аккорд</a>
-              </div>
-              <div class="shape_info">
-                <a href="#">
-                  <img src="./images/Modal/Briks.svg" alt="Briks">
-                </a>
-                <a class="modal_name" href="#">Брикс</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal_footer">
-          <span class="modal_footer_text">По вашему выбору 15 товаров</span>
-          <div class="goto_wrapper">
-            <p class="goto_text">
-              <strong>Показать</strong>
-            </p>
-            <button class="goto_button" type="submit">
-              <img src="../images/banners/Arrow-right.svg" alt="Arrow" />
-              <img
-                src="../images/banners/Arrow-right-hover.svg"
-                alt="Arrow"
-              />
-            </button>
-          </div>
-        </div>
-      </div>
-
     </div>
   </body>
 </html>
