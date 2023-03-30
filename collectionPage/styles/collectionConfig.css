@@ -167,7 +167,7 @@
 /* МОДАЛЬНЫЕ ОКНА */
 .palette_modal,
 .pattern_modal {
-    display: none;
+    display: block;
     position: fixed;
     z-index: 100;
     width: 100%;
@@ -363,7 +363,7 @@
 
     .collection_config_section .collection_switch {
         position: absolute;
-        top: -66px;
+        top: -91px;
         right: 0;
     }
 }

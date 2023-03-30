@@ -32,12 +32,12 @@ li {
         line-height: 52px;
     }
 
-    .title_section {
-        padding-bottom: 15px;
-    }
-
     .bread_crumbs {
         margin-bottom: 60px;
+    }
+
+    .title_section {
+        padding: 15px 0;
     }
 }
 
