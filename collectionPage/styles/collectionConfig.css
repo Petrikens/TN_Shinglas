@@ -225,6 +225,25 @@
     position: relative;
 }
 
+.palette_wrapper,
+.pattern_wrapper {
+    cursor: pointer;
+}
+
+.palette_wrapper input,
+.pattern_wrapper input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.palette_wrapper input:checked ~ .modal_name,
+.pattern_wrapper input:checked ~ .modal_name {
+    color: #959698;
+}
+
 .active_marker {
     position: absolute;
     top: -20px;
@@ -236,58 +255,12 @@
     justify-content: center;
     background: #E30613;
     border-radius: 50%;
-    display: none;
-}
-
-.active_palette {
-    display: flex;
-    color: #959698;
 }
 
 .palette {
     width: 200px;
     height: 60px;
     border-radius: 5px;
-}
-
-.modal_palette_item:first-child .palette {
-    background-color: #8E6B5D;
-}
-
-.modal_palette_item:nth-child(2) .palette {
-    background-color: #705043;
-}
-
-.modal_palette_item:nth-child(3) .palette {
-    background-color: #8D4839;
-}
-
-.modal_palette_item:nth-child(4) .palette {
-    background-color: #A2988F;
-}
-
-.modal_palette_item:nth-child(5) .palette {
-    background-color: #AFB0B3;
-}
-
-.modal_palette_item:nth-child(6) .palette {
-    background-color: #757576;
-}
-
-.modal_palette_item:nth-child(7) .palette {
-    background-color: #A93131;
-}
-
-.modal_palette_item:nth-child(8) .palette {
-    background-color: #557D4B;
-}
-
-.modal_palette_item:nth-child(9) .palette {
-    background-color: #5A92C8;
-}
-
-.modal_palette_item:last-child .palette {
-    background-color: #000000;
 }
 
 .modal_name {
