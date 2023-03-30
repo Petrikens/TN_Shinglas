@@ -142,7 +142,6 @@
     gap: 5px;
     border: 1px solid #000000;
     border-radius: 5px;
-    overflow: hidden;
 }
 
 .collection_config_section .selector .selector-list li {
@@ -153,6 +152,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.collection_config_section .selector ul {
+    overflow: hidden;
+    max-height: fit-content;
 }
 
 .collection_config_section .selector .selector-list li:hover {
@@ -168,7 +172,7 @@
 /* МОДАЛЬНЫЕ ОКНА */
 .palette_modal,
 .pattern_modal {
-    display: block;
+    display: none;
     position: fixed;
     z-index: 100;
     width: 100%;
