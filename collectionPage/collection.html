@@ -381,7 +381,7 @@
       <section class="palette_collection">
         <link rel="stylesheet" href="./styles/paletteCollection.css" />
         <div class="container">
-          <div class="palette_collection_card">
+          <div class="roof_collection_card">
             <img class="palette_collection_img" src="./images/paletteCollection/Atlantika_Tenerife_tekstura 2.jpg" alt="Atlantika_Tenerife">
             <div class="palette_collection_info">
               <div class="collection_info_left">
@@ -398,15 +398,22 @@
             </div>
             <div class="visualization">
               <img src="./images/paletteCollection/3d.svg" alt="3d">
+              <button class="goto_vizualization">Перейти в 3D-конфигуратор</button>
             </div>
-            <button class="collection_favorite" type="submit">
+            <button class="collection_favorite active_favorite_collection" type="submit">
               <img
+                class="default_like"
                 src="../images/header/Like.svg"
                 alt="Like"
               />
+              <img
+              class="active_like"
+              src="../images/header/FillLike.svg"
+              alt="Like"
+            />
             </button>
           </div>
-          <div class="palette_collection_card">
+          <div class="roof_collection_card">
             <img class="palette_collection_img" src="./images/paletteCollection/Atlantika_Tenerife_tekstura 2.jpg" alt="Atlantika_Tenerife">
             <div class="palette_collection_info">
               <div class="collection_info_left">
@@ -452,7 +459,13 @@
             </div>
             <button class="collection_favorite" type="submit">
               <img
+                class="default_like"
                 src="../images/header/Like.svg"
+                alt="Like"
+              />
+              <img
+                class="active_like"
+                src="../images/header/FillLike.svg"
                 alt="Like"
               />
             </button>
