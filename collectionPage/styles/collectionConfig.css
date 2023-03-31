@@ -176,7 +176,7 @@
 /* МОДАЛЬНЫЕ ОКНА */
 .palette_modal,
 .pattern_modal {
-    display: none;
+    display: block;
     position: fixed;
     z-index: 100;
     width: 100%;
