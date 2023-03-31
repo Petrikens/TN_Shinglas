@@ -108,8 +108,8 @@
     align-items: center;
 }
 
-.selected_filters_count {
-    margin-left: 10px;
+.filter_button .filter_text {
+    margin-right: 10px;
 }
 
 /* КАСТОМНЫЙ СЕЛЕКТ */
