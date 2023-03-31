@@ -111,7 +111,7 @@
 
 /* МОДАЛЬНЫЕ ОКНА */
 .modal_layout {
-    display: none;
+    display: block;
     position: fixed;
     z-index: 100;
     width: 100%;
