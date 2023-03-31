@@ -128,7 +128,7 @@
     position: relative;
 }
 
-.additional_palette_block > img {
+.additional_palette_block .tile_thumbnail {
     width: 99px;
     height: 79px;
     border-radius: 5px;
