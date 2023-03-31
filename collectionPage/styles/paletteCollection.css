@@ -319,7 +319,7 @@
         justify-content: center;
     }
 
-    .additional_palette_block + img {
+    .additional_palette_block .tile_thumbnail {
         width: 100px;
         height: 79px;
     }
