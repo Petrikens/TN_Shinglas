@@ -67,7 +67,7 @@
 .collection_config_section .selector .selector-display:after {
     position: absolute;
     content: url(../images/CustomSelectArrow.svg);
-    top: 14px;
+    top: 10px;
     right: 10px;
 }
 
