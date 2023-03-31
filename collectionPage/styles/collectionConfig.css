@@ -112,6 +112,8 @@
 .collection_config_section .selector {
     position: relative;
     cursor: pointer;
+    width: fit-content;
+    height: fit-content;
 }
 
 .collection_config_section .selector .selector-display {
@@ -123,6 +125,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0;
 }
 
 .collection_config_section .selector .selector-display:after {
@@ -142,6 +145,12 @@
     gap: 5px;
     border: 1px solid #000000;
     border-radius: 5px;
+    padding: 0;
+}
+
+.collection_config_section .selector .selector-list ul {
+    overflow: hidden;
+    max-height: fit-content;
 }
 
 .collection_config_section .selector .selector-list li {
@@ -152,11 +161,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.collection_config_section .selector ul {
-    overflow: hidden;
-    max-height: fit-content;
 }
 
 .collection_config_section .selector .selector-list li:hover {
@@ -196,7 +200,6 @@
     width: 700px;
     height: 900px;
     left: calc(50% - 350px);
-    top: calc(50% - 450px);
 }
 
 .modal_header {
@@ -234,6 +237,8 @@
 .palette_wrapper,
 .pattern_wrapper {
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
 }
 
 .palette_wrapper input,
@@ -273,6 +278,7 @@
     font-size: 16px;
     line-height: 21px;
     text-decoration-style: dashed;
+    margin-top: 10px;
 }
 
 .modal_footer {
@@ -306,7 +312,7 @@
 }
 
 .pattern_info {
-    max-width: 182px;
+    width: 182px;
     position: relative;
 }
 
